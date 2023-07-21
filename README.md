@@ -32,4 +32,4 @@
 https://www.figma.com/file/bAEJaoqbJOAX6yf0uEZz75/expired_foods?type=design&node-id=0%3A1&mode=design&t=zGEZgn14ElDN3Vfg-1
 
 # ER図
-![Alt text](https://i.gyazo.com/a2859a78edf6cf9f284dc75f0947c597.png)
+![Alt text](https://i.gyazo.com/cdae65f284ee46a4d88448418b0a9454.png)
