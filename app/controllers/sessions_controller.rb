@@ -1,8 +1,9 @@
 class SessionsController < ApplicationController
+  skip_before_action :require_login
 
   def create
-    user = User.find_by(email: sessions_params[:email])
-    if user&.authenticate(sessions_params[:password])
+    user = User.find_by(email: params[:email])
+    if user&.authenticate(params[:password])
       session[:user_id] = user.id
       redirect_to items_path
    else
@@ -18,6 +19,6 @@ class SessionsController < ApplicationController
   private
 
   def sessions_params
-    params.permit(:email, :password)
+    params.require(:session).permit(:email, :password)
   end
 end

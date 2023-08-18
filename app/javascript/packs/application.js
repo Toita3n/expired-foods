@@ -12,3 +12,5 @@ import '@fortawesome/fontawesome-free/js/all';
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import "./sort_items"

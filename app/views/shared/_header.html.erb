@@ -6,26 +6,27 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-       <% if current_user.present? %>
+        <% if current_user.present? %>
           <li class="nav-item">
             <%= link_to 'ログアウト', logout_path, class: 'nav-link', method: :delete, data: { confirm: 'ログアウトします' } %>
           </li>
           <li class="nav-item">
-            <%= link_to '商品登録', '#', class: 'nav-link'%>
+            <%= link_to '商品登録', new_item_path, class: 'nav-link'%>
           </li>
           <li class="nav-item">
-            <%= link_to '商品一覧', '#', class: 'nav-link'%>
-       <% else %>
+            <%= link_to '商品一覧', items_path, class: 'nav-link'%>
+          </li>
+        <% else %>
           <li class="nav-item">
             <%= link_to 'ユーザー登録', sign_up_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
             <%= link_to 'ログイン', login_path, class: 'nav-link' %>
           </li>
-       <% end %>
-          <li class="nav-item">
-            <%= link_to '買い物リスト', '#', class: 'nav-link' %>
-          </li>
+        <% end %>
+        <li class="nav-item">
+          <%= link_to '買い物リスト', wish_lists_path, class: 'nav-link' %>
+        </li>
       </ul>
     </div>
   </div>

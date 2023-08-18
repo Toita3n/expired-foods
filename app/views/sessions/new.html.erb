@@ -1,10 +1,10 @@
 <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
-  <div class="card" style="width: 400px;">
+  <div class="card-info" style="width: 400px;">
     <div class="card-header">
       ログイン
     </div>
-    <div class="card-body">
-      <%= form_with url: login_path do |f| %>
+    <div class="card-body-up">
+      <%= form_with url: login_path, method: :post do |f| %>
         <div class="mb-3">
           <%= f.label :email, 'メールアドレス' %>
           <%= f.email_field :email, class: 'form-control', placeholder:'メールアドレス' %>
@@ -12,7 +12,7 @@
 
         <div class="mb-3">
           <%= f.label :password, 'パスワード' %>
-          <%= f.password_field :password, class: 'form-control', placeholder:'パスワード' %>
+          <%= f.password_field :password, class: 'form-control', placeholder:'パスワード', id: "show_password" %>
         </div>
         <div class="mb-3">
           <%= f.submit 'ログイン', class: 'btn btn-primary' %>

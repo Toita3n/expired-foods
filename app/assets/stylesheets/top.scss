@@ -1,9 +1,11 @@
 
 .top-wrapper {
-    background-image: image-url("top.jpg") ;
-    height: calc(100vh - 65px);
-    position: relative;
-    background-position: center;
+  background-image: image-url("top.jpg") ;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
   
     .top-inner-text {
       position: absolute;
@@ -13,7 +15,7 @@
       width: 100%;
       text-align: center;
       font-size: 3rem;
-      color: white;
+      color: #ff6347;
   
       @media screen and (max-width: 767px) {
         font-size: 2.0rem;

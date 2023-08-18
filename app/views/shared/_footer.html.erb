@@ -1,21 +1,20 @@
-<footer class="p-3 mb-2 bg-dark">
-  <div class="md-flex md-justify-between">
-    <%= link_to 'expired foods', root_path %>
-    <div class="grid">
-      <div class="footer-inner">
-        <p class="text-white">INFO</p>
-        <li class="nav-item">
-          <%= link_to 'お問い合わせ', '#'%>
-        </li>
-        <li class="nav-item">
-          <%= link_to '利用規約', '#'%>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Privacy Policy', '#'%>
-        </li>
-      </div>
-    </div>
+<div class="footer bg-dark">
+  <div class="footer-inner">
+      <li class="nav-item">
+        <%= link_to 'expired foods', root_path, class: "nav-item" %>
+      </li>
+    <ul>
+      <li class="nav-item">
+        <%= link_to 'お問い合わせ', '#' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to '利用規約', '#' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Privacy Policy', '#' %>
+      </li>
+    </ul>
   </div>
   <hr>
-  <p class="copyright">© 2023 this is created by individual</p>
-</footer>
+  <p class="copyright bg-white">© 2023 this is created by individual</p>
+</div>
