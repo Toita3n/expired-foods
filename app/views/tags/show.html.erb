@@ -11,13 +11,12 @@
                  <option value="latest">遠い順</option>
                  <option value="expired">近い順</option>
                 </select>
-          <h1 style="text-align: center">全<%= @tag.items.count %>件</h1>
-          <div class="item-tag"></div>
         </li>
       </div>
     </div>
       <% if @tags.present? %>
         <%= render 'tag', tag: @tag %>
       <% end %>
+      <%= paginate @tags %>
   </div>
 </section>

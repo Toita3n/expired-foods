@@ -1,6 +1,6 @@
 <%= form_with model: item, local: true do |f| %>
   <div class="mb-3">
-    <%= f.label :title %>
+    <%= f.label :title, "商品名" %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="form-group">
@@ -18,6 +18,10 @@
   <div class="field">
     <%= f.label :name, "タグ (空白で区切ると複数タグ登録できます)" %>
     <%= f.text_field :name, value: @tag_list, class:"form-control" %>
+  </div>
+  <div class="textarea">
+    <%= f.label :detail, "概要(買った場所や値段などの情報を入力できます)" %>
+    <%= f.text_field :detail, class: "form-control" %>
   </div>
   <%= f.submit '商品登録', class: 'btn btn-primary'  %>
 <% end %>

@@ -8,6 +8,7 @@ class Item < ApplicationRecord
   validates :title, presence: true
   validates :count, presence: true, numericality: true
   validates :expired_at, presence: true
+  validates :detail, presence: true, length: { minimum: 0, maximum: 256}
 
   scope :latest_expired, -> { order(expired_at: :desc) }
   scope :expired, -> { order(expired_at: :asc) }

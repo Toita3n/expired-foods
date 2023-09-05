@@ -2,11 +2,11 @@ class ItemsController < ApplicationController
 
   def index
     if params[:latest_expired]
-      @items = Item.latest_expired
+      @items = Item.latest_expired.page(params[:page]).per(5)
     elsif params[:expired]
-      @items = Item.expired
+      @items = Item.expired.page(params[:page]).per(5)
     else
-      @items = Item.all
+      @items = Item.all.page(params[:page]).per(5)
     end
 
     @tag_list = Tag.all
@@ -18,7 +18,7 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
-    @tags = Tag.find(params[:id])
+    @items = Item.select(:name).distinct
   end
 
   def create
@@ -45,7 +45,7 @@ class ItemsController < ApplicationController
       @item.save_tags(tag_list)
       redirect_to item_path(@item), success: 'アップデートされました'
     else
-      remder :edit
+      render :edit
     end
   end
 
@@ -58,6 +58,6 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list)
+    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :detail)
   end
 end

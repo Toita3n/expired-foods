@@ -15,15 +15,12 @@
              <h3 class="d-inline"><%= @item.title %></h3>
                 <%= render 'items/crud_menus', item: @item %>
              <ul class="list-inline">
-                 <li class="list-inline-item">総数<%= @item.count %>個</li>
-                 <li class="list-inline-item">賞味期限:<%= @item.expired_at.strftime('%Y-%m-%d')  %></li>
+                 <li class="list-inline-item">総数:<%= @item.count %>個</li>
+                 <li class="list-inline-item">賞味期限:<%= @item.expired_at.strftime('%Y-%m-%d') %></li>
                  <li class="list-inline-item"><%= @item.remaining_days %></li>
-                 <li class="list-inline-item">
-                   <% @item.tags.each do |tag| %>
-                    <%= link_to tag.name, tag_path(tag), class: 'badge rounded-pill bg-info text-decoration-none text-dark' %>
-                   <% end %>
-                 </li>
+                 <div class="box3"><%= @item.detail %></div>
              </ul>
+               <%= link_to '商品一覧に戻る', items_path, class: 'btn btn-secondary' %>
            </div>
          </div>
         </div>

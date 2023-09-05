@@ -39,11 +39,10 @@
     background-color: silver;
 }
 
-.scroller {
-    width: 400px;
-    height: 100px;
-    overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
+.box3{
+    margin: 1em auto;
+    padding: 1em;
+    border:solid 2px black;
     background-color: silver;
+    overflow-y: scroll;
 }

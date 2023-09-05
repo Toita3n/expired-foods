@@ -5,8 +5,8 @@ class TagsController < ApplicationController
 
   def show
     @tag = Tag.find(params[:id])
-    @tags = Tag.includes(items: :user)
-    @items = Item.select(:name).distinct
+    @tags = Tag.includes(items: :user).page(params[:page]).per(5)
+    @items = Item.includes(:user).page(params[:page]).per(5)
   end
 
   def destroy
