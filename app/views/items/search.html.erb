@@ -1,7 +1,7 @@
 <section class="content">
   <div class="box box-primary">
     <div class="box-header">
-       <%= render 'search_form_items' %>
+    <%= render 'search_form_items' %>
       <h3 class="box-title">商品一覧</h3>
       <div class="ul list-inline">
         <li>
@@ -15,11 +15,11 @@
         </li>
       </div>
     </div>
-      <% if @items.present? %>
-        <%= render @items %>
+      <% if @search_items.present? %>
+        <%= render @search_items %>
       <% else %>
         <p>Nothing</p>
       <% end %>
-      <%= paginate @items %>
+      <%= paginate @search_items %>
   </div>
 </section>

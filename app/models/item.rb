@@ -12,6 +12,9 @@ class Item < ApplicationRecord
 
   scope :latest_expired, -> { order(expired_at: :desc) }
   scope :expired, -> { order(expired_at: :asc) }
+  scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%")}
+  scope :search_detail, ->(detail) { where("detail LIKE ?", "%#{detail}%")}
+  scope :tag_name, ->(tag_name) { joins(:tags).merge(Item.where("tags.name LIKE ?", "%#{tag_name}%"))}
 
   def remaining_days
     today = Date.today

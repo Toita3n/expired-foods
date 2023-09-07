@@ -55,9 +55,18 @@ class ItemsController < ApplicationController
     redirect_to items_path
   end
 
+  def search
+    @search_items_form = SearchItemsForm.new(search_item_params)
+    @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(5)
+  end
+
   private
 
   def item_params
     params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :detail)
+  end
+
+  def search_item_params
+    params.fetch(:q, {}).permit(:title, :detail, :tag_name)
   end
 end
