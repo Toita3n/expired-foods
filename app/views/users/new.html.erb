@@ -6,10 +6,6 @@
     <div class="card-body-up">
       <%= form_with model: @sign_up_form, url: sign_up_path do |f| %>
         <div class="mb-3">
-          <%= f.label :name %>
-          <%= f.text_field :name, class: 'form-control', placeholder: 'ニックネーム' %>
-        </div>
-        <div class="mb-3">
           <%= f.label :email %>
           <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>

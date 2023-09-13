@@ -1,0 +1,24 @@
+<div class="content">
+ <table class="table">
+   <%= link_to '買い物リストに追加', new_shopping_list_path, class: 'btn btn-primary'%>
+  <thead>
+    <th>商品名</th>
+    <th>総数</th>
+    <th>詳細</th>
+  </thead>
+     <tbody>
+       <% if @shopping_lists.present? %>
+         <% @shopping_lists.each do |list| %>
+           <tr>
+             <td><%= check_box_tag :shopping_list_box %>
+                 <%= label_tag :shopping_list_box, list.product %></td>
+             <td><%= list.number %></td>
+             <td><%= list.trait %></td>
+             <td><%= render 'crud_menus', { shopping_list: list } %></td>
+           </tr>
+         <% end %>
+          </tr>
+       <% end %>
+     </tbody>
+ </table>
+</div>

@@ -1,0 +1,13 @@
+<ul class='crud-menu-btn list-inline float-right'>
+  <li class="list-inline-shopping_list">
+    <%= link_to edit_shopping_list_path(shopping_list), id: "button-edit-#{shopping_list.id}" do %>
+     <%= icon 'fa', 'pen' %>
+    <% end %>
+  </li>
+ー
+  <li class="list-inline-shopping_list">
+    <%= link_to shopping_list_path(shopping_list), id: "button-delete-#{shopping_list.id}", method: :delete, data:{confirm: '削除しますか?'} do %>
+      <%= icon 'fas', 'trash' %>
+    <% end %>
+  </li>
+</ul>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_09_05_010053) do
+ActiveRecord::Schema.define(version: 2023_09_12_032145) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -62,6 +62,16 @@ ActiveRecord::Schema.define(version: 2023_09_05_010053) do
     t.index ["user_id"], name: "index_items_on_user_id"
   end
 
+  create_table "shopping_lists", force: :cascade do |t|
+    t.string "product"
+    t.integer "number"
+    t.text "trait"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_shopping_lists_on_user_id"
+  end
+
   create_table "tags", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -71,15 +81,9 @@ ActiveRecord::Schema.define(version: 2023_09_05_010053) do
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "password_digest", null: false
-    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
-  end
-
-  create_table "wish_lists", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
@@ -87,4 +91,5 @@ ActiveRecord::Schema.define(version: 2023_09_05_010053) do
   add_foreign_key "item_tags", "items"
   add_foreign_key "item_tags", "tags"
   add_foreign_key "items", "users"
+  add_foreign_key "shopping_lists", "users"
 end

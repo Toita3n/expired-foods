@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
   resources :tags, only: %i[index show destroy]
-  resources :wish_lists, only: %i{index new destroy}
+  resources :shopping_lists
 end

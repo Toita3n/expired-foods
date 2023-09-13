@@ -4,12 +4,11 @@ class SignUpForm
   attribute :email, :string
   attribute :password, :string
   attribute :password_confirmation, :string
-  attribute :name, :string
 
   validates :password, length: { minimum: 3 }
   validates :password, confirmation: true
   with_options presence: true do
-    validates :email, :password, :password_confirmation, :name
+    validates :email, :password, :password_confirmation
   end
 
   validate :email_is_not_taken_by_another
@@ -17,7 +16,7 @@ class SignUpForm
   def save
     return false unless valid?
 
-    user = User.new(email: email, password: password, name: name)
+    user = User.new(email: email, password: password)
     user.save
   end
 

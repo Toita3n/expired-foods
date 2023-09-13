@@ -16,8 +16,8 @@
     <%= f.file_field :image %>
   </div>
   <div class="field">
-    <%= f.label :name, "タグ (空白で区切ると複数タグ登録できます)" %>
-    <%= f.text_field :name, value: @tag_list, class:"form-control" %>
+    <%= f.label :tag_name, "タグ (空白で区切ると複数タグ登録できます)" %>
+    <%= f.text_field :tag_name, value: @tag_list, class:"form-control" %>
   </div>
   <div class="textarea">
     <%= f.label :detail, "概要(買った場所や値段などの情報を入力できます)" %>

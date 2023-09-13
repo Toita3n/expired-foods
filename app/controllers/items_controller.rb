@@ -24,7 +24,7 @@ class ItemsController < ApplicationController
   def create
     @item = current_user.items.build(item_params)
     @item.user_id = current_user.id
-    tag_list = params[:item][:name].split(' ')
+    tag_list = params[:item][:tag_name].split(' ')
     if @item.save
       @item.save_tags(tag_list)
       redirect_to items_path
@@ -40,7 +40,7 @@ class ItemsController < ApplicationController
 
   def update
     @item = Item.find(params[:id])
-    tag_list = params[:item][:name].split(' ')
+    tag_list = params[:item][:tag_name].split(' ')
     if @item.update(item_params)
       @item.save_tags(tag_list)
       redirect_to item_path(@item), success: 'アップデートされました'
@@ -63,7 +63,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :detail)
+    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :tag_name, :detail)
   end
 
   def search_item_params

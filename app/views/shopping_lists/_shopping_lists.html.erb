@@ -1,0 +1,15 @@
+<%= form_with model: @shopping_list, local: true do |f| %>
+  <div class="mb-3">
+    <%= f.label :product, '商品名' %>
+    <%= f.text_field :product %>
+  </div>
+  <div class="fomr-group">
+    <%= f.label :number, '総数' %>
+    <%= f.number_field :number, size: '5x5', min: 1 %>
+  </div>
+  <div class="textarea">
+    <%= f.label :trait, '詳細' %>
+    <%= f.text_area :trait %>
+  </div>
+    <%= f.submit '保存', class: 'btn btn-primary' %>
+<% end %>
