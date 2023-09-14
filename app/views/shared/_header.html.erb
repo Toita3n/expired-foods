@@ -16,6 +16,12 @@
           <li class="nav-item">
             <%= link_to '商品一覧', items_path, class: 'nav-link'%>
           </li>
+           <li class="nav-item">
+            <%= link_to '買い物リスト', shopping_lists_path, class: 'nav-link' %>
+          </li>
+           <li class="nav-item">
+             <%= link_to 'ユーザー設定', user_path(current_user), class: 'nav-link' %>
+           </li>
         <% else %>
           <li class="nav-item">
             <%= link_to 'ユーザー登録', sign_up_path, class: 'nav-link' %>
@@ -24,9 +30,6 @@
             <%= link_to 'ログイン', login_path, class: 'nav-link' %>
           </li>
         <% end %>
-        <li class="nav-item">
-          <%= link_to '買い物リスト', shopping_lists_path, class: 'nav-link' %>
-        </li>
       </ul>
     </div>
   </div>

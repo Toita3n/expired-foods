@@ -15,6 +15,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = current_user
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    redirect_to user_path(@user.id)
+  end
+
   def destroy
     @users = User.find_by(id: params[:id])
     @user.destroy!
@@ -24,6 +38,6 @@ class UsersController < ApplicationController
   private
 
   def sign_up_form_params
-    params.require(:sign_up_form).permit(:email, :password, :password_confirmation)
+    params.require(:sign_up_form).permit(:email, :password, :password_confirmation, :profile)
   end
 end
