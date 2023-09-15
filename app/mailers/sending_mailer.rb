@@ -6,7 +6,7 @@ class SendingMailer < ApplicationMailer
   end
 
   def reset_password_email(user)
-    @greeting = "Hi"
+    @greeting = "こんにちは"
     @user = User.find(user.id)
     @url = edit_password_reset_url(@user.reset_password_token)
     email(to: user.email, subject 'パスワード変更のお知らせ')

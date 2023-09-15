@@ -1,9 +1,9 @@
 class ItemsController < ApplicationController
 
   def index
-    if params[:latest_expired]
+    if params[:latest_expired] #賞味期限が遠い順
       @items = Item.latest_expired.page(params[:page]).per(5)
-    elsif params[:expired]
+    elsif params[:expired] #賞味期限が遠い順
       @items = Item.expired.page(params[:page]).per(5)
     else
       @items = Item.all.page(params[:page]).per(5)
@@ -24,7 +24,7 @@ class ItemsController < ApplicationController
   def create
     @item = current_user.items.build(item_params)
     @item.user_id = current_user.id
-    tag_list = params[:item][:tag_name].split(' ')
+    tag_list = params[:item][:tag_name].split(' ') #tagの表示
     if @item.save
       @item.save_tags(tag_list)
       redirect_to items_path
@@ -35,7 +35,7 @@ class ItemsController < ApplicationController
 
   def edit
     @item = Item.find(params[:id])
-    @tag_list = @item.tags.pluck(:name).join(' ')
+    @tag_list = @item.tags.pluck(:name).join(' ') #半角空白でtagを追加できる
   end
 
   def update
@@ -56,7 +56,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    @search_items_form = SearchItemsForm.new(search_item_params)
+    @search_items_form = SearchItemsForm.new(search_item_params) #　form_objectを使用してsearchする
     @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(5)
   end
 

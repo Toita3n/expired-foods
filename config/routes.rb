@@ -12,10 +12,10 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :users, only: %i[new create show edit update]
-  resource :profile, only: %i[show edit update]
+  resources :users, only: %i[new create show edit update destroy]
   resources :tags, only: %i[index show destroy]
   resources :shopping_lists
+  resources :password_resets, only: %i[new create edit update]
 
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end

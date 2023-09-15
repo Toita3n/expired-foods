@@ -1,17 +1,18 @@
-<div class="container pt-3">
-  <div class="row">
-    <div class="col-md-10 offset-md-1 mb-5">
-      <h1 class="float-left"><%= t('.title') %></h1>
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+  <div class="card-info"  style="width: 400px;">
+    <div class="card-header">
+      パスワードの変更
     </div>
-    <div class="col-md-10 offset-md-1">
-      <%= form_with model: @user, url: profile_path, local: true do |f| %>
-        <%= render "shared/error_messages", object: f.object %>
-        <div class="form-group">
+    <div class="card-body-up">
+      <%= form_with model: @user, url: user_path(@user), local: true do |f| %>
+        <div class="mb-3">
           <%= f.label :email %>
-          <%= f.email_field :email, class: "form-control" %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>
-        <%= f.submit (t 'defaults.update'), class: "btn btn-primary"%>
-      <% end %>  
+        <div>
+          <%= f.submit 'メールアドレスの変更', class: 'btn btn-primary' %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

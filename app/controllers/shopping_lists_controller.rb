@@ -10,7 +10,7 @@ class ShoppingListsController < ApplicationController
 
   def create
     @shopping_list = ShoppingList.new(shopping_list_params)
-    @shopping_list.user_id = current_user.id
+    @shopping_list.user_id = current_user.id #user_idをreferenceにしているため
     if @shopping_list.save
       redirect_to shopping_lists_path
     else

@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @sign_up_form = SignUpForm.new(sign_up_form_params)
+    @sign_up_form = SignUpForm.new(sign_up_form_params) #form_objectを使用してユーザー登録
     if @sign_up_form.save
       redirect_to login_path, success: 'サインアップしました'
     else
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update(user_params)
+    @user.update!(user_params)
     redirect_to user_path(@user.id)
   end
 
@@ -38,6 +38,10 @@ class UsersController < ApplicationController
   private
 
   def sign_up_form_params
-    params.require(:sign_up_form).permit(:email, :password, :password_confirmation, :profile)
+    params.require(:sign_up_form).permit(:email, :password, :password_confirmation)
+  end
+
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation, :reset_password_token)
   end
 end
