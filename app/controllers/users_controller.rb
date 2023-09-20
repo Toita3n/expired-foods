@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :require_login
+  skip_before_action :require_login, only: %i[new create update]
 
   def new
     @sign_up_form = SignUpForm.new

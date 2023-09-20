@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find_by(id: session[:user_id])
   end
 
-  def require_login
-    redirect_to login_path, warning: 'ログインしてください' if current_user.blank?
+  def not_authenticated
+    redirect_to login_path, danger: "ログインして下さい"
   end
 end

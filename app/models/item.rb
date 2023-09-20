@@ -22,9 +22,9 @@ class Item < ApplicationRecord
     expired_date = expired_at.to_date
 
     if expired_date == today
-      '期限当日になりました'
+      '期限当日です'
     elsif expired_date < today
-      '期限切れ'
+      '期限切れです'
     else
       remaining_days = (expired_date - today).to_i
       "あと #{remaining_days} 日です"

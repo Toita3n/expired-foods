@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_09_12_032145) do
+ActiveRecord::Schema.define(version: 2023_09_20_011235) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -38,6 +38,13 @@ ActiveRecord::Schema.define(version: 2023_09_12_032145) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "inquiries", force: :cascade do |t|
+    t.string "email", null: false
+    t.text "text", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "item_tags", force: :cascade do |t|
@@ -80,16 +87,19 @@ ActiveRecord::Schema.define(version: 2023_09_12_032145) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
-    t.string "password_digest", null: false
+    t.string "crypted_password"
+    t.string "salt"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_token_expires_at"
+    t.datetime "reset_password_email_sent_at"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "item_tags", "items"
   add_foreign_key "item_tags", "tags"
-  add_foreign_key "items", "users"
-  add_foreign_key "shopping_lists", "users"
 end

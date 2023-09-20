@@ -1,14 +1,15 @@
 class SessionsController < ApplicationController
-  skip_before_action :require_login
+  skip_before_action :require_login, only: %i[new create]
 
   def create
-    user = User.find_by(email: params[:email])
-    if user&.authenticate(params[:password])
-      session[:user_id] = user.id
+    @user = login(params[:email], params[:password])
+
+    if @user
       redirect_to items_path
-   else
-      render :new
-   end
+    else
+      flash.now[:alert] = 'Login failed'
+      render action: 'new'
+    end
   end
 
   def destroy

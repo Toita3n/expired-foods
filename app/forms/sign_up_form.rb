@@ -11,22 +11,14 @@ class SignUpForm
     validates :email, :password, :password_confirmation
   end
 
-  validate :email_is_not_taken_by_another
-
   def save
     return false unless valid?
 
-    user = User.new(email: email, password: password)
-    user.save
+    user = User.new(email: email, password: password, password_confirmation: password_confirmation)
+    user.save!
   end
 
   def user
     @user ||= User.new(email: email, password: password, password_confirmation: password_confirmation)
-  end
-
-  private
-
-  def email_is_not_taken_by_another
-    errors.add(:email, :taken, value: email) if User.exists?(email: email)
   end
 end

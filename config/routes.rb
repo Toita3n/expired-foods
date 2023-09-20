@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+  get 'password_resets/create'
+  get 'password_resets/edit'
+  get 'password_resets/update'
   resources :items do
     collection do
       get 'search'
@@ -16,6 +19,9 @@ Rails.application.routes.draw do
   resources :tags, only: %i[index show destroy]
   resources :shopping_lists
   resources :password_resets, only: %i[new create edit update]
+  resources :inquiries, only: %i[new create] do
+    get '/mentions', to: 'inquiries#mentions'
+  end
 
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end
