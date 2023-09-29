@@ -8,7 +8,7 @@
   </thead>
      <tbody>
        <% if @shopping_lists.present? %>
-         <% @shopping_lists.each do |list| %>
+         <% current_user.shopping_lists.each do |list| %>
            <tr>
              <td><%= check_box_tag :shopping_list_box %>
                  <%= label_tag :shopping_list_box, list.product %></td>

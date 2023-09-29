@@ -1,4 +1,5 @@
-<li id="<%= dom_id(item) %>">
+<% if current_user&.mine?(item) %>
+ <li id="<%= dom_id(item) %>">
   <div class="card">
     <div class="card-body">
       <div class="item-info"><%= link_to item.title, item_path(item) %></div>
@@ -21,4 +22,5 @@
     </div>
   </div>
   <hr>
-</li>
+ </li>
+<% end %>

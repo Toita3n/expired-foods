@@ -1,0 +1,8 @@
+<%= form_with model: @search_shopping_lists_form, scope: :q, url: search_admin_shopping_lists_path, method: :get, local: true do |f| %>
+  <div class="mb-3">
+    <%= f.text_field :product, placeholder: '商品名' %>
+    <%= f.text_field :trait, placeholder: '概要' %>
+    <%= f.search_field :user_email, placeholder: 'メールアドレス'%>
+    <%= f.submit '検索', class: 'btn btn-outline-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<% content_for(:title, @item.title) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1><%= t '.title' %></h1>
+      <%= form_with model: @item, url: admin_item_path(@item), local: true do |f| %>
+        <div class="mb-3">
+         <%= f.label :title, "商品名" %>
+         <%= f.text_field :title, class: 'form-control' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :count, '総数' %>
+          <%= f.number_field :count, size: '5x5', min: 0 %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :expired_at, '賞味期限' %>
+          <%= f.date_field :expired_at %>
+        </div>
+        <div class="mb-3">
+          <%= f.label :image %>
+          <%= f.file_field :image %>
+    </div>
+        <div class="textarea">
+          <%= f.label :detail, "概要(買った場所や値段などの情報を入力できます)" %>
+          <%= f.text_field :detail, class: "form-control" %>
+        </div>
+          <%= f.submit '商品登録', class: 'btn btn-primary'  %>
+        <% end %>
+    </div>
+  </div>
+</div>

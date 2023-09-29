@@ -1,0 +1,16 @@
+<tr>
+  <td>
+    <%= tag.id %>
+  </td>
+  <td>
+    <%= tag.name %>
+  </td>
+  <td>
+    <%= l tag.created_at, format: :long %>
+  </td>
+  <td>
+    <%= link_to t('defaults.show'), admin_tag_path(tag), class: 'btn btn-info' %>
+    <%= link_to t('defaults.edit'), edit_admin_tag_path(tag), class: 'btn btn-success' %>
+    <%= link_to t('defaults.delete'), admin_tag_path(tag), method: :delete, data: { confirm: t('defaults.message.deleted_comfirm') }, class: 'btn btn-danger' %>
+  </td>
+</tr>

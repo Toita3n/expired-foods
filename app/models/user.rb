@@ -8,6 +8,9 @@ class User < ApplicationRecord
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, length: {minimum: 3}, if: -> { new_record? || changes[:crypted_password]}
   validates :reset_password_token, uniqueness: true, allow_nil: true
+  enum role: { general: 0, admin: 1 }
+
+  scope :search_email, ->(email) { where("email LIKE :word", word: "%#{email}%")}
 
   def mine?(object)
     id == object.user_id

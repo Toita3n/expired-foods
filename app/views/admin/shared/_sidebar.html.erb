@@ -1,0 +1,39 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <a href="#" class="brand-link">
+    <%= image_tag 'AdminLTELogo.png', class: 'brand-image img-circle elevation-3' %>
+    <span class="brand-text font-weight-light">AdminLTE 3</span>
+  </a>
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item menu-open">
+            <ul class="nav nav-treeview">
+             <li class="nav-item">
+                <%= link_to admin_users_path, class: "nav-link" do %>
+                 <i class="nav-icon far fa-user"></i>
+                 <p>ユーザー</p>
+               <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to admin_items_path, class: "nav-link" do %>
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>商品</p>
+                <% end %>
+              </li>
+                  <li class="nav-item">
+               <%= link_to admin_tags_path, class: "nav-link" do %>
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>タグ</p>
+                <% end %>
+              </li>
+              <li class="nav-item">
+               <%= link_to admin_shopping_lists_path, class: "nav-link" do %>
+                  <i class="nav-icon far fa-file"></i>
+                  <p>買い物リスト</p>
+                <% end %>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </aside>

@@ -16,11 +16,40 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: %i[new create show edit update destroy]
-  resources :tags, only: %i[index show destroy]
+  resources :tags, only: %i[index show edit update destroy]
   resources :shopping_lists
   resources :password_resets, only: %i[new create edit update]
   resources :inquiries, only: %i[new create] do
     get '/mentions', to: 'inquiries#mentions'
+  end
+
+  namespace :admin do
+    root to: 'dashboards#index'
+    get '/login', to: 'user_sessions#new'
+    post '/login', to: 'user_sessions#create'
+    delete '/logout', to: 'user_sessions#destroy'
+    resources :users, only: %i[index edit update show destroy] do
+      collection do
+        get 'search'
+      end
+    end
+
+    resources :items, only: %i[index edit update show destroy] do
+      collection do
+        get 'search'
+      end
+    end
+
+    resources :tags, only: %i[index edit show update destroy search] do
+      collection do
+        get 'search'
+      end
+    end
+    resources :shopping_lists, only: %i[index update show destroy] do
+      collection do
+        get 'search'
+      end
+    end
   end
 
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?

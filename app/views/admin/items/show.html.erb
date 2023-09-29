@@ -1,0 +1,39 @@
+<% content_for(:title, @item.title) %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1><%= t('.title') %></h1>
+      <div class="text-right mb-3">
+        <%= link_to t('defaults.edit'), edit_admin_item_path(@item), class: 'btn btn-success' %>
+        <%= link_to t('defaults.delete'), admin_item_path(@item), method: :delete, data: { confirm: t('defaults.message.deleted_comfirm') }, class: 'btn btn-danger' %>
+      </div>
+      <table class="table table-bordered bg-white">
+        <tr>
+          <th scope="row"><%= Item.human_attribute_name(:id) %></th>
+          <td><%= @item.id %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Item.human_attribute_name(:title) %></th>
+          <td><%= @item.title %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Item.human_attribute_name(:image) %></th>
+          <td><%= @item.image %></td>
+        </tr>
+          <tr>
+          <th scope="row"><%= Item.human_attribute_name(:count) %></th>
+          <td><%= @item.count %></td>
+        </tr>
+        </tr>
+          <tr>
+          <th scope="row"><%= Item.human_attribute_name(:detail) %></th>
+          <td><%= @item.detail %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Item.human_attribute_name(:created_at) %></th>
+          <td><%= l @item.created_at, format: :long %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

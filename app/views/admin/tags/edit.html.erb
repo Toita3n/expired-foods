@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h1>タグ編集</h1>
+     <%= form_with model: @tag, url: admin_tag_path(@tag), local: true do |f| %>
+      <div class="field">
+       <%= f.label :tag, "タグ" %>
+       <%= f.text_field :name, class: "form-control" %>
+    </div>
+       <%= f.submit 'タグを更新', class: 'btn btn-primary'  %>
+     <% end %>
+    </div>
+  </div>
+</div>

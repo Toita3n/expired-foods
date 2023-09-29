@@ -1,0 +1,23 @@
+<tr>
+  <td>
+    <%= shopping_list.id %>
+  </td>
+  <td>
+    <%= link_to shopping_list.product %>
+  </td>
+  <td>
+    <%= shopping_list.number %>
+  </td>
+  <td>
+    <%= shopping_list.trait %>
+  </td>
+  <td>
+    <%= shopping_list.user.email %>
+  </td>
+  <td>
+    <%= l shopping_list.created_at, format: :long %>
+  </td>
+  <td>
+    <%= link_to t('defaults.delete'), admin_shopping_list_path(shopping_list), method: :delete, data: { confirm: t('defaults.message.deleted_comfirm') }, class: 'btn btn-danger' %>
+  </td>
+</tr>

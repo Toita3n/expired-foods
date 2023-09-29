@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def index
-    @tags = Tag.all
+    @tags = Tag.includes(items: :user).order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def show

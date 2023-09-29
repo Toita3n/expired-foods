@@ -6,6 +6,7 @@ class SearchItemsForm
   attribute :detail, :string
   attribute :tag_name, :string
 
+
   def search
     relation = Item.distinct
 
