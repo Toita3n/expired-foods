@@ -1,14 +1,14 @@
 <%= form_with model: item, local: true do |f| %>
   <div class="mb-3">
-    <%= f.label :title, "商品名" %>
+    <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label :count, '総数' %>
+    <%= f.label :count %>
     <%= f.number_field :count, size: '5x5', min: 0 %>
   </div>
   <div class="mb-3">
-    <%= f.label :expired_at, '賞味期限' %>
+    <%= f.label :expired_at %>
     <%= f.date_field :expired_at %>
   </div>
   <div class="mb-3">
@@ -16,12 +16,12 @@
     <%= f.file_field :image %>
   </div>
   <div class="field">
-    <%= f.label :tag_name, "タグ (空白で区切ると複数タグ登録できます)" %>
+    <%= f.label :tag_name %>
     <%= f.text_field :tag_name, value: @tag_list, class:"form-control" %>
   </div>
   <div class="textarea">
-    <%= f.label :detail, "概要(買った場所や値段などの情報を入力できます)" %>
+    <%= f.label :detail %>
     <%= f.text_field :detail, class: "form-control" %>
   </div>
-  <%= f.submit '商品登録', class: 'btn btn-primary'  %>
+  <%= f.submit t('defaults.register'), class: 'btn btn-primary'  %>
 <% end %>

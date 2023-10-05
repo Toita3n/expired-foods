@@ -1,3 +1,4 @@
+<% content_for(:title, t('.title')) %>
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -8,15 +9,21 @@
       </div>
       <table class="table table-bordered bg-white">
         <tr>
-          <th scope="row"><%= User.human_attribute_name(:id) %></th>
+          <th scope="row"><%= Tag.human_attribute_name(:id) %></th>
           <td><%= @tag.id %></td>
         </tr>
         <tr>
-          <th scope="row"><%= User.human_attribute_name(:name) %></th>
+          <th scope="row"><%= Tag.human_attribute_name(:name) %></th>
           <td><%= @tag.name %></td>
         </tr>
         <tr>
-          <th scope="row"><%= User.human_attribute_name(:created_at) %></th>
+          <th scope="row"><%= Tag.human_attribute_name(:item) %></th>
+          <td> <% @tag.items.each do |tag| %>
+                <%= tag.title %>
+               <% end %></td>
+        </tr>
+        <tr>
+          <th scope="row"><%= Tag.human_attribute_name(:created_at) %></th>
           <td><%= l @tag.created_at, format: :long %></td>
         </tr>
       </table>

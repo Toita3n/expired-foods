@@ -1,10 +1,11 @@
+<% content_for(:title, t('.title')) %>
 <div class="content">
  <table class="table">
-   <%= link_to '買い物リストに追加', new_shopping_list_path, class: 'btn btn-primary'%>
+   <%= link_to t('.add_shopping_lists'), new_shopping_list_path, class: 'btn btn-primary'%>
   <thead>
-    <th>商品名</th>
-    <th>総数</th>
-    <th>詳細</th>
+    <th><%=ShoppingList.human_attribute_name(:product) %></th>
+    <th><%=ShoppingList.human_attribute_name(:number) %></th>
+    <th><%=ShoppingList.human_attribute_name(:trait) %></th>
   </thead>
      <tbody>
        <% if @shopping_lists.present? %>

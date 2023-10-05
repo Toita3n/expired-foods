@@ -1,7 +1,8 @@
+<% content_for(:title) %>
 <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
   <div class="card-info"  style="width: 400px;">
     <div class="card-header">
-      パスワードの変更
+      <%= t('defaults.email_setting')%>
     </div>
     <div class="card-body-up">
       <%= form_with model: @user, url: user_path(@user), local: true do |f| %>
@@ -10,7 +11,7 @@
           <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>
         <div>
-          <%= f.submit 'メールアドレスの変更', class: 'btn btn-primary' %>
+          <%= f.submit t('defaults.submit'), class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>

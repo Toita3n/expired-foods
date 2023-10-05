@@ -12,8 +12,9 @@ class ShoppingListsController < ApplicationController
     @shopping_list = ShoppingList.new(shopping_list_params)
     @shopping_list.user_id = current_user.id #user_idをreferenceにしているため
     if @shopping_list.save
-      redirect_to shopping_lists_path
+      redirect_to shopping_lists_path, success: t('.success')
     else
+      flash.now[:danger] = t('.fail')
       render :new
     end
   end
@@ -25,7 +26,7 @@ class ShoppingListsController < ApplicationController
   def destroy
     @shopping_list = ShoppingList.find_by(id: params[:id])
     @shopping_list.destroy!
-    redirect_to shopping_lists_path
+    redirect_to shopping_lists_path, success: t('.success')
   end
 
   private

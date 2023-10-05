@@ -9,13 +9,16 @@ class Item < ApplicationRecord
   validates :title, presence: true
   validates :count, presence: true, numericality: true
   validates :expired_at, presence: true
-  validates :detail, presence: true, length: { minimum: 0, maximum: 256}
+  validates :detail, length: { minimum: 0, maximum: 256}
+
+  validate :check_guest_user_limit, if:-> { user&.guest? }
 
   scope :latest_expired, -> { order(expired_at: :desc) }
   scope :expired, -> { order(expired_at: :asc) }
   scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%")}
   scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%")}
   scope :search_tag_name, ->(tag_name) { joins(:tags).merge(Item.where("tags.name LIKE ?", "%#{tag_name}%"))}
+  scope :search_email_item, ->(email_item) { joins(:user).merge(Item.where("users.email LIKE ?", "%#{email_item}%"))}
 
   def remaining_days
     today = Date.today
@@ -43,6 +46,12 @@ class Item < ApplicationRecord
     new_tags.each do |new_name|
       new_item_tag = Tag.find_or_create_by(name: new_name)
       self.tags << new_item_tag
+    end
+  end
+
+  def check_guest_user_limit
+    if user.guest? && user.items.count >= 3
+      errors.add(:base, 'ゲストユーザーは3つまでしかアイテムを登録できません。')
     end
   end
 end

@@ -1,10 +1,11 @@
+<% content_for(:title, @item.title) %>
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <div class="box1">
         <div class="card-header">
           <i class="bi bi-calendar me-2"></i>
-          <span>商品情報編集</span>
+          <span><%= t('.item_edit')%></span>
         </div>
         <div class="card-body">
           <%= render 'form', { item: @item } %>

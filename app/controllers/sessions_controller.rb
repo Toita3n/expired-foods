@@ -5,16 +5,16 @@ class SessionsController < ApplicationController
     @user = login(params[:email], params[:password])
 
     if @user
-      redirect_to items_path
+      redirect_to items_path, success: t('.success')
     else
-      flash.now[:alert] = 'Login failed'
+      flash.now[:danger] = t('.fail')
       render action: 'new'
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to login_path, success: 'ログアウトしました'
+    redirect_to login_path, success: t('.success')
   end
 
   private

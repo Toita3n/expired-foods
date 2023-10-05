@@ -10,8 +10,8 @@
          <%= image_tag("default.jpg", size: '150x120') %>
         <% end %>
       </div>
-      <div class="item-info">数:<%= item.count %></div>
-      <div class="item-info">期限:<%= item.expired_at.strftime('%Y-%m-%d') %></div>
+      <div class="item-info"><%= t('defaults.count')%>:<%= item.count %></div>
+      <div class="item-info"><%= t('defaults.expiration')%>:<%= item.expired_at.strftime('%Y-%m-%d') %></div>
       <div class="item-info"><%= item.remaining_days %></div>
       <div class="item-info">
        <% item.tags.each do |tag| %>

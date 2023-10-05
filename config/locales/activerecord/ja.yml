@@ -8,13 +8,16 @@ ja:
     attributes:
       user:
         role: 管理権限
+      sessions:
       item:
         title: 商品名
         image: 写真
+        expired_at: 賞味期限
         count: 数
-        detail: 特色
+        detail: 概要(買った場所や値段などの情報を入力できます)
+        tag_name: タグ (空白で区切ると複数タグ登録できます)
       tag:
-        name: 'タグ名'
+        name: タグ名
       shopping_list:
         product: 商品名
         number: 数
@@ -26,6 +29,7 @@ ja:
     id: ID
     email: メールアドレス
     password: パスワード
+    password_confirmation: パスワード再確認用
     created_at: 作成日時
     updated_at: 更新日時
   enums:

@@ -11,7 +11,7 @@ class Admin::ShoppingListsController < Admin::BaseController
 
   def destroy
     @shopping_list.destroy!
-    redirect_to admin_shopping_lists_path, success: '商品を削除しました'
+    redirect_to admin_shopping_lists_path, success: t('.success')
   end
 
   def search

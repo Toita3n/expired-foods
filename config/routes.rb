@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'password_resets/create'
   get 'password_resets/edit'
   get 'password_resets/update'
+  post '/guest_login', to: 'guest_sessions#create'
+  delete '/guest_logout', to: 'guest_sessions#destroy'
   resources :items do
     collection do
       get 'search'

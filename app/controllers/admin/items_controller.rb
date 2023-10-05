@@ -8,10 +8,13 @@ class Admin::ItemsController < Admin::BaseController
   def edit; end
 
   def update
-    if@item.update(item_params)
-        redirect_to admin_item_path(@item), success: '商品が更新されました'
+    @item = Item.find(params[:id])
+    tag_list = params[:item][:tag_name].split(' ')
+    if  @item.update(item_params)
+        @item.save_tags(tag_list)
+        redirect_to admin_item_path(@item), success: t('.message_item_update')
     else
-        flash.now['danger'] = '更新できませんでした'
+        flash.now['danger'] = t('.not_to_update')
         render :edit
     end
   end
@@ -20,7 +23,7 @@ class Admin::ItemsController < Admin::BaseController
 
   def destroy
     @item.destroy!
-    redirect_to admin_item_path, success: '商品を削除しました'
+    redirect_to admin_item_path, success: t('.message_deleted')
   end
 
   def search
@@ -39,6 +42,6 @@ class Admin::ItemsController < Admin::BaseController
   end
 
   def search_item_params
-    params.fetch(:q, {}).permit(:title, :detail, :tag_name)
+    params.fetch(:q, {}).permit(:title, :detail, :tag_name, :email_item)
   end
 end

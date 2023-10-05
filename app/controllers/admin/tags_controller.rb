@@ -10,7 +10,8 @@ class Admin::TagsController < Admin::BaseController
     @tag_list = Tag.all
   end
 
-  def edit; end
+  def edit
+  end
 
   def update
     if @tag.update(tag_params)

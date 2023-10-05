@@ -8,26 +8,28 @@
       <ul class="navbar-nav ml-auto">
         <% if current_user.present? %>
           <li class="nav-item">
-            <%= link_to 'ログアウト', logout_path, class: 'nav-link', method: :delete, data: { confirm: 'ログアウトします' } %>
+            <%= link_to t('defaults.logout'), logout_path, class: 'nav-link', method: :delete, data: { confirm: 'ログアウトします' } %>
           </li>
           <li class="nav-item">
-            <%= link_to '商品登録', new_item_path, class: 'nav-link'%>
+            <%= link_to t('defaults.register_item'), new_item_path, class: 'nav-link'%>
           </li>
           <li class="nav-item">
-            <%= link_to '商品一覧', items_path, class: 'nav-link'%>
+            <%= link_to t('defaults.item_list'), items_path, class: 'nav-link'%>
           </li>
            <li class="nav-item">
-            <%= link_to '買い物リスト', shopping_lists_path, class: 'nav-link' %>
+            <%= link_to t('defaults.shopping_list'), shopping_lists_path, class: 'nav-link' %>
           </li>
-           <li class="nav-item">
-             <%= link_to 'ユーザー設定', user_path(current_user), class: 'nav-link' %>
-           </li>
+           <% if current_user.email != 'guestuser@example.com' %>
+            <li class="nav-item">
+              <%= link_to t('defaults.setting'), user_path(current_user), class: 'nav-link' %>
+            </li>
+           <% end %>
         <% else %>
           <li class="nav-item">
-            <%= link_to 'ユーザー登録', sign_up_path, class: 'nav-link' %>
+            <%= link_to t('defaults.enroll'), sign_up_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
-            <%= link_to 'ログイン', login_path, class: 'nav-link' %>
+            <%= link_to t('defaults.login'), login_path, class: 'nav-link' %>
           </li>
         <% end %>
       </ul>

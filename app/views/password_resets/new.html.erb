@@ -1,12 +1,14 @@
+<% content_for(:title, t('.title')) %>
 <div class="content">
  <div class="row">
-   <p>パスワード変更申請</p>
+   <h1><%= t('.title')%></h1>
    <%= form_with url: password_resets_path, local: true, method: :post do |form| %>
      <div class="field">
-       <%= form.label :email %><br />
+       <%= t('.email') %>
        <%= form.text_field :email %>
-       <%= form.submit "送信", class:"btn btn-primary" %>
+       <%= form.submit t('defaults.submit'), class:"btn btn-primary" %>
      </div>
    <% end %>
   </div>
+  <p>上記のメールアドレスにパスワード変更のURLを送信します。</p>
 </div>

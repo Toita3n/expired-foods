@@ -8,8 +8,8 @@
     <%= f.number_field :number, size: '5x5', min: 1 %>
   </div>
   <div class="textarea">
-    <%= f.label :trait, '詳細' %>
+    <%= f.label :trait, '特徴' %>
     <%= f.text_area :trait %>
   </div>
-    <%= f.submit '保存', class: 'btn btn-primary' %>
+    <%= f.submit t('defaults.register_item'), class: 'btn btn-primary' %>
 <% end %>

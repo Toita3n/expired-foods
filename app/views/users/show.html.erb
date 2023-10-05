@@ -1,30 +1,34 @@
-<div class="container pt-3">
+<% content_for(:title, @user.email) %>
+<div class="content pt-3">
   <div class="row">
     <div class="col-md-10 offset-md-1 mb-5">
-      <h1 class="float-left">ユーザー詳細</h1>
+      <h1 class="float-card"><%= t('.title')%></h1>
     </div>
     <div class="col-md-10 offset-md-1">
       <table class="table">
         <tbody>
           <tr>
             <th>
-              <span>メールアドレス</span>
+              <span><%= t('.email')%></span>
             </th>
-            <td><%= current_user.email %>
-            <%=link_to "メールアドレスの編集", edit_user_path(current_user), class: 'btn btn-success float-right' %></td>
+            <td>
+              <% if current_user.email == 'guestuser@example.com' %></td>
+              <td><%= t('.cannot_change_email')%></td>
+            <% else %>
+              <%= current_user.email %>
+              <%=link_to t('.change_email'), edit_user_path(current_user), class: 'btn btn-success float-right' %></td>
+            <% end %>
           </tr>
           <tr>
             <th>
-              <span>パスワード</span>
+              <span><%= t('.line_account')%></span>
             </th>
-            <td><%= current_user.password %></td>
-          </tr>
-           <tr>
-            <th>
-              <span>LINEアカウント</span>
-            </th>
-            <td>#
-            <%= link_to "LINEアカウントの紐付け変更", "#", class: 'btn btn-primary float-right'%></td>
+            <% if current_user.email == 'guestuser@example.com' %>
+             <td><%= t('.cannot_put_LINEID')%></td>
+            <% else %>
+             <td>#
+             <%= link_to t('.change_line_account'), "#", class: 'btn btn-primary float-right'%></td>
+            <% end %>
           </tr>
         </tbody>
       </table>

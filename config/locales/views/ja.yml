@@ -1,23 +1,34 @@
 ja:
   defaults:
     login: 'ログイン'
-    admin_login: '権限者用ログイン'
+    admin_login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
-    post: '投稿'
+    setting: 'ユーザー設定'
+    enroll: 'ユーザー登録'
     search_word: '検索ワード'
+    thing: '商品情報'
     show: '詳細'
     edit: '編集'
     delete: '削除'
+    search: '検索'
+    submit: '送信'
+    count: '数'
+    expiration: '期限'
+    register_item: '商品登録'
+    item_list: '商品一覧'
+    shopping_list: '買い物リスト' 
+    email_setting: 'メールアドレス変更'
     password_reset: 'パスワードリセット'
     message:
       require_login: 'ログインしてください'
-      created: "%{item}を作成しました"
-      not_created: "%{item}を作成できませんでした"
-      updated: "%{item}を更新しました"
-      not_updated: "%{item}を更新できませんでした"
-      deleted: "%{item}を削除しました"
-      deleted_comfirm: '削除しますか？'
+      confirmed_logout: 'ログアウトしますか？'
+      created: "%{thing}を作成しました"
+      not_created: "%{thing}を作成できませんでした"
+      updated: "%{thing}を更新しました"
+      not_updated: "%{thing}を更新できませんでした"
+      deleted: "%{thing}を削除しました"
+      deleted_confirm: '削除しますか？'
       not_authorized: '権限がありません'
   users:
     new:
@@ -26,11 +37,27 @@ ja:
     create:
       success: 'ユーザー登録が完了しました'
       fail: 'ユーザー登録に失敗しました'
-  user_sessions:
+    show:
+      title: 'ユーザー詳細'
+      email: 'メールアドレス'
+      change_email: 'メールアドレスの編集'
+      password: 'パスワード'
+      line_account: 'LINEアカウント'
+      change_line_account: 'LINEアカウントの紐付け変更'
+      cannot_change_email: 'emailの変更へできません'
+      cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
+    update:
+      success: 'ユーザー情報が更新されました'
+    destroy:
+      success: 'ユーザーを削除しました'
+  sessions:
     new:
       title: 'ログイン'
+      email: 'メールアドレス'
+      password: 'パスワード'
       to_register_page: '登録ページへ'
       password_forget: 'パスワードをお忘れの方はこちら'
+      guest_login: 'ゲストログイン'
     create:
       success: 'ログインしました'
       fail: 'ログインに失敗しました'
@@ -38,43 +65,128 @@ ja:
       success: 'ログアウトしました'
   items:
     index:
+      title: '商品一覧'
+      add_item: '商品追加'
+      count: '数'
+      expired_at: '賞味期限'
+      sort: 'ソート'
+      latest_expired_at: '遠い順'
+      oldest_expired_at: '近い順'
+      nothing: '商品が存在しません'
     new:
-    show:
-      
-    edit:
-  tags:
-  password_reset:
-    new:
-      title:
-      submit:
-    edit:
-      title:
+      title: '商品登録'
+      register_item: '商品登録'
     create:
-      success:
-    updated:
+      message_create: '商品を作成しました'
+      not_to_create: '商品が作成されませんでした'
+    show:
+      title: '商品情報'
+      return_items: '商品一覧に戻る'
+      expiration: '賞味期限'
+    edit:
+      item_edit: '商品編集'
+    update:
+      message_item_update: '商品が更新されました'
+      not_to_update: '商品が更新されませんでした'
+    destroy:
+      message_deleted: '削除しました'
+    search:
+      add_item: '商品追加'
+      expired_at: '賞味期限'
+      sort: 'ソート'
+      latest_expired_at: '遠い順'
+      oldest_expired_at: '近い順'
+      nothing: '商品が存在しません'
+  tags:
+    show:
+      title: 'タグ関連'
+      add_item: '商品追加'
+      expired_at: '賞味期限'
+      sort: 'ソート'
+      latest_expired_at: '遠い順'
+      oldest_expired_at: '近い順'
+    destroy:
+      success: 'タグを削除しました'
+  shopping_lists:
+    index:
+      title: 'ショッピングリスト'
+      add_shopping_lists: '買い物リストに商品を追加'
+    new:
+      add_shopping_lists: '買い物リストに商品を追加'
+      product: '商品名'
+      number: '総数'
+      trait: '詳細'
+    create:
+      success: '商品がショッピングリストに追加されました'
+    edit:
+      item_edit: '商品編集'
+    destroy:
+      success: 'ショッピングリストから商品を削除しました'
+  password_resets:
+    new:
+      title: 'パスワード変更申請'
+      email: '変更確認用メールアドレス'
+    edit:
+      title: 'パスワード変更'
+    create:
+      success: 'メールを送信しました'
+    update:
+      success: 'パスワードを変更しました'
+  inquiries:
+    new:
+      title: 'お問い合わせフォーム'
+  guest_sessions:
+    create:
+      guest_user_login: 'ゲストユーザーでログインしました。'
+      limited_function: 'ゲストユーザーは機能を制限しています。'
   admin:
     user_sessions:
       new:
         title: 'ログイン'
       create:
+        email: 'メールアドレス'
         success: 'ログインしました'
-        fall: 'ログインに失敗しました'
+        fail: 'ログインに失敗しました'
       destroy:
         success:  'ログアウトしました'
     users:
       index:
         title: 'ユーザー一覧'
+      show:
+        title: 'ユーザー詳細'
+      edit:
+        title: 'ユーザー編集'
+      update:
+        fail: 'ユーザー情報を変更しました'
     items:
       index:
-        title: 商品一覧
+        title: '商品一覧'
+      show:
+        title: '商品詳細'
+      edit:
+        title: '商品編集'
+      update:
+        not_to_update: '更新できませんでした'
+      search:
+        title: '商品一覧'
     tags:
       index:
-        title: タグ一覧
+        title: 'タグ一覧'
+      show: 
+        title: 'タグ詳細'
+      edit: 
+        title: 'タグ編集'
+      search:
+        title: 'タグ一覧'
     shopping_lists:
-       index:
-         title: ショッピングリスト一覧
+      index:
+        title: 'ショッピングリスト一覧'
+      destroy:
+        success: '削除しました'
+      search: 
+        title: 'ショッピングリスト一覧'
     dashboards:
       index:
-        title: 'ダッシュボード'
+        title: 'ダッシュボードです'
         users: 'ユーザー'
     

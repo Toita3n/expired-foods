@@ -8,15 +8,16 @@ class UsersController < ApplicationController
   def create
     @sign_up_form = SignUpForm.new(sign_up_form_params) #form_objectを使用してユーザー登録
     if @sign_up_form.save
-      redirect_to login_path, success: 'サインアップしました'
+      redirect_to login_path, success: t('.success')
     else
-      flash.now[:danger] = 'サインアップに失敗しました'
+      flash.now[:danger] = t('.fail')
       render :new
     end
   end
 
   def show
-    @user = current_user
+    @guest_user = guest_user
+    @user = User.find(params[:id])
   end
 
   def edit
@@ -26,12 +27,12 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @user.update!(user_params)
-    redirect_to user_path(@user.id)
+    redirect_to user_path(@user.id), success: t('.success')
   end
 
   def destroy
     @user.destroy!
-    redirect_to root_path
+    redirect_to root_path, success: t('.success')
   end
 
   private

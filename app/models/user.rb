@@ -12,7 +12,26 @@ class User < ApplicationRecord
 
   scope :search_email, ->(email) { where("email LIKE :word", word: "%#{email}%")}
 
+  validate :cannot_change_email, on: :update, if: -> { guest? && email_changed? }
+
+  def cannot_change_email
+    errors.add(:email, 'ゲストユーザーのemailは変更できません。')
+  end
+
   def mine?(object)
     id == object.user_id
+  end
+
+  def guest?
+    email == 'guestuser@example.com'
+  end
+
+  def self.guest
+    find_or_initialize_by(email: 'guestuser@example.com') do |user|
+      user.password = SecureRandom.hex(10) if user.new_record?
+      user.password_confirmation = user.password if user.new_record?
+      user.role = :general
+      user.save! if user.new_record? 
+    end
   end
 end

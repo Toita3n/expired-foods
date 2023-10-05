@@ -3,10 +3,14 @@
     <%= item.id %>
   </td>
   <td>
-    <%= link_to item.title %>
+    <%= item.title %>
   </td>
   <td>
     <%= item.user.email %>
+  </td>
+   <td>
+     <% item.tags.each do |tag| %>
+     <%= link_to tag.name, admin_tag_path(tag) %> <% end %>
   </td>
   <td>
     <%= l item.created_at, format: :long %>

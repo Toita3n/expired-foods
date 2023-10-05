@@ -2,11 +2,11 @@ class ItemsController < ApplicationController
 
   def index
     if params[:latest_expired] #賞味期限が遠い順
-      @items = Item.latest_expired.page(params[:page]).per(5)
+      @items = Item.latest_expired.page(params[:page]).per(10)
     elsif params[:expired] #賞味期限が遠い順
-      @items = Item.expired.page(params[:page]).per(5)
+      @items = Item.expired.page(params[:page]).per(10)
     else
-      @items = Item.all.page(params[:page]).per(5)
+      @items = Item.all.page(params[:page]).per(10)
     end
 
     @tag_list = Tag.all
@@ -23,13 +23,12 @@ class ItemsController < ApplicationController
 
   def create
     @item = current_user.items.build(item_params)
-    @item.user_id = current_user.id
     tag_list = params[:item][:tag_name].split(' ') #tagの表示
-    if @item.save
+    if @item.save!
       @item.save_tags(tag_list)
-      redirect_to items_path
+      redirect_to items_path, success: t('.message_create')
     else
-      render :new
+      render :new, danger: t('.not_to_create')
     end
   end
 
@@ -43,16 +42,16 @@ class ItemsController < ApplicationController
     tag_list = params[:item][:tag_name].split(' ')
     if @item.update(item_params)
       @item.save_tags(tag_list)
-      redirect_to item_path(@item), success: 'アップデートされました'
+      redirect_to item_path(@item), success: t('.message_item_update')
     else
-      render :edit
+      render :edit, danger: t('.not_to_update')
     end
   end
 
   def destroy
     @item = Item.find_by(id: params[:id])
     @item.destroy!
-    redirect_to items_path
+    redirect_to items_path, success: t('.message_deleted')
   end
 
   def search

@@ -9,23 +9,29 @@
       </div>
       <table class="table table-bordered bg-white">
         <tr>
-          <th scope="row"><%= Item.human_attribute_name(:id) %></th>
+        <th scope="row"><%= Item.human_attribute_name(:id) %></th>
           <td><%= @item.id %></td>
         </tr>
         <tr>
-          <th scope="row"><%= Item.human_attribute_name(:title) %></th>
+        <th scope="row"><%= Item.human_attribute_name(:title) %></th>
           <td><%= @item.title %></td>
         </tr>
         <tr>
-          <th scope="row"><%= Item.human_attribute_name(:image) %></th>
+        <th scope="row"><%= Item.human_attribute_name(:image) %></th>
           <td><%= @item.image %></td>
         </tr>
-          <tr>
+        <tr>
           <th scope="row"><%= Item.human_attribute_name(:count) %></th>
           <td><%= @item.count %></td>
         </tr>
+        <tr>
+          <th scope="row"><%= Item.human_attribute_name(:tag) %></th>
+          <td> <% @item.tags.each do |tag| %>
+                <%= tag.name %>
+               <% end %>
+          </td>
         </tr>
-          <tr>
+        <tr>
           <th scope="row"><%= Item.human_attribute_name(:detail) %></th>
           <td><%= @item.detail %></td>
         </tr>

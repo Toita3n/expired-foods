@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
   def not_authenticated
     redirect_to login_path, danger: "ログインして下さい"
   end
+  
+  def guest_user
+    current_user == User.find_by(email: 'guestuser@example.com')
+  end
 end
