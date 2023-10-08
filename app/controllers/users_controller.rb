@@ -26,8 +26,11 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update!(user_params)
-    redirect_to user_path(@user.id), success: t('.success')
+    if @user.update(user_params)
+      redirect_to user_path(@user.id), success: t('.success')
+    else
+      render :edit, danger: t('.not_to_update')
+    end
   end
 
   def destroy

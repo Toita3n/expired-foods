@@ -2,13 +2,12 @@ class ItemsController < ApplicationController
 
   def index
     if params[:latest_expired] #賞味期限が遠い順
-      @items = Item.latest_expired.page(params[:page]).per(10)
+      @items = Item.latest_expired.page(params[:page])
     elsif params[:expired] #賞味期限が遠い順
-      @items = Item.expired.page(params[:page]).per(10)
+      @items = Item.expired.page(params[:page])
     else
-      @items = Item.all.page(params[:page]).per(10)
+      @items = Item.all.order(created_at: :asc).page(params[:page])
     end
-
     @tag_list = Tag.all
   end
 
@@ -19,12 +18,13 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     @items = Item.select(:name).distinct
+    @tags = Tag.all
   end
 
   def create
     @item = current_user.items.build(item_params)
     tag_list = params[:item][:tag_name].split(' ') #tagの表示
-    if @item.save!
+    if @item.save
       @item.save_tags(tag_list)
       redirect_to items_path, success: t('.message_create')
     else
@@ -41,6 +41,7 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     tag_list = params[:item][:tag_name].split(' ')
     if @item.update(item_params)
+      @item = Item.find(params[:id])
       @item.save_tags(tag_list)
       redirect_to item_path(@item), success: t('.message_item_update')
     else

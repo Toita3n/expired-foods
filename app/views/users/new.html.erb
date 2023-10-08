@@ -1,11 +1,12 @@
 <% content_for(:title, t('.title')) %>
-<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+<div class="pot d-flex justify-content-center align-items-center" style="height: 80vh;">
   <div class="card-info"  style="width: 400px;">
     <div class="card-header">
       <%= t('.title')%>
     </div>
     <div class="card-body-up">
       <%= form_with model: @sign_up_form, url: sign_up_path do |f| %>
+       <%= render 'shared/error_messages', object: f.object %>
         <div class="mb-3">
           <%= f.label :email %>
           <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>

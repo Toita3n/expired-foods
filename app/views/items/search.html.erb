@@ -19,7 +19,7 @@
       <% if @search_items.present? %>
         <%= render @search_items %>
       <% else %>
-        <p>Nothing</p>
+        <p><%= t('.nothing')%></p>
       <% end %>
       <%= paginate @search_items %>
   </div>

@@ -15,16 +15,16 @@ class Admin::TagsController < Admin::BaseController
 
   def update
     if @tag.update(tag_params)
-        redirect_to admin_tags_path, success: '商品が更新されました'
+        redirect_to admin_tags_path, success: t('.tag_upadate')
     else
-        flash.now['danger'] = '更新できませんでした'
+        flash.now['danger'] = t('.fail')
         render :edit
     end
   end
 
   def destroy
     @tag.destroy!
-    redirect_to admin_tags_path, success: '削除完了しました'
+    redirect_to admin_tags_path, success: t('.success')
   end
 
   def search

@@ -10,6 +10,6 @@ class GuestSessionsController < ApplicationController
 
   def destroy
     session.delete(:user_id)
-    redirect_to root_path, notice: 'ゲストユーザーからログアウトしました。'
+    redirect_to root_path, notice: t('.logout_guest_user')
   end
 end

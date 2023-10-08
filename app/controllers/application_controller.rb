@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::Base
 
   helper_method :current_user
+  helper_method :not_authenticated
   before_action :require_login
   add_flash_types :success, :info, :warning, :danger
-  
+
   private
 
   def current_user
@@ -11,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def not_authenticated
-    redirect_to login_path, danger: "ログインして下さい"
+    redirect_to login_path, danger: t('defaults.message.not_authorized')
   end
   
   def guest_user

@@ -20,8 +20,10 @@ ja:
     shopping_list: '買い物リスト' 
     email_setting: 'メールアドレス変更'
     password_reset: 'パスワードリセット'
+    return_to_top_page: 'トップページに戻る'
     message:
       require_login: 'ログインしてください'
+      not_logout: 'ログインできません'
       confirmed_logout: 'ログアウトしますか？'
       created: "%{thing}を作成しました"
       not_created: "%{thing}を作成できませんでした"
@@ -96,7 +98,7 @@ ja:
       sort: 'ソート'
       latest_expired_at: '遠い順'
       oldest_expired_at: '近い順'
-      nothing: '商品が存在しません'
+      nothing: '商品がありません'
   tags:
     show:
       title: 'タグ関連'
@@ -118,8 +120,10 @@ ja:
       trait: '詳細'
     create:
       success: '商品がショッピングリストに追加されました'
+      fail: '商品が作成できませんでした'
     edit:
       item_edit: '商品編集'
+      confirm_delete: '削除しますか？'
     destroy:
       success: 'ショッピングリストから商品を削除しました'
   password_resets:
@@ -139,6 +143,7 @@ ja:
     create:
       guest_user_login: 'ゲストユーザーでログインしました。'
       limited_function: 'ゲストユーザーは機能を制限しています。'
+      logout_guest_user: 'ログアウトしました'
   admin:
     user_sessions:
       new:
@@ -176,6 +181,10 @@ ja:
         title: 'タグ詳細'
       edit: 
         title: 'タグ編集'
+      update:
+        tag_update: 'タグが更新されました'
+        fail: 'タグが編集できませんでした'
+      destroy: 'タグが削除されました' 
       search:
         title: 'タグ一覧'
     shopping_lists:

@@ -5,6 +5,12 @@
 .content {
     padding :5px;
     margin :5px;
+    background-image: image-url("sandwitch.jpg") ;
+    background-position: center bottom;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
 
         .td{
             background-color: silver;
