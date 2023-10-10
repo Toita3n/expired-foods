@@ -197,6 +197,7 @@ GEM
     minitest (5.18.1)
     msgpack (1.7.2)
     multi_xml (0.6.0)
+    mysql2 (0.5.5)
     net-imap (0.3.6)
       date
       net-protocol
@@ -306,7 +307,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.6-arm64-darwin)
     thor (1.2.2)
     tilt (2.2.0)
     timeout (0.4.0)
@@ -363,6 +363,7 @@ DEPENDENCIES
   line-bot-api
   listen (~> 3.3)
   mini_magick
+  mysql2
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
@@ -371,7 +372,6 @@ DEPENDENCIES
   selenium-webdriver
   sorcery
   spring
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   unicorn
