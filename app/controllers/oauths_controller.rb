@@ -11,19 +11,27 @@ class OauthsController < ApplicationController
       redirect_to root_path, success: "#{provider.titleize}でログインしました"
       return
     end
-    create_user_form(provider) unless (@user = login_from(provider))
-    redirect_to root_path, success: "#{provider.titleize}でログインしました"
+
+    @user = login_from(provider)
+
+    if @user
+      if @user.uid != auth_params[:uid] # ユーザーがログインしようとしているUIDと異なる場合
+        # 既存ユーザーのUIDを更新
+        @user.update(uid: auth_params[:uid])
+      end
+      redirect_to current_user_path(@user), success: "#{provider.titleize}でログインしました"
+    else
+      # 新しいユーザーを作成
+      @user = create_from(provider)
+      # LINEのUIDを新しいユーザーアカウントに関連付ける
+      @user.update(uid: auth_params[:uid])
+      redirect_to root_path
+    end
   end
 
   private
 
   def auth_params
-    params.permit(:code, :provider, :denied, :state)
-  end
-
-  def create_user_form(provider)
-    @user = create_from(provider)
-    reset_session
-    auto_login(@user)
+    params.permit(:code, :provider, :denied, :state, :uid)
   end
 end

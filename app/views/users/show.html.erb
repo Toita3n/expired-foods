@@ -31,7 +31,7 @@
                <span><%= current_user.name %></span>
               <% else %>
                <span><%= current_user.name %></span>
-                <span><%= link_to 'Login with Line', auth_at_provider_path(provider: :line) %></span>
+                <span><%= link_to 'LINEアカウント連携', auth_at_provider_path(provider: :line, uid: @user.uid) %></span>
               <% end %>
            <% end %>
           </tr>

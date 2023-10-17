@@ -16,54 +16,46 @@
 
 .line-login-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #06C755;
-    color: #FFFFFF;
+    background-color: #06C755; /* LINEのブランドカラー */
+    color: #fff;
+    padding: 10px 20px 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
-    border: 1px solid rgba(0,0,0,0.8);
-    transition: background-color 0.2s, color 0.2s;
-    background-image: image_url("btn_line_base.png");
+    border-left:1px solid #000000;
+    background-image: image-url("btn_line_base.png");
     background-repeat: no-repeat;
-
-}
+  }
   
-.line-login-button:hover {
-    color: #FFFFFF;
-    background-color: #06C755;
+  /* LINEログインボタンのホバー時のスタイル */
+  .line-login-button:hover {
+    background-color: #06C755; /* ホバー時の色 */
     opacity: 0.9;
-    background-image: image_url("btn_line_hover.png");
+    background-image: image-url("btn_line_hover.png");
     background-repeat: no-repeat;
-}
-
-.line-login-button:active {
-    background-color:#06C755;
-    color: #FFFFFF;
-    opacity: 0.7;
-}
+  }
   
-.line-login-button[disabled]::before {
-    background-color: #E5E5E5;
-    opacity: 0.6;
-    border-color: #E5E5E5;
-}
-
-.line-login-button[disabled] .line-logo {
-    color: #1E1E1E;
-    opacity: 0.2;
-}
+  /* LINEログインボタンのアクティブ時のスタイル */
+  .line-login-button:active {
+    background-color: #06C755; /* クリック時の色 */
+    opacity: 0.8;
+    background-image: image-url("btn_line_press.png");
+    background-repeat: no-repeat;
+  }
   
-.line-login-button:not([disabled])::before {
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.08);
-    margin: 0 10px;
-}
-
-.line-login-button[disabled]::before {
-    background-color: #E5E5E5;
-    opacity: 0.6;
-    border-color: #E5E5E5;
-    background-image: image_url("line_44.png");
-}
+  /* LINEログインボタンのテキストスタイル */
+  .line-login-button span {
+    vertical-align: middle; /* ボタン内のテキストを中央に配置 */
+    margin-left: 5px; /* テキストとボタンアイコンの間隔 */
+  }
+  
+  /* LINEログインボタンのレスポンシブデザイン */
+  @media (max-width: 768px) {
+    .line-login-button {
+      font-size: 14px; /* モバイルデバイス用のフォントサイズ */
+      padding: 8px 16px; /* モバイルデバイス用のパディング */
+    }
+  }
+  

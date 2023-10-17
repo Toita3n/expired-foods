@@ -219,9 +219,9 @@ Rails.application.config.sorcery.configure do |config|
   # config.salesforce.scope = "full"
   # config.salesforce.user_info_mapping = {:email => "email"}
 
-   config.line.key = '2001193053'
-   config.line.secret = 'd8e7e3fd46118bdb7d41f4035f51a778'
-   config.line.callback_url = 'https://d9f8-240d-1a-66a-3c00-3121-5d32-1e61-9d0.ngrok-free.app/callback?provider=line'
+   config.line.key = ENV['LINE_LOGIN_CHANNEL_ID']
+   config.line.secret = ENV['LINE_LOGIN_SECRET']
+   config.line.callback_url = 'https://9d7b-240d-1a-66a-3c00-3121-5d32-1e61-9d0.ngrok-free.app/callback?provider=line'
    config.line.scope = 'profile'
    config.line.bot_prompt = "aggressive"
    config.line.user_info_mapping = { name: 'displayName',
