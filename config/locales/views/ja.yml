@@ -25,11 +25,11 @@ ja:
       require_login: 'ログインしてください'
       not_logout: 'ログインできません'
       confirmed_logout: 'ログアウトしますか？'
-      created: "%{thing}を作成しました"
-      not_created: "%{thing}を作成できませんでした"
-      updated: "%{thing}を更新しました"
-      not_updated: "%{thing}を更新できませんでした"
-      deleted: "%{thing}を削除しました"
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
+      updated: "%{item}を更新しました"
+      not_updated: "%{item}を更新できませんでした"
+      deleted: "%{item}を削除しました"
       deleted_confirm: '削除しますか？'
       not_authorized: '権限がありません'
   users:
@@ -45,16 +45,20 @@ ja:
       change_email: 'メールアドレスの編集'
       password: 'パスワード'
       line_account: 'LINEアカウント'
-      change_line_account: 'LINEアカウントの紐付け変更'
+      destroy_user: 'ユーザーアカウントの削除'
+      destroy_line_account: 'LINEアカウントの連携解除'
       cannot_change_email: 'emailの変更へできません'
       cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
     update:
       success: 'ユーザー情報が更新されました'
+    edit_line:
+      edit_line_account: 'ラインアカウントの連携解除'
     destroy:
       success: 'ユーザーを削除しました'
   sessions:
     new:
       title: 'ログイン'
+      name: 'ユーザー名'
       email: 'メールアドレス'
       password: 'パスワード'
       to_register_page: '登録ページへ'

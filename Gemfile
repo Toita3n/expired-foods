@@ -28,6 +28,7 @@ gem 'image_processing', '~> 1.2'
 gem 'mini_magick'
 #gem 'google-cloud-vision'
 gem 'dotenv-rails'
+gem 'omniauth-line'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -37,6 +38,7 @@ gem 'kaminari'
 gem 'config'
 gem 'sorcery'
 gem 'line-bot-api'
+gem 'httparty'
 gem 'enum_help'
 gem 'rails-i18n'
 gem 'faker'

@@ -1,5 +1,5 @@
 <%= form_with model: @search_users_form, scope: :q, url: search_admin_users_path, method: :get, local: true do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
+  <%= f.search_field :name, class: "form-control me-2", placeholder: "ユーザー名" %>
   <%= f.search_field :email, class: "form-control me-2", placeholder: "メールアドレス" %>
   <%= f.submit '検索', class: 'btn btn-outline-primary' %>
 <% end %>

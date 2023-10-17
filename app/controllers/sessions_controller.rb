@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   skip_before_action :require_login, only: %i[new create]
 
   def create
-    @user = login(params[:email], params[:password])
+    @user = login( params[:email], params[:password])
 
     if @user
       redirect_to items_path, success: t('.success')
@@ -20,6 +20,6 @@ class SessionsController < ApplicationController
   private
 
   def sessions_params
-    params.require(:session).permit(:email, :password)
+    params.require(:session).permit(:name, :email, :password)
   end
 end

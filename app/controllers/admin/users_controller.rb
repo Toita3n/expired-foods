@@ -38,6 +38,6 @@ class Admin::UsersController < Admin::BaseController
   end
 
   def search_email_params
-    params.fetch(:q, {}).permit(:email)
+    params.fetch(:q, {}).permit(:user, :email)
   end
 end

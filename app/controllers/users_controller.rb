@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :require_login, only: %i[new create update]
+  skip_before_action :require_login, only: %i[new create update destroy]
 
   def new
     @sign_up_form = SignUpForm.new
@@ -34,6 +34,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.find_by(id: params[:id])
     @user.destroy!
     redirect_to root_path, success: t('.success')
   end
@@ -41,10 +42,10 @@ class UsersController < ApplicationController
   private
 
   def sign_up_form_params
-    params.require(:sign_up_form).permit(:email, :password, :password_confirmation)
+    params.require(:sign_up_form).permit(:name, :email, :password, :password_confirmation, :uid)
   end
 
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation, :reset_password_token)
+    params.require(:user).permit(:name, :email, :password, :password_confirmation, :reset_password_token, :uid)
   end
 end

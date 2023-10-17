@@ -16,19 +16,32 @@
               <td><%= t('.cannot_change_email')%></td>
             <% else %>
               <%= current_user.email %>
-              <%=link_to t('.change_email'), edit_user_path(current_user), class: 'btn btn-success float-right' %></td>
+              <%=link_to t('.change_email'), edit_user_path(current_user), class: 'btn btn-primary float-right' %></td>
             <% end %>
           </tr>
           <tr>
             <th>
               <span><%= t('.line_account')%></span>
             </th>
-            <% if current_user.email == 'guestuser@example.com' %>
-             <td><%= t('.cannot_put_LINEID')%></td>
-            <% else %>
-             <td>#
-             <%= link_to t('.change_line_account'), "#", class: 'btn btn-primary float-right'%></td>
-            <% end %>
+           <% if current_user.email == 'guestuser@example.com' %>
+            <td><%= t('.cannot_change_email') %></td>
+           <% else %>
+            <td>
+              <% if current_user.uid.present?%>
+               <span><%= current_user.name %></span>
+              <% else %>
+               <span><%= current_user.name %></span>
+                <span><%= link_to 'Login with Line', auth_at_provider_path(provider: :line) %></span>
+              <% end %>
+           <% end %>
+          </tr>
+          <tr>
+           <th>
+            <span><%= t('.destroy_user')%></span>
+           </th>
+            <td>
+             <%= link_to 'ユーザー削除', user_path(@user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-center", data: { confirm: t('defaults.message.deleted_confirm') } %>
+            </td>
           </tr>
         </tbody>
       </table>

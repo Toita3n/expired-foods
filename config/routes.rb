@@ -12,13 +12,18 @@ Rails.application.routes.draw do
   get 'password_resets/update'
   post '/guest_login', to: 'guest_sessions#create'
   delete '/guest_logout', to: 'guest_sessions#destroy'
-  post '/callback', to: 'webhook#callback'
+  post '/callback', to: 'line_bot#callback'
+  get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
+  get '/callback', to: 'oauths#callback'
+  post 'oauth/callback', to: 'oauths#callback'
   resources :items do
     collection do
       get 'search'
     end
   end
-  resources :users, only: %i[new create show edit update destroy]
+  resources :users, only: %i[new create show edit update destroy] do
+   resource :authentication
+  end
   resources :tags, only: %i[index show edit update destroy]
   resources :shopping_lists
   resources :password_resets, only: %i[new create edit update]

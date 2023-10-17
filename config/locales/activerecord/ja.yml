@@ -8,6 +8,7 @@ ja:
     attributes:
       user:
         role: 管理権限
+        name: 'ユーザー名'
       sessions:
       item:
         title: 商品名
