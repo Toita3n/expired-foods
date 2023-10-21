@@ -39,9 +39,8 @@ class LineBotController < ApplicationController
 
   def item_text_message(event)
     user = User.find_by(uid: event['source']['userId'])
-    authentication = Authentication.find_by(uid: event['source']['userId'])
 
-    if user && authentication && user.uid == authentication.uid
+    if user && user.uid.present?
       text = event.message['text']
       item = user.items.find_by(title: text)
       # 商品情報を返信

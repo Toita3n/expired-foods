@@ -29,6 +29,8 @@ gem 'mini_magick'
 #gem 'google-cloud-vision'
 gem 'dotenv-rails'
 gem 'omniauth-line'
+gem 'omniauth-rails_csrf_protection'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -42,6 +44,7 @@ gem 'httparty'
 gem 'enum_help'
 gem 'rails-i18n'
 gem 'faker'
+gem 'typhoeus'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -71,6 +74,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
+gem 'sitemap_generator'
+gem 'meta-tags'
 
 group :production do
   gem 'unicorn'

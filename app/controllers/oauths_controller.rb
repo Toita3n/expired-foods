@@ -1,5 +1,6 @@
 class OauthsController < ApplicationController
   skip_before_action :require_login
+  
 
   def oauth
     login_at(auth_params[:provider])
@@ -7,31 +8,32 @@ class OauthsController < ApplicationController
 
   def callback
     provider = auth_params[:provider]
-    if auth_params[:denied].present?
-      redirect_to root_path, success: "#{provider.titleize}でログインしました"
+    @user = User.find_by(id: session[:user_id])
+    if auth_params[:denied].present?  # ここの節を追加
+      redirect_to root_path, notice: 'ログインをキャンセルしました'
       return
     end
-
-    @user = login_from(provider)
-
-    if @user
-      if @user.uid != auth_params[:uid] # ユーザーがログインしようとしているUIDと異なる場合
-        # 既存ユーザーのUIDを更新
-        @user.update(uid: auth_params[:uid])
-      end
-      redirect_to current_user_path(@user), success: "#{provider.titleize}でログインしました"
+    if @user = login_from(provider)
+      redirect_to root_path, notice:'連携できません'
+    elsif
+        @user = current_user.present? ? update_from(provider) : create_from(provider)
+        redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
     else
-      # 新しいユーザーを作成
-      @user = create_from(provider)
-      # LINEのUIDを新しいユーザーアカウントに関連付ける
-      @user.update(uid: auth_params[:uid])
-      redirect_to root_path
+        redirect_to root_path, danger: 'ユーザーの作成をして下さい'
     end
   end
 
   private
 
   def auth_params
-    params.permit(:code, :provider, :denied, :state, :uid)
+    params.permit(:code, :provider, :denied, :state)
+  end
+
+  def update_from(provider_name)
+    sorcery_fetch_user_hash provider_name
+    attrs = user_attrs(@provider.user_info_mapping, @user_hash)
+    current_user.update(attrs.except(:name))
+    current_user.add_provider_to_user(provider_name.to_s, @user_hash[:uid].to_s)
+    authentication = current_user.authentications.find_by(provider: provider_name.to_s)
   end
 end

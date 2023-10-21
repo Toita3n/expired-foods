@@ -1,4 +1,4 @@
-<% content_for(:title, @user.email) %>
+<% content_for(:title, current_user.name) %>
 <div class="content pt-3">
   <div class="row">
     <div class="col-md-10 offset-md-1 mb-5">
@@ -8,6 +8,7 @@
       <table class="table">
         <tbody>
           <tr>
+            <%=link_to t('.change_profile'), edit_user_path(current_user), class: 'btn btn-primary float-right' %></td>
             <th>
               <span><%= t('.email')%></span>
             </th>
@@ -16,7 +17,6 @@
               <td><%= t('.cannot_change_email')%></td>
             <% else %>
               <%= current_user.email %>
-              <%=link_to t('.change_email'), edit_user_path(current_user), class: 'btn btn-primary float-right' %></td>
             <% end %>
           </tr>
           <tr>
@@ -29,9 +29,12 @@
             <td>
               <% if current_user.uid.present?%>
                <span><%= current_user.name %></span>
+               <td><%=t('.connected_LINE')%></td>
               <% else %>
                <span><%= current_user.name %></span>
-                <span><%= link_to 'LINEアカウント連携', auth_at_provider_path(provider: :line, uid: @user.uid) %></span>
+                <td>
+                  <%= link_to 'LINEアカウント連携',auth_at_provider_path(provider: :line), method: :post, class: 'btn btn-primary' %>
+                </td>
               <% end %>
            <% end %>
           </tr>
@@ -40,7 +43,7 @@
             <span><%= t('.destroy_user')%></span>
            </th>
             <td>
-             <%= link_to 'ユーザー削除', user_path(@user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-center", data: { confirm: t('defaults.message.deleted_confirm') } %>
+              <%= link_to 'ユーザー削除', user_path(current_user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-center", data: { confirm: t('defaults.message.deleted_confirm') } %>
             </td>
           </tr>
         </tbody>

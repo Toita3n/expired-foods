@@ -3,7 +3,8 @@ class User < ApplicationRecord
 
   has_many :items, dependent: :destroy
   has_many :shopping_lists, dependent: :destroy
-  has_one :authentication, foreign_key: 'uid', primary_key: 'uid', dependent: :destroy
+  has_many :authentications, dependent: :destroy
+  accepts_nested_attributes_for :authentications
 
   validates :name, uniqueness: true, presence: true
   validates :email, uniqueness: true
@@ -11,7 +12,6 @@ class User < ApplicationRecord
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, length: {minimum: 3}, if: -> { new_record? || changes[:crypted_password]}
   validates :reset_password_token, uniqueness: true, allow_nil: true
-  validates :uid, uniqueness: true, allow_nil: true
 
   enum role: { general: 0, admin: 1 }
 
@@ -39,13 +39,6 @@ class User < ApplicationRecord
       user.password_confirmation = user.password if user.new_record?
       user.role = :general
       user.save! if user.new_record? 
-    end
-  end
-
-  def update_uid_from_authentication
-    authentications.each do |auth|
-      self.uid = auth.uid
-      save
     end
   end
 end

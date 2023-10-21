@@ -1,3 +1,3 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :line, ENV['LINE_CHANNEL_ID'], ENV['LINE_CLIENT_SECRET']
+  provider :line, ENV['LINE_LOGIN_CHANNEL_ID'], ENV['LINE_LOGIN_SECRET']
 end

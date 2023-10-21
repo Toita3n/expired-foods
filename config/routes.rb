@@ -13,9 +13,9 @@ Rails.application.routes.draw do
   post '/guest_login', to: 'guest_sessions#create'
   delete '/guest_logout', to: 'guest_sessions#destroy'
   post '/callback', to: 'line_bot#callback'
-  get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
   get '/callback', to: 'oauths#callback'
   post 'oauth/callback', to: 'oauths#callback'
+  post "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
   resources :items do
     collection do
       get 'search'

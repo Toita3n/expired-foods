@@ -16,8 +16,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @guest_user = guest_user
-    @user = User.find(params[:id])
+    set_current_user
+    @authentication = current_user.authentications.find_by(provider: 'line')
   end
 
   def edit
@@ -42,10 +42,14 @@ class UsersController < ApplicationController
   private
 
   def sign_up_form_params
-    params.require(:sign_up_form).permit(:name, :email, :password, :password_confirmation, :uid)
+    params.require(:sign_up_form).permit(:name, :email, :password, :password_confirmation)
   end
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation, :reset_password_token, :uid)
+  end
+
+  def set_current_user
+    @current_user = User.find(current_user.id)
   end
 end

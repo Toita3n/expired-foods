@@ -42,11 +42,11 @@ ja:
     show:
       title: 'ユーザー詳細'
       email: 'メールアドレス'
-      change_email: 'メールアドレスの編集'
+      change_profile: 'ユーザー情報の変更'
       password: 'パスワード'
       line_account: 'LINEアカウント'
+      connected_LINE: 'LINEアカウントが連携されています'
       destroy_user: 'ユーザーアカウントの削除'
-      destroy_line_account: 'LINEアカウントの連携解除'
       cannot_change_email: 'emailの変更へできません'
       cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
     update:

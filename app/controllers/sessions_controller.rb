@@ -17,6 +17,10 @@ class SessionsController < ApplicationController
     redirect_to login_path, success: t('.success')
   end
 
+  def oauth
+    login_at(auth_params[:provider])
+  end
+
   private
 
   def sessions_params
