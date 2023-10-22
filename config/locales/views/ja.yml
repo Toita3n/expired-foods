@@ -21,6 +21,9 @@ ja:
     email_setting: 'メールアドレス変更'
     password_reset: 'パスワードリセット'
     return_to_top_page: 'トップページに戻る'
+    privacy_policy: 'プライバシーポリシー'
+    term_of_use: '利用規約'
+    inquiry: 'お問い合わせ'
     message:
       require_login: 'ログインしてください'
       not_logout: 'ログインできません'
