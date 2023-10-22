@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'static_pages#top'
   get 'sessions/new'
+  get '/privacy_policy', to: 'static_pages#privacy_policy'
+  get '/term_of_use', to: 'static_pages#term_of_use'
   get :sign_up, to: 'users#new'
   post :sign_up, to: 'users#create'
   get '/login', to: 'sessions#new'
