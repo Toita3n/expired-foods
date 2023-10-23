@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(
-    name: 'Toita',
-    email: 'expired.foodsapp@gmail.com',
-    password: 'expired-foods1997',
-    password_confirmation: 'expired-foods1997',
+    name: 'admin',
+    email: 'admin@gmail.com',
+    password: 'password',
+    password_confirmation: 'password',
     role: 1
 )
 

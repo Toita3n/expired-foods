@@ -55,14 +55,4 @@
     overflow-y: scroll;
 }
 
-.required-field{
-    position: relative;
-}
-  
-.required-icon::after{
-    color: red;
-    position: absolute;
-    top: 0;
-    right: -10px; 
-}
   
