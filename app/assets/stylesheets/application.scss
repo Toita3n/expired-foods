@@ -40,9 +40,14 @@
   left: 0;
   bottom: 0;
   text-align: center;
-  background-color: #222222;
+  background-color: black;
 
   ul{
     list-style: none;
+  }
+
+  .link{
+    text-decoration: none;
+    color: white;
   }
 }

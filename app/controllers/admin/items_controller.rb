@@ -42,6 +42,6 @@ class Admin::ItemsController < Admin::BaseController
   end
 
   def search_item_params
-    params.fetch(:q, {}).permit(:title, :detail, :tag_name, :email_item)
+    params.fetch(:q, {}).permit(:title, :detail, :tag_name, :user_id_item)
   end
 end

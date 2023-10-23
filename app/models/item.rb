@@ -18,8 +18,7 @@ class Item < ApplicationRecord
   scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%")}
   scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%")}
   scope :search_tag_name, ->(tag_name) { joins(:tags).merge(Item.where("tags.name LIKE ?", "%#{tag_name}%"))}
-  scope :search_email_item, ->(email_item) { joins(:user).merge(Item.where("users.email LIKE ?", "%#{email_item}%"))}
-
+  scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%")}
   def remaining_days
     today = Date.today
     expired_date = expired_at.to_date

@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   post '/callback', to: 'line_bot#callback'
   get '/callback', to: 'oauths#callback'
   post 'oauth/callback', to: 'oauths#callback'
-  post "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
+  get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
   resources :items do
     collection do
       get 'search'

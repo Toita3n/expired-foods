@@ -6,12 +6,24 @@
  <!-- Photo Area Wrapper -->
 <div class="second-wrapper">
   <div class="second-inner-text">
-   <h1 class="section_title">Expired-foodsについて</h1>
-   <h2>冷蔵庫の中身がごちゃごちゃになることを防ぎ、中身を記録するアプリです。</h2>
-   <h2>LINEと同期すれば、賞味期限を知らせてくれます。</h2>
-   <h2>ユーザーは登録はこちらからお願いします</h2>
-   <%= link_to t('defaults.enroll'), sign_up_path, class: 'green_button' %>
+    <div class="flex">
+      <div class="image">
+        <%= image_tag "foods_lists.png", alt: "食材リスト", class: "img" %>
+      </div>
+      <div class="text">
+        <h2>食材を写真付きで投稿</h2>
+         <p>食材をもう忘れない</p>
+         <p>忘れがちな賞味期限を守ろう！！</p>
+         <p>ショッピングリストも作成可能</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="iamge">
+        <%= image_tag "line_bot.jpg", alt: "LINEbotの内容", class: "img" %>
+      </div>
+      <div class="text">
+        <h2>LINE連携</h2>
+         <p>LINEを連携をすることで商品名を送信すると現在登録されている賞味期限や総数などを返信してくれる</p>
+    </div>
   </div>
 </div>
-
-

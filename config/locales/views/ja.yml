@@ -39,6 +39,7 @@ ja:
     new:
       title: 'ユーザー登録'
       to_login_page: 'ログインページへ'
+      line_login: 'LINEログイン'
     create:
       success: 'ユーザー登録が完了しました'
       fail: 'ユーザー登録に失敗しました'
@@ -48,10 +49,12 @@ ja:
       change_profile: 'ユーザー情報の変更'
       password: 'パスワード'
       line_account: 'LINEアカウント'
+      likned_LINE: 'LINEアカウント連携'
       connected_LINE: 'LINEアカウントが連携されています'
       destroy_user: 'ユーザーアカウントの削除'
       cannot_change_email: 'emailの変更へできません'
       cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
+      destroy: 'ユーザー削除'
     update:
       success: 'ユーザー情報が更新されました'
     edit_line:
