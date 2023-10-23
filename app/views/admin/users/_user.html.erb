@@ -3,6 +3,9 @@
     <%= user.id %>
   </td>
   <td>
+    <%= user.name %>
+  </td>
+  <td>
     <%= user.email %>
   </td>
   <td>
@@ -10,6 +13,13 @@
   </td>
   <td>
     <%= l user.created_at, format: :long %>
+  </td>
+  <td>
+    <% if user.uid.present?%>
+     <p>LINEに連携済み</p>
+    <% else %>
+     <p>LINEに連携していません</p>
+    <% end %>
   </td>
   <td>
     <%= link_to t('defaults.show'), admin_user_path(user), class: 'btn btn-info' %>

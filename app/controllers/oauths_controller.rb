@@ -1,6 +1,5 @@
 class OauthsController < ApplicationController
   skip_before_action :require_login
-  
 
   def oauth
     login_at(auth_params[:provider])
@@ -9,24 +8,30 @@ class OauthsController < ApplicationController
   def callback
     provider = auth_params[:provider]
     @user = User.find_by(id: session[:user_id])
-    if auth_params[:denied].present?  # ここの節を追加
+    
+    if auth_params[:denied].present?
       redirect_to root_path, notice: 'ログインをキャンセルしました'
-      return
-    end
-    if @user = login_from(provider)
-      redirect_to root_path, notice:'連携できません'
-    elsif
-        @user = current_user.present? ? update_from(provider) : create_from(provider)
-        redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
+    elsif @user = login_from(provider)
+      redirect_to root_path, notice: '連携できません'
     else
-        redirect_to root_path, danger: 'ユーザーの作成をして下さい'
+      if current_user.present?
+        @user = update_from(provider)
+      else
+        @user = create_from(provider)
+      end
+      
+      if @user
+        redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
+      else
+        redirect_to root_path, danger: 'ユーザーの作成に失敗しました'
+      end
     end
   end
 
   private
 
   def auth_params
-    params.permit(:code, :provider, :denied, :state)
+    params.permit(:code, :provider, :denied, :state, :error)
   end
 
   def update_from(provider_name)

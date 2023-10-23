@@ -5,10 +5,7 @@
 .content {
     padding :5px;
     margin :5px;
-    background-image: image-url("sandwitch.jpg") ;
-    background-position: center bottom;
-    background-repeat: repeat;
-    background-size: cover;
+    background-color: #F0FFFF;
     width: 100%;
     height: 1000px;
 
@@ -40,7 +37,7 @@
 .box1 {
     border:solid 2px #A5A19A;
     width: 700px;
-    height: 500px;
+    height: 710px;
 }
 
 .box2 {
@@ -57,3 +54,15 @@
     background-color: silver;
     overflow-y: scroll;
 }
+
+.required-field{
+    position: relative;
+}
+  
+.required-icon::after{
+    color: red;
+    position: absolute;
+    top: 0;
+    right: -10px; 
+}
+  

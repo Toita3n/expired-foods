@@ -28,6 +28,14 @@
           <th scope="row"><%= User.human_attribute_name(:created_at) %></th>
           <td><%= l @user.created_at, format: :long %></td>
         </tr>
+        <tr>
+          <th scope="row"><%= User.human_attribute_name(:uid) %></th>
+        <% if @user.uid.present?%>
+          <td>LINEに連携済み</td>
+       <% else %>
+          <td>LINEに連携していません</td>
+        <% end %>
+        </tr>
       </table>
     </div>
   </div>

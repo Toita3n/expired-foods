@@ -15,7 +15,7 @@
       width: 100%;
       text-align: center;
       font-size: 3rem;
-      color: #ff6347;
+      color: #3399FF;
   
       @media screen and (max-width: 767px) {
         font-size: 2.0rem;
@@ -31,27 +31,36 @@
   }
 
 
-.second-wrapper{
-  background-image: image-url("blueberry.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 700px;
-
-    .second-inner-text{
-      padding :10px;
-      margin :10px;
-
-        h1 {
-          color: red;
-        }
-
-        h2{
-          color:red;
-        }
-    }
-}
+.second-wrapper {
+    background-color: #D7EEFF;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  }
+  
+  .second-inner-text {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .image {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .img {
+    width: 70%;
+    height: auto;
+  }
+  
+  .text {
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+  }
 
 @keyframes fadeInAnime{
   from {

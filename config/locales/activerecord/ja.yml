@@ -9,6 +9,7 @@ ja:
       user:
         role: 管理権限
         name: 'ユーザー名'
+        uid: 'LINEアカウント'
       sessions:
       item:
         title: 商品名
@@ -16,7 +17,8 @@ ja:
         expired_at: 賞味期限
         count: 数
         detail: 概要(買った場所や値段などの情報を入力できます)
-        tag_name: タグ (空白で区切ると複数タグ登録できます)
+        tag_name: タグ (半角スペースで区切ると複数タグ登録できます)
+        user_id: 'ユーザーID'
       tag:
         name: タグ名
       shopping_list:

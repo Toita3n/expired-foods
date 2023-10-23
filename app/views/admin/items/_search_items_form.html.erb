@@ -1,6 +1,6 @@
 <%= form_with model: @search_items_form, scope: :q, url: search_admin_items_path, class: "d-flex", method: :get do |f| %>
   <%= f.search_field :title, id: "search_field_of_item", class: "form-control me-2", placeholder: "商品名" %>
   <%= f.search_field :detail, id: "search_field_of_detail", class: "form-control me-2", placeholder: "概要" %>
-  <%= f.search_field :email_item, id: "search_field_of_email_item", class: "form-control me-2", placeholder: "メールアドレス" %>
+  <%= f.search_field :user_id_item, id: "search_field_of_email_item", class: "form-control me-2", placeholder: "ユーザーid" %>
   <%= f.submit "検索", class: 'btn btn-outline-primary' %>
 <% end %>

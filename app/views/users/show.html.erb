@@ -33,7 +33,7 @@
               <% else %>
                <span><%= current_user.name %></span>
                 <td>
-                  <%= link_to 'LINEアカウント連携',auth_at_provider_path(provider: :line), method: :post, class: 'btn btn-primary' %>
+                  <%= link_to t('.linked_LINE'),auth_at_provider_path(provider: :line), class: 'btn btn-primary' %>
                 </td>
               <% end %>
            <% end %>
@@ -43,7 +43,7 @@
             <span><%= t('.destroy_user')%></span>
            </th>
             <td>
-              <%= link_to 'ユーザー削除', user_path(current_user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-center", data: { confirm: t('defaults.message.deleted_confirm') } %>
+              <%= link_to t('.destroy'), user_path(current_user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-center", data: { confirm: t('defaults.message.deleted_confirm') } %>
             </td>
           </tr>
         </tbody>
