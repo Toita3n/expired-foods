@@ -55,11 +55,11 @@ production:
  encoding: utf8
  reconnect: false
  pool: 5
- database: expired_foods
- username: admin
- password: <%= ENV['DATABASE_PASSWORD'] %>
- socket: /var/lib/mysql/mysql.sock
- host: <%= ENV['DATABASE_HOST'] %>
+ database: <%= Rails.application.credentials.db[:database] %>
+ username: <%= Rails.application.credentials.db[:username] %>
+ password: <%= Rails.application.credentials.db[:password] %>
+ socket: <%= Rails.application.credentials.db[:socket] %>
+ host: <%= Rails.application.credentials.db[:host] %>
  port: 3306
  timeout: 5000
 # Warning: The database defined as "test" will be erased and
