@@ -8,7 +8,13 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.4",
     "admin-lte": "^3.2.0",
+    "bootstrap": "4.3.1",
     "express": "^4.18.2",
+    "jQuery": "^1.7.4",
+    "jquery": "^3.7.1",
+    "moment-timezone": "^0.5.31",
+    "popper.js": "^1.14.7",
+    "tempusdominus-core": "5.19.3",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
@@ -17,7 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/plugin-proposal-private-methods": "^7.18.6",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack-dev-server": "^3"
   },
   "description": "logou",
