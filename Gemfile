@@ -84,5 +84,5 @@ gem 'meta-tags'
 
 group :production do
   gem 'unicorn'
-  gem 'aws-sdk-s3'
+  gem 'aws-sdk-s3', require: false
 end
