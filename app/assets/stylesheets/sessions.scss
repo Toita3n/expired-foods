@@ -22,7 +22,7 @@
     text-align: center;
     text-decoration: none;
     border-left:1px solid #000000;
-    background-image: image-url("btn_line_base.png");
+    background-image:image-url("btn_line_base.png");
     background-repeat: no-repeat;
   }
   
@@ -30,7 +30,7 @@
   .line-login-button:hover {
     background-color: #06C755; /* ホバー時の色 */
     opacity: 0.9;
-    background-image: image-url("btn_line_hover.png");
+    background-image:image-url("btn_line_hover.png");
     background-repeat: no-repeat;
   }
   
@@ -38,7 +38,7 @@
   .line-login-button:active {
     background-color: #06C755; /* クリック時の色 */
     opacity: 0.8;
-    background-image: image-url("btn_line_press.png");
+    background-image:image-url("btn_line_press.png");
     background-repeat: no-repeat;
   }
   

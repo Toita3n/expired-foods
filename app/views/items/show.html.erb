@@ -9,7 +9,7 @@
              <% if @item.image.attached? %>
                <%= image_tag @item.image, size: '300x250' %>
              <% else %>
-               <%= image_tag("default.jpg", size: '300x200') %>
+               <%= image_tag asset_path("default.jpg", size: '300x200') %>
              <% end %>
            </div>
            <div class='col-md-12'>
