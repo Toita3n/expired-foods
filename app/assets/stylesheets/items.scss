@@ -1,7 +1,3 @@
-// Place all the styles related to the items controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
 .content {
     padding :5px;
     margin :5px;
@@ -9,9 +5,9 @@
     width: 100%;
     height: 1000px;
 
-        .td{
-            background-color: silver;
-        }
+    .td{
+        background-color: silver;
+    }
 }
 
 
@@ -58,7 +54,7 @@
 .required-field{
     position: relative;
 }
-  
+
 .required-icon::after{
     color: red;
     position: absolute;

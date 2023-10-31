@@ -13,7 +13,7 @@
 
 .line-login-button {
     display: inline-block;
-    background-color: #06C755; /* LINEのブランドカラー */
+    background-color: #06C755;
     color: #fff;
     padding: 10px 20px 10px 50px;
     border: none;
@@ -25,34 +25,30 @@
     background-image:image-url("btn_line_base.png");
     background-repeat: no-repeat;
   }
-  
-  /* LINEログインボタンのホバー時のスタイル */
+
   .line-login-button:hover {
-    background-color: #06C755; /* ホバー時の色 */
+    background-color: #06C755;
     opacity: 0.9;
     background-image:image-url("btn_line_hover.png");
     background-repeat: no-repeat;
   }
-  
-  /* LINEログインボタンのアクティブ時のスタイル */
+
   .line-login-button:active {
-    background-color: #06C755; /* クリック時の色 */
+    background-color: #06C755;
     opacity: 0.8;
     background-image:image-url("btn_line_press.png");
     background-repeat: no-repeat;
   }
-  
-  /* LINEログインボタンのテキストスタイル */
+
   .line-login-button span {
-    vertical-align: middle; /* ボタン内のテキストを中央に配置 */
-    margin-left: 5px; /* テキストとボタンアイコンの間隔 */
+    vertical-align: middle;
+    margin-left: 5px;
   }
-  
-  /* LINEログインボタンのレスポンシブデザイン */
+
   @media (max-width: 768px) {
     .line-login-button {
-      font-size: 14px; /* モバイルデバイス用のフォントサイズ */
-      padding: 8px 16px; /* モバイルデバイス用のパディング */
+      font-size: 14px;
+      padding: 8px 16px;
     }
   }
   
