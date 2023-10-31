@@ -51,6 +51,11 @@ development:
   <<: *default
   compile: true
 
+  entry:
+    - application.css
+    - application.js
+
+
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
     https: false
