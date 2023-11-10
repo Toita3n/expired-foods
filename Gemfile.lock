@@ -234,13 +234,7 @@ GEM
       net-protocol
     net-protocol (0.2.2)
       timeout
-<<<<<<< HEAD
-    net-scp (4.0.0)
-      net-ssh (>= 2.6.5, < 8.0.0)
-    net-smtp (0.3.3)
-=======
     net-smtp (0.4.0)
->>>>>>> line_login
       net-protocol
     net-ssh (7.2.0)
     nio4r (2.5.9)
@@ -362,18 +356,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-<<<<<<< HEAD
-    sshkit (1.21.5)
-      net-scp (>= 1.1.2)
-      net-ssh (>= 2.8.0)
-    thor (1.2.2)
-    tilt (2.2.0)
-    timeout (0.4.0)
-=======
     thor (1.3.0)
     tilt (2.3.0)
     timeout (0.4.1)
->>>>>>> line_login
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
