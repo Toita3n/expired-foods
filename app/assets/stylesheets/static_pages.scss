@@ -12,19 +12,5 @@
         height: 70%;
         padding: 10px 10px;
         overflow: auto; // コンテンツがスクロール可能になるようにする
-
-        // スクロールバーのスタイリング
-        &::-webkit-scrollbar {
-            width: 12px;
-        }
-        &::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-        &::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
     }
 }

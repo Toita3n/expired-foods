@@ -37,6 +37,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 4.3.1'
 gem 'font-awesome-sass', '~> 6.4.0'
 gem 'kaminari'
+gem 'bootstrap5-kaminari-views', '~> 0.0.1'
 gem 'config'
 gem 'sorcery'
 gem 'line-bot-api'

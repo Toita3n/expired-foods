@@ -19,6 +19,6 @@
       <% if @tags.present? %>
         <%= render 'tag', tag: @tag %>
       <% end %>
-      <%= paginate @tags %>
+      <%= paginate @tags, theme: 'bootstrap-5' %>
   </div>
 </section>

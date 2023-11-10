@@ -49,7 +49,7 @@ ja:
       change_profile: 'ユーザー情報の変更'
       password: 'パスワード'
       line_account: 'LINEアカウント'
-      likned_LINE: 'LINEアカウント連携'
+      linked_LINE: 'LINEアカウント連携'
       connected_LINE: 'LINEアカウントが連携されています'
       destroy_user: 'ユーザーアカウントの削除'
       cannot_change_email: 'emailの変更へできません'

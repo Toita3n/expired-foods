@@ -10,44 +10,50 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
  @import "top";
+ @import "sessions";
+ @import "items";
+ @import "shopping_lists";
  @import "bootstrap";
  @import "font-awesome";
-
-.absolute-container {
-  position: relative;
-  padding-bottom: 120px;
+ 
+.relative-header {
   min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
-.footer{
+.main {
+  flex: 1;
+}
+
+.flex-footer {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+  }
 
   .web-name{
-    font-size: 15px;
+    color: white;
   }
 
   .copyright{
-    color: white;
-  }
-}
-
-.absolute-footer {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  background-color: black;
-
-  ul{
-    list-style: none;
-  }
-
-  .link{
-    text-decoration: none;
     color: white;
   }
 }
