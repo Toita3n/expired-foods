@@ -57,7 +57,7 @@ class ItemsController < ApplicationController
 
   def search
     @search_items_form = SearchItemsForm.new(search_item_params) #　form_objectを使用してsearchする
-    @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(5)
+    @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(4)
   end
 
   private

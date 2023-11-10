@@ -4,7 +4,7 @@ class Admin::ShoppingListsController < Admin::BaseController
   def index
     @shopping_lists = ShoppingList.all.order(created_at: :desc).page(params[:page])
   end
-  
+
   def edit; end
 
   def show; end

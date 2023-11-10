@@ -1,5 +1,6 @@
 class GuestSessionsController < ApplicationController
   skip_before_action :require_login
+
   def create
     user = User.guest
     session[:user_id] = user.id
