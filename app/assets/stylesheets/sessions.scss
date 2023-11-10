@@ -1,6 +1,9 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/*
+ *= require_self
+ */
 .card-info{
     margin:5px;
     background-color: silver;
@@ -9,6 +12,18 @@
     background-color: #D7EEFF;
     width: 100%;
     height: 700px;
+}
+
+.required-field{
+  position: relative;
+}
+
+.required-icon::after{
+  content: '必須';
+  color: red;
+  position: relative;
+  top: 0;
+  right: 0px;
 }
 
 .line-login-button {
@@ -25,29 +40,7 @@
     background-image: image-url("btn_line_base.png");
     background-repeat: no-repeat;
   }
-  
-  /* LINEログインボタンのホバー時のスタイル */
-  .line-login-button:hover {
-    background-color: #06C755; /* ホバー時の色 */
-    opacity: 0.9;
-    background-image: image-url("btn_line_hover.png");
-    background-repeat: no-repeat;
-  }
-  
-  /* LINEログインボタンのアクティブ時のスタイル */
-  .line-login-button:active {
-    background-color: #06C755; /* クリック時の色 */
-    opacity: 0.8;
-    background-image: image-url("btn_line_press.png");
-    background-repeat: no-repeat;
-  }
-  
-  /* LINEログインボタンのテキストスタイル */
-  .line-login-button span {
-    vertical-align: middle; /* ボタン内のテキストを中央に配置 */
-    margin-left: 5px; /* テキストとボタンアイコンの間隔 */
-  }
-  
+
   /* LINEログインボタンのレスポンシブデザイン */
   @media (max-width: 768px) {
     .line-login-button {
@@ -55,4 +48,3 @@
       padding: 8px 16px; /* モバイルデバイス用のパディング */
     }
   }
-  

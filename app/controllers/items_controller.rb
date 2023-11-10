@@ -2,11 +2,11 @@ class ItemsController < ApplicationController
 
   def index
     if params[:latest_expired] #賞味期限が遠い順
-      @items = Item.latest_expired.page(params[:page])
+      @items = current_user.items.latest_expired.page(params[:page]).per(4)
     elsif params[:expired] #賞味期限が遠い順
-      @items = Item.expired.page(params[:page])
+      @items = current_user.items.expired.page(params[:page]).per(4)
     else
-      @items = Item.all.order(created_at: :asc).page(params[:page])
+      @items = current_user.items.order(created_at: :asc).page(params[:page]).per(4)
     end
     @tag_list = Tag.all
   end
