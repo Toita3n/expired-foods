@@ -8,7 +8,7 @@
 
 User.create!(
     name: 'admin',
-    email: 'admin@gmail.com',
+    email: 'admin@example.com',
     password: 'password',
     password_confirmation: 'password',
     role: 1
