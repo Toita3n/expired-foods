@@ -14,7 +14,7 @@ default: &default
  database: expired_foods
  pool: 5
  username: root
- password: 97password_TSTA
+ password: password
  host: 127.0.0.1
  socket: /tmp/mysql.sock
  port: 3307
