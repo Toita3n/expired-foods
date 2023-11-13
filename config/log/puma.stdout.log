@@ -1,0 +1,20 @@
+=== puma startup: 2023-11-13 08:09:46 +0000 ===
+=== puma startup: 2023-11-13 08:12:53 +0000 ===
+=== puma startup: 2023-11-13 08:20:00 +0000 ===
+[5535] - Worker 1 (PID: 5552) booted in 5.14s, phase: 0
+[5535] - Worker 0 (PID: 5551) booted in 5.14s, phase: 0
+[5535] - Gracefully shutting down workers...
+[5535] === puma shutdown: 2023-11-13 08:20:16 +0000 ===
+[5535] - Goodbye!
+=== puma startup: 2023-11-13 08:44:21 +0000 ===
+[5645] - Worker 1 (PID: 5662) booted in 3.49s, phase: 0
+[5645] - Worker 0 (PID: 5661) booted in 3.49s, phase: 0
+[5645] - Gracefully shutting down workers...
+[5645] === puma shutdown: 2023-11-13 08:44:29 +0000 ===
+[5645] - Goodbye!
+=== puma startup: 2023-11-13 09:31:58 +0000 ===
+[5884] - Worker 0 (PID: 5900) booted in 3.51s, phase: 0
+[5884] - Worker 1 (PID: 5901) booted in 3.51s, phase: 0
+[5884] - Gracefully shutting down workers...
+[5884] === puma shutdown: 2023-11-13 09:32:10 +0000 ===
+[5884] - Goodbye!
