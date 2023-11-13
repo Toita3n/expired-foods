@@ -5,7 +5,3 @@ require("bootstrap");
 
 var jQuery = require("jquery");
 require("admin-lte");
-
-// import jQuery from "jquery";
-global.$ = global.jQuery = jQuery;
-window.$ = window.jQuery = jQuery;
