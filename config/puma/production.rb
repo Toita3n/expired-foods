@@ -1,3 +1,4 @@
+require 'puma/daemon'
 # アプリケーションディレクトリ
 app_dir = File.expand_path("../../", __FILE__)
 # ソケット通信を図る為bindでURI指定
@@ -15,3 +16,4 @@ workers 2
 
 environment 'production'
 plugin :tmp_restart
+daemonize
