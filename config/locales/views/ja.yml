@@ -70,6 +70,7 @@ ja:
       to_register_page: '登録ページへ'
       password_forget: 'パスワードをお忘れの方はこちら'
       guest_login: 'ゲストログイン'
+      line_login: 'LINEでログイン'
     create:
       success: 'ログインしました'
       fail: 'ログインに失敗しました'
