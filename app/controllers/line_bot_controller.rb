@@ -1,5 +1,5 @@
 class LineBotController < ApplicationController
-  require 'line/bot'  # gem 'line-bot-api'
+  require 'line/bot'
   skip_before_action :require_login
 
   protect_from_forgery except: [:callback]
