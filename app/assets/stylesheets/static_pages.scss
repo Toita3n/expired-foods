@@ -1,6 +1,9 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/*
+ *= require_self
+*/
 .scroll-box {
     width: 700px;
     height: 600px;
