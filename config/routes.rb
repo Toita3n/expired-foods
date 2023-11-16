@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'static_pages#top'
+  get '/index.html', to: 'static_pages#top'
   get '/privacy_policy', to: 'static_pages#privacy_policy'
   get '/term_of_use', to: 'static_pages#term_of_use'
   get :sign_up, to: 'users#new'
@@ -17,7 +18,6 @@ Rails.application.routes.draw do
   get '/callback', to: 'oauths#callback'
   post 'oauth/callback', to: 'oauths#callback'
   get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
-  get '/index.html', to: redirect('/')
   resources :items do
     collection do
       get 'search'
