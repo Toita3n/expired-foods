@@ -5,6 +5,7 @@ lock '3.18.0'
 # Capistranoのログの表示に利用する
 set :application, 'expired-foods'
 set :deploy_to, '/var/www/expired-foods'
+set :branch, 'main'
 
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:Toita3n/expired-foods.git'
@@ -14,9 +15,8 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 
 set :rbenv_type, :user
 set :rbenv_ruby, '3.0.2'
-# どの公開鍵を利用してデプロイするか
-set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['~/.ssh/runteq-key.pem'] 
+
+append :linked_files, "config/master.key"
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/puma.pid" }

@@ -6,6 +6,12 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
+set :rails_env, 'production'
+# どの公開鍵を利用してデプロイするか
+set :ssh_options, { 
+    auth_methods: [ 'publickey' ],
+    keys: [ '~/.ssh/runteq-key.pem' ],
+  }
 server '172.31.0.188', user: 'ec2-user', roles: %w{app db web}
 
 

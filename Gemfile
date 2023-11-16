@@ -64,11 +64,11 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'letter_opener_web'
-  gem 'capistrano'
+  gem 'capistrano', require: false
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
-  gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano3-puma'
 end
 
 group :test do
