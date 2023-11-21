@@ -70,8 +70,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://www.stop-expired-foods.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'email-smtp.ap-northeast-1.amazonaws.com',
-    domain: 'stop-expired-foods.com',
+    address: 'smtp.gmail.com',
+    domain: 'smtp.gmail.com',
     port: 587,
     user_name: Rails.application.credentials.gmail[:email],
     password: Rails.application.credentials.gmail[:app_password],
