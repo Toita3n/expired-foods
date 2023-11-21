@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'notifications@expired-foods.com'
+  default from: 'expired.foodsapp@gmail.com'
   layout 'mailer'
 end
