@@ -67,7 +67,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options = { protocol: 'https', host: 'https://www.stop-expired-foods.com' }
+  config.action_mailer.default_url_options = { host: 'https://www.stop-expired-foods.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'email-smtp.ap-northeast-1.amazonaws.com',

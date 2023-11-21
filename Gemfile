@@ -87,4 +87,5 @@ gem 'meta-tags'
 
 group :production do
   gem 'aws-sdk-s3', require: false
+  #gem 'aws-sdk-rails', '~>3.6', '>= 3.6.1'
 end
