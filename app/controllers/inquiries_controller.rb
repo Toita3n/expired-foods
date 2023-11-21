@@ -8,7 +8,7 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save
        InquiryMailer.inquiry_mail(@inquiry).deliver
-       redirect_to inquiries_mentions_path(@inquiry)
+       redirect_to inquiry_mentions_path(@inquiry)
     else
        render :new
     end
