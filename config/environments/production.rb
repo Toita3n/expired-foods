@@ -67,15 +67,16 @@ Rails.application.configure do
 
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options = { host: 'https://www.stop-expired-foods.com' }
+  config.action_mailer.default_url_options = { protocol: 'https', host: 'https://www.stop-expired-foods.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'expired.foodspp@gmail.com',
+    address: 'email-smtp.ap-northeast-1.amazonaws.com',
     domain: 'stop-expired-foods.com',
-    port: 443,
-    user_name: Rails.application.credentials.gmail[:email]
-    password: Rails.application.credentials.gmail[:app_password]
-    authentication: :login
+    port: 587,
+    user_name: Rails.application.credentials.gmail[:email],
+    password: Rails.application.credentials.gmail[:app_password],
+    authentication: :login,
+    enable_starttls_auto: true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
