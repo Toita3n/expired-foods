@@ -1,5 +1,7 @@
 class ItemsController < ApplicationController
 
+  before_action :set_item, only: %i[show edit update]
+
   def index
     if params[:latest_expired] #賞味期限が遠い順
       @items = current_user.items.latest_expired.page(params[:page]).per(4)
@@ -16,7 +18,6 @@ class ItemsController < ApplicationController
   end
 
   def show
-    @item = Item.find(params[:id])
     @items = Item.select(:name).distinct
     @tags = Tag.all
   end
@@ -33,15 +34,12 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    @item = Item.find(params[:id])
     @tag_list = @item.tags.pluck(:name).join(' ') #半角空白でtagを追加できる
   end
 
   def update
-    @item = Item.find(params[:id])
     tag_list = params[:item][:tag_name].split(' ')
     if @item.update(item_params)
-      @item = Item.find(params[:id])
       @item.save_tags(tag_list)
       redirect_to item_path(@item), success: t('.message_item_update')
     else
@@ -61,6 +59,10 @@ class ItemsController < ApplicationController
   end
 
   private
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
   def item_params
     params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :tag_name, :detail)
