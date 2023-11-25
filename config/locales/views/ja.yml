@@ -124,6 +124,7 @@ ja:
     index:
       title: 'ショッピングリスト'
       add_shopping_lists: '買い物リストに商品を追加'
+      delete_selected: 'チェックボックスの商品を削除'
     new:
       add_shopping_lists: '買い物リストに商品を追加'
       product: '商品名'
@@ -135,8 +136,12 @@ ja:
     edit:
       item_edit: '商品編集'
       confirm_delete: '削除しますか？'
+    update:
+      success: '商品情報が変更されました'
+      not_to_update: '変更されませんでした'
     destroy:
       success: 'ショッピングリストから商品を削除しました'
+      no_selection: '削除するには削除対象にチェックボックスを入れて下さい'
   password_resets:
     new:
       title: 'パスワード変更申請'

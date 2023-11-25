@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   end
   resources :tags, only: %i[index show edit update destroy]
   resources :shopping_lists
+  delete 'shopping_lists/destroy', to: 'shopping_lists#destroy_selected', as: :destroy_selected_shopping_lists
   resources :password_resets, only: %i[new create edit update]
   resources :inquiries, only: %i[new create] do
     get '/mentions', to: 'inquiries#mentions'

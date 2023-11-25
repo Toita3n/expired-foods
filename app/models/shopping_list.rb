@@ -1,5 +1,4 @@
 class ShoppingList < ApplicationRecord
-  self.table_name = "shopping_lists"
   belongs_to :user
   validates :product, presence: true
   validates :number, presence: true
