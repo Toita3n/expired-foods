@@ -4,13 +4,6 @@ class LineBotController < ApplicationController
 
   protect_from_forgery except: [:callback]
 
-  def client
-    @client ||= Line::Bot::Client.new { |config|
-      config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
-      config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
-    }
-  end
-
   def callback
     body = request.body.read
 
@@ -35,6 +28,13 @@ class LineBotController < ApplicationController
   end
 
   private
+
+  def client
+    @client ||= Line::Bot::Client.new { |config|
+      config.channel_secret = ENV["LINE_CHANNEL_SECRET"]
+      config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
+    }
+  end
 
   def item_text_message(event)
     user = User.find_by(uid: event['source']['userId'])

@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
       if (selectedValue === "latest") {
         // 遠い順の場合の処理
         redirectUrl += "?latest_expired=true";
-      } else if (selectedValue === "expired") {
+      } else if (selectedValue === "close") {
         // 近い順の場合の処理
-        redirectUrl += "?expired=true";
+        redirectUrl += "?close_expired=true";
       }
 
       // 画面移行

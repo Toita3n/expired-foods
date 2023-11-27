@@ -110,16 +110,21 @@ ja:
       latest_expired_at: '遠い順'
       oldest_expired_at: '近い順'
       nothing: '商品がありません'
-  tags:
+  profiles:
     show:
-      title: 'タグ関連'
-      add_item: '商品追加'
-      expired_at: '賞味期限'
-      sort: 'ソート'
-      latest_expired_at: '遠い順'
-      oldest_expired_at: '近い順'
+      title: 'ユーザー詳細'
+      email: 'メールアドレス'
+      change_profile: 'ユーザー情報の変更'
+      password: 'パスワード'
+      line_account: 'ユーザー名/LINEアカウント'
+      linked_LINE: 'LINEアカウント連携'
+      connected_LINE: 'LINEアカウントが連携されています'
+      destroy_user: 'ユーザーアカウントの削除'
+      cannot_change_email: 'emailの変更へできません'
+      cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
+      destroy: 'ユーザー削除'
     destroy:
-      success: 'タグを削除しました'
+      success: 'ユーザーを削除しました'
   shopping_lists:
     index:
       title: 'ショッピングリスト'

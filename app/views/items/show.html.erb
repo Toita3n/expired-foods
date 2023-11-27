@@ -19,9 +19,6 @@
                  <li class="list-inline-item"><%= t('defaults.count')%>:<%= @item.count %>個</li>
                  <li class="list-inline-item"><%= t('.expiration')%>:<%= @item.expired_at.strftime('%Y-%m-%d') %></li>
                  <li class="list-inline-item"><%= @item.remaining_days %></li>
-                 <li class="list-inline-item"><% @item.tags.each do |tag| %> 
-                                               <%= link_to tag.name, tag_path(tag), class: 'badge arounded-pill bg-info trxt-decoration-none text-white'%>
-                                              <% end %>
                  <div class="box2"><%= @item.detail %></div>
              </ul>
                <%= link_to t('.return_items'), items_path, class: 'btn btn-secondary' %>

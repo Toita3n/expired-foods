@@ -23,10 +23,9 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :users, only: %i[new create show edit update destroy] do
-   resource :authentication
-  end
-  resources :tags, only: %i[index show edit update destroy]
+  resources :users, only: %i[new create destroy]
+  resource :authentication
+  resource :profile, only: %i[show edit update]
   resources :shopping_lists
   delete 'shopping_lists/destroy', to: 'shopping_lists#destroy_selected', as: :destroy_selected_shopping_lists
   resources :password_resets, only: %i[new create edit update]
@@ -44,18 +43,13 @@ Rails.application.routes.draw do
         get 'search'
       end
     end
-
+  
     resources :items, only: %i[index edit update show destroy] do
       collection do
         get 'search'
       end
     end
-
-    resources :tags, only: %i[index edit show update destroy search] do
-      collection do
-        get 'search'
-      end
-    end
+    
     resources :shopping_lists, only: %i[index update show destroy] do
       collection do
         get 'search'

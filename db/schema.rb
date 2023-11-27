@@ -59,16 +59,6 @@ ActiveRecord::Schema.define(version: 2023_10_18_140602) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "item_tags", charset: "utf8mb3", force: :cascade do |t|
-    t.bigint "item_id", null: false
-    t.bigint "tag_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id", "tag_id"], name: "index_item_tags_on_item_id_and_tag_id", unique: true
-    t.index ["item_id"], name: "index_item_tags_on_item_id"
-    t.index ["tag_id"], name: "index_item_tags_on_tag_id"
-  end
-
   create_table "items", charset: "utf8mb3", force: :cascade do |t|
     t.string "title"
     t.integer "count"
@@ -91,12 +81,6 @@ ActiveRecord::Schema.define(version: 2023_10_18_140602) do
     t.index ["user_id"], name: "index_shopping_lists_on_user_id"
   end
 
-  create_table "tags", charset: "utf8mb3", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
     t.string "email", null: false
     t.string "crypted_password"
@@ -115,6 +99,4 @@ ActiveRecord::Schema.define(version: 2023_10_18_140602) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "item_tags", "items"
-  add_foreign_key "item_tags", "tags"
 end

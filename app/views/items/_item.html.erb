@@ -13,11 +13,6 @@
       <div class="item-info"><%= t('defaults.count')%>:<%= item.count %></div>
       <div class="item-info"><%= t('defaults.expiration')%>:<%= item.expired_at.strftime('%Y-%m-%d') %></div>
       <div class="item-info"><%= item.remaining_days %></div>
-      <div class="item-info">
-       <% item.tags.each do |tag| %>
-        <%= link_to tag.name, tag_path(tag), class: 'badge rounded-pill bg-info text-decoration-none text-dark' %>
-       <% end %>
-      </div>
       <div class="item-info"><%= render 'crud_menus', { item: item } %></div>
     </div>
   </div>

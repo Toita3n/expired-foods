@@ -2,9 +2,6 @@ class Item < ApplicationRecord
   belongs_to :user
   has_one_attached :image
   attr_accessor :image_cache
-  attr_accessor :tag_name
-  has_many :item_tags, dependent: :destroy
-  has_many :tags, through: :item_tags
 
   validates :title, presence: true
   validates :count, presence: true, numericality: true
@@ -17,7 +14,6 @@ class Item < ApplicationRecord
   scope :expired, -> { order(expired_at: :asc) }
   scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%")}
   scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%")}
-  scope :search_tag_name, ->(tag_name) { joins(:tags).merge(Item.where("tags.name LIKE ?", "%#{tag_name}%"))}
   scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%")}
   
   def remaining_days
@@ -31,21 +27,6 @@ class Item < ApplicationRecord
     else
       remaining_days = (expired_date - today).to_i
       "あと #{remaining_days} 日です"
-    end
-  end
-
-  def save_tags(tags)
-    current_tags = self.tags.pluck(:name) unless self.tags.nil?
-    old_tags = current_tags - tags
-    new_tags = tags - current_tags
-
-    old_tags.each do |old_name|
-      self.tags.delete Tag.find_by(name: old_name)
-    end
-
-    new_tags.each do |new_name|
-      new_item_tag = Tag.find_or_create_by(name: new_name)
-      self.tags << new_item_tag
     end
   end
 

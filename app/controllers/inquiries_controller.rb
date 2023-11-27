@@ -19,5 +19,4 @@ class InquiriesController < ApplicationController
   def inquiry_params
     params.require(:inquiry).permit(:email, :text)
   end
-
 end
