@@ -6,15 +6,15 @@ class Item < ApplicationRecord
   validates :title, presence: true
   validates :count, presence: true, numericality: true
   validates :expired_at, presence: true
-  validates :detail, length: { minimum: 0, maximum: 256}
+  validates :detail, length: { minimum: 0, maximum: 256 }
 
   validate :check_guest_user_limit, if:-> { user&.guest? }
 
   scope :latest_expired, -> { order(expired_at: :desc) }
   scope :expired, -> { order(expired_at: :asc) }
-  scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%")}
-  scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%")}
-  scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%")}
+  scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%") }
+  scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%") }
+  scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%") }
   
   def remaining_days
     today = Date.today
