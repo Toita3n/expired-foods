@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   resources :items do
     collection do
       get 'search'
+      get 'already_expired'
+      get 'before_expired'
     end
   end
   resources :users, only: %i[new create destroy]

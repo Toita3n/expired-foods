@@ -9,19 +9,17 @@
           <%= link_to t('.add_item'), new_item_path, class: 'btn btn-primary' %>
                <label for="item-sort"><%= t('.expired_at')%></label>
                 <select id="item-sort-select">
-                 <option value="default"><%= t('.sort')%></option>
-                 <option value="latest"><%= t('.latest_expired_at')%></option>
-                 <option value="close"><%= t('.oldest_expired_at')%></option>
+                 <option value="expired"><%= t('.expiration')%></option>
                 </select>
-          <%= link_to t('.expiration'), already_expired_items_path, class: 'btn btn-outline-secondary' %>
+          <%= link_to t('.all_items'), items_path, class: 'btn btn-outline-success' %>
         </li>
       </div>
     </div>
-      <% if @items.present? %>
-        <%= render @items %>
+      <% if @expired_items.present? %>
+        <%= render @expired_items %>
       <% else %>
         <p><%= t('.nothing')%></p>
       <% end %>
-      <%= paginate @items, theme: 'bootstrap-5' %>
+      <%= paginate @expired_items, theme: 'bootstrap-5' %>
   </div>
 </section>

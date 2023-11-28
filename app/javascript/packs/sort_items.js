@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
       } else if (selectedValue === "close") {
         // 近い順の場合の処理
         redirectUrl += "?close_expired=true";
+      } else if (selectedValue === "expired") {
+        redirectUrl += "?already_expired=true";
       }
 
       // 画面移行

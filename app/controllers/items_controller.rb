@@ -5,6 +5,10 @@ class ItemsController < ApplicationController
     @items = item_sort(params)
   end
 
+  def already_expired
+    @expired_items = current_user.items.where('expired_at <= ?', Time.now).order(created_at: :desc).page(params[:page]).per(5)
+  end
+
   def new
     @item = Item.new
   end
@@ -40,7 +44,7 @@ class ItemsController < ApplicationController
 
   def search
     @search_items_form = SearchItemsForm.new(search_item_params) #form_objectを使用してsearchする
-    @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(5)
+    @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(4)
   end
 
   private
@@ -53,9 +57,9 @@ class ItemsController < ApplicationController
     if params[:latest_expired]#賞味期限が遠い順
       current_user.items.latest_expired.page(params[:page]).per(4)
     elsif params[:close_expired]#賞味期限が遠い順
-      current_user.items.expired.page(params[:page]).per(4)
-    else#デフォルトの状態
-      current_user.items.order(created_at: :asc).page(params[:page]).per(4)
+      current_user.items.close_expired.page(params[:page]).per(4)
+    else
+      current_user.items.order(created_at: :desc).page(params[:page]).per(4)
     end
   end
 
