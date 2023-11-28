@@ -21,15 +21,15 @@
           </tr>
           <tr>
             <th>
-              <span><%= t('.line_account')%></span>
+              <span><%= t('.line_account') %></span>
             </th>
            <% if current_user.email == 'guestuser@example.com' %>
             <td><%= t('.cannot_change_email') %></td>
            <% else %>
             <td>
-              <% if current_user.uid.present?%>
+              <% if current_user.uid.present? %>
                <span><%= current_user.name %></span>
-               <td><%=t('.connected_LINE')%></td>
+               <td><%=t('.connected_LINE') %></td>
               <% else %>
                <span><%= current_user.name %></span>
                 <td>
@@ -45,7 +45,7 @@
            </th>
             <td><span>&nbsp;</span></td>
             <td>
-              <%= link_to t('.destroy'), user_path(current_user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-right", data: { confirm: t('defaults.message.deleted_confirm') } %>
+             <%= link_to t('.destroy'), user_path(current_user), id: "button-delete-#{current_user.id}", method: :delete, class: "btn btn-danger float-right", data: { confirm: t('defaults.message.deleted_confirm') } %>
             </td>
           </tr>
         </tbody>

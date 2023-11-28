@@ -11,7 +11,7 @@ class Item < ApplicationRecord
   validate :check_guest_user_limit, if:-> { user&.guest? }
 
   scope :latest_expired, -> { order(expired_at: :desc) }
-  scope :expired, -> { order(expired_at: :asc) }
+  scope :close_expired, -> { order(expired_at: :asc) }
   scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%") }
   scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%") }
   scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%") }

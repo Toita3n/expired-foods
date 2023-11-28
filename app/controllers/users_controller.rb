@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     @authentication = current_user.authentications.find_by(provider: 'line')
   end
 
-  def edit;end
+  def edit; end
 
   def update
     if @user.update(user_params)
