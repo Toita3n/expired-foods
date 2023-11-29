@@ -9,3 +9,4 @@ require("@rails/activestorage").start()
 require("channels");
 require("bootstrap");
 import "./sort_items"
+import "./count_items"

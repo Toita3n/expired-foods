@@ -125,6 +125,11 @@ ja:
       oldest_expired_at: '近い順'
       expiration: '賞味期限切れ'
       nothing: '商品・食材が存在しません'
+    increment:
+      increase: '商品・食材が１つ追加されました'
+    decrement:
+      decrease: '商品・食材が一つ減りました'
+      not_exceed_zero: '０未満にはなりません'
   profiles:
     show:
       title: 'ユーザー詳細'
@@ -210,19 +215,6 @@ ja:
         not_to_update: '更新できませんでした'
       search:
         title: '商品一覧'
-    tags:
-      index:
-        title: 'タグ一覧'
-      show: 
-        title: 'タグ詳細'
-      edit: 
-        title: 'タグ編集'
-      update:
-        tag_update: 'タグが更新されました'
-        fail: 'タグが編集できませんでした'
-      destroy: 'タグが削除されました' 
-      search:
-        title: 'タグ一覧'
     shopping_lists:
       index:
         title: 'ショッピングリスト一覧'

@@ -1,12 +1,12 @@
 class ItemsController < ApplicationController
-  before_action :set_item, only: %i[show edit update]
+  before_action :set_item, only: %i[show edit update destroy increment decrement]
 
   def index
     @items = item_sort(params)
   end
 
   def already_expired
-    @expired_items = current_user.items.where('expired_at <= ?', Time.now).order(created_at: :desc).page(params[:page]).per(5)
+    @expired_items = current_user.items.already_expired.order(created_at: :desc).page(params[:page]).per(4)
   end
 
   def new
@@ -37,7 +37,6 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    @item = Item.find_by(id: params[:id])
     @item.destroy!
     redirect_to items_path, success: t('.message_deleted')
   end
@@ -47,10 +46,24 @@ class ItemsController < ApplicationController
     @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(4)
   end
 
+  def increment
+    @item.increment!(:count)
+    redirect_to items_path, success: t('.increase')
+  end
+
+  def decrement
+    if @item.count > 0
+      @item.decrement!(:count)
+      redirect_to items_path, warning: t('.decrease')
+    else
+      redirect_to items_path, warning: t('.not_exceed_zero')
+    end
+  end
+
   private
 
   def set_item
-    @item = Item.find(params[:id])
+    @item = current_user.items.find(params[:id])
   end
 
   def item_sort(params)

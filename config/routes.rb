@@ -24,7 +24,10 @@ Rails.application.routes.draw do
       get 'already_expired'
       get 'before_expired'
     end
+    patch 'increment', on: :member
+    patch 'decrement', on: :member
   end
+
   resources :users, only: %i[new create destroy]
   resource :authentication
   resource :profile, only: %i[show edit update]
@@ -45,13 +48,13 @@ Rails.application.routes.draw do
         get 'search'
       end
     end
-  
+
     resources :items, only: %i[index edit update show destroy] do
       collection do
         get 'search'
       end
     end
-    
+
     resources :shopping_lists, only: %i[index update show destroy] do
       collection do
         get 'search'

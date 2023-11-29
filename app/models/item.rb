@@ -16,7 +16,7 @@ class Item < ApplicationRecord
   scope :search_title, ->(title) { where("title LIKE :word", word: "%#{title}%") }
   scope :search_detail, ->(detail) { where("detail LIKE :word", word: "%#{detail}%") }
   scope :search_user_id_item, ->(user_id_item) { where("user_id LIKE :word", word: "%#{user_id_item}%") }
-  
+
   def remaining_days
     today = Date.today
     expired_date = expired_at.to_date
@@ -35,9 +35,5 @@ class Item < ApplicationRecord
     if user.guest? && user.items.count >= 3
       errors.add(:base, 'ゲストユーザーは3つまでしかアイテムを登録できません。')
     end
-  end
-
-  def already_expired?
-    expired_at < Time.current
   end
 end
