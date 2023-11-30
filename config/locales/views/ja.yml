@@ -16,6 +16,7 @@ ja:
     count: '数'
     expiration: '期限'
     register_item: '商品登録'
+    use_template: 'テンプレートの使用'
     item_list: '商品一覧'
     shopping_list: '買い物リスト' 
     email_setting: 'メールアドレス変更'

@@ -10,3 +10,4 @@ require("channels");
 require("bootstrap");
 import "./sort_items"
 import "./count_items"
+import "./template_items"
