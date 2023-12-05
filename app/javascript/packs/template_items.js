@@ -1,42 +1,32 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var templateButton = document.getElementById('use_template_button');
-    var templateSelect = document.getElementById('item_template');
-    var titleField = document.getElementById('item_title');
-    var countField = document.getElementById('item_count');
-    var detailField = document.getElementById('item_detail');
+    let templateButton = document.getElementById('use_template_button');
+    let templateSelect = document.getElementById('item_template');
+    let titleField = document.getElementById('item_title');
+    let countField = document.getElementById('item_count');
+    let detailField = document.getElementById('item_detail');
   
-    templateButton.addEventListener('click', function() {
-      var selectedTemplate = templateSelect.value;
+    // テンプレート情報のマップ
+    const templates = {
+      '牛肉': { title: '牛肉', count: 1, detail: '100g' },
+      '豚肉': { title: '豚肉', count: 1, detail: '100g' },
+      '鶏肉': { title: '鶏肉', count: 1, detail: '100g' },
+      '刺身': { title: 'マグロ', count: 1, detail: '100g' },
+      '鮭': { title: '鮭', count: 1, detail: '100g' },
+      'ぶり': { title: 'ぶり', count: 1, detail: '100g' },
+      '卵': { title: '卵', count: 10, detail: '1パック' }
+    };
   
-      // テンプレートに応じてフォームの値を設定
-      if (selectedTemplate === '牛肉') {
-        titleField.value = '牛肉';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === '豚肉') {
-        titleField.value = '豚肉';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === '鶏肉') {
-        titleField.value = '鶏肉';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === '刺身') {
-        titleField.value = 'マグロ';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === '鮭') {
-        titleField.value = '鮭';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === 'ぶり') {
-        titleField.value = 'ぶり';
-        countField.value = 1;
-        detailField.value = '100g';
-      } else if (selectedTemplate === '鰆') {
-        titleField.value = '鰆';
-        countField.value = 1;
-        detailField.value = '100g';
-      }
-    });
+    if (templateButton) {
+      templateButton.addEventListener('click', function() {
+        let selectedTemplate = templateSelect.value;
+        
+        // テンプレートが存在する場合にフォームの値を設定
+        if (templates[selectedTemplate]) {
+          let templateInfo = templates[selectedTemplate];
+          titleField.value = templateInfo.title;
+          countField.value = templateInfo.count;
+          detailField.value = templateInfo.detail;
+        }
+      });
+    } 
 });

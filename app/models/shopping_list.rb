@@ -1,7 +1,10 @@
 class ShoppingList < ApplicationRecord
   belongs_to :user
-  validates :product, presence: true
-  validates :number, presence: true
+  with_options presence: true do 
+    validates :product
+    validates :number
+    validates :availability, inclusion: { in: [true, false] }
+  end
   validates :trait, length: { minimum: 0, maximum: 256 }
 
   scope :search_product, ->(product) { where("product LIKE :word", word: "%#{product}%") }

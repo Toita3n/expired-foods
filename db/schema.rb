@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_18_140602) do
+ActiveRecord::Schema.define(version: 2023_12_03_043416) do
 
   create_table "active_storage_attachments", charset: "utf8mb3", force: :cascade do |t|
     t.string "name", null: false
@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(version: 2023_10_18_140602) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
+    t.boolean "availability", default: false, null: false
     t.index ["user_id"], name: "index_shopping_lists_on_user_id"
   end
 

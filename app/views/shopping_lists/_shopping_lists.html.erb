@@ -1,16 +1,38 @@
-<%= form_with model: @shopping_list, local: true do |f| %>
- <%= render 'shared/error_messages', object: f.object %>
-  <div class="mb-3 required-field">
-    <%= f.label :product, '商品名' %><span class="required-icon">★</span>
-    <%= f.text_field :product %>
-  </div>
-  <div class="fomr-group required-field">
-    <%= f.label :number, '総数' %><span class="required-icon">★</span>
-    <%= f.number_field :number, size: '5x5', min: 1 %>
-  </div>
-  <div class="textarea">
-    <%= f.label :trait, '特徴' %>
-    <%= f.text_area :trait %>
-  </div>
-    <%= f.submit t('defaults.register_item'), class: 'btn btn-primary' %>
+<%= form_with model: @shopping_list, url: shopping_lists_path, local: true do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <table>
+    <tr>
+      <th>
+       <%= f.label :availability, '登録'%>
+      </th>
+      <th>
+        <%= f.label :product, '商品名'%><span class="required-icon">★</span>
+      </th>
+      <th>
+        <%= f.label :number, '総数'%><span class="required-icon">★</span>
+      </th>
+      <th>
+        <%= f.label :trait, '特徴'%>
+      </th>
+    </tr>
+    <tbody>
+      <%= f.fields_for :shopping_lists do |f| %>
+        <tr>
+          <td>
+            <%= f.check_box :availability %>
+          </td>
+          <td>
+            <%= f.text_field :product %>
+          </td>
+          <td>
+            <%= f.number_field :number, size: '5x5', min: 1 %>
+          </td>
+          <td>
+            <%= f.text_area :trait %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= f.submit t('defaults.register_item'), class: 'btn btn-primary' %>
 <% end %>

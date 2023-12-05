@@ -22,7 +22,7 @@
   </div>
   <div class="form-group">
     <%= f.label :template %>
-    <%= f.select :template, options_for_select(["牛肉", "豚肉", "鶏肉", "刺身", "鮭", "ぶり", "鰆"]), {}, class: 'form-control', id: 'item_template' %>
+    <%= f.select :template, options_for_select(["牛肉", "豚肉", "鶏肉", "刺身", "鮭", "ぶり", "卵"]), {}, class: 'form-control', id: 'item_template' %>
     <%= link_to t('defaults.use_template'), 'javascript:void(0);', id: 'use_template_button', class: 'btn btn-primary' %>
   </div>
   <%= f.submit t('defaults.register'), class: 'btn btn-outline-primary' %>

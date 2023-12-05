@@ -6,7 +6,7 @@ class ShoppingListsController < ApplicationController
   end
 
   def new
-    @shopping_list = ShoppingList.new
+    @shopping_list = ListCollectionForm.new
   end
 
   def create
@@ -49,5 +49,10 @@ class ShoppingListsController < ApplicationController
 
   def shopping_list_params
     params.require(:shopping_list).permit(:product, :number, :trait)
+  end
+
+  def shopping_list_collection_params
+    params.require(:list_collection_form)
+    .permit(shopping_lists_attributes: [:product, :number, :trait, :availability])
   end
 end
