@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/index.html', to: 'static_pages#top'
   get '/privacy_policy', to: 'static_pages#privacy_policy'
   get '/term_of_use', to: 'static_pages#term_of_use'
+  get '/guide', to: 'static_pages#guide'
   get :sign_up, to: 'users#new'
   post :sign_up, to: 'users#create'
   get '/login', to: 'sessions#new'

@@ -23,6 +23,7 @@ ja:
     password_reset: 'パスワードリセット'
     return_to_top_page: 'トップページに戻る'
     privacy_policy: 'プライバシーポリシー'
+    guide: '使い方ガイド'
     term_of_use: '利用規約'
     inquiry: 'お問い合わせ'
     message:
