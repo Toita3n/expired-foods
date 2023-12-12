@@ -7,7 +7,7 @@
 |
   <li class="list-inline-item">
     <%= link_to item_path(item), id: "button-delete-#{item.id}", method: :delete, data:{confirm: t('defaults.message.deleted_confirm')} do %>
-      <%= icon 'fas', 'trash' %>
+      <%= icon 'fas', 'xmark' %>
     <% end %>
   </li>
 </ul>

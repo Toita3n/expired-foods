@@ -20,7 +20,7 @@ ja:
         user_id: 'ユーザーID'
         template: '食材指定用テンプレート(クリックすると選択できます)'
       shopping_list:
-        product: 商品名
+        product: 項目
         number: 数
         trait: メモ
   # 全モデル共通の属性
