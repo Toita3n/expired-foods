@@ -22,10 +22,11 @@ ja:
       shopping_list:
         product: 商品名
         number: 数
-        trait: 概要
+        trait: メモ
   # 全モデル共通の属性
   attributes:
     id: ID
+    name: 'アカウント名'
     email: メールアドレス
     password: パスワード
     password_confirmation: パスワード再確認用

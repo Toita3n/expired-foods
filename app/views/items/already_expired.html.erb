@@ -6,11 +6,10 @@
       <h3 class="box-title"><% t('.title')%></h3>
       <div class="ul list-inline">
         <li>
-          <%= link_to t('.add_item'), new_item_path, class: 'btn btn-primary' %>
-               <label for="item-sort"><%= t('.expired_at')%></label>
-                <select id="item-sort-select">
-                 <option value="expired"><%= t('.expiration')%></option>
-                </select>
+          <label for="item-sort"><%= t('.expired_at')%></label>
+            <select id="item-sort-select">
+              <option value="expired"><%= t('.expiration')%></option>
+            </select>
           <%= link_to t('.all_items'), items_path, class: 'btn btn-outline-success' %>
         </li>
       </div>

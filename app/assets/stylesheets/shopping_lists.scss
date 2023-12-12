@@ -4,17 +4,17 @@
 /*
  *= require_self
 */
-.shoppinglist-reginster{
+.shoppinglist-reginster {
     border: solid 1px #FFF;
     position : relative;
 
 
-    .required-field{
+    .required-field {
         position: relative;
     }
       
-    .required-icon::after{
-        content: '必須';
+    .required-icon::after {
+        content: '★';
         color: red;
         position: relative;
         top: 0;

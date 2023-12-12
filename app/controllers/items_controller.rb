@@ -72,12 +72,12 @@ class ItemsController < ApplicationController
     elsif params[:close_expired]#賞味期限が遠い順
       current_user.items.close_expired.page(params[:page]).per(4)
     else
-      current_user.items.order(created_at: :desc).page(params[:page]).per(4)
+      current_user.items.close_expired.order(created_at: :desc).page(params[:page]).per(4)
     end
   end
 
   def item_params
-    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :detail)
+    params.require(:item).permit(:title, :count, :expired_at, :detail)
   end
 
   def search_item_params

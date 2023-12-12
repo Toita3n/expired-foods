@@ -8,10 +8,6 @@
       <%= form_with model: @user, url: profile_path, local: true do |f| %>
        <%= render 'shared/error_messages', object: f.object %>
         <div class="mb-3">
-          <%= f.label :name %>
-          <%= f.text_field :name, class: 'form-control', placeholder: 'ユーザー名' %>
-        </div>
-        <div class="mb-3">
           <%= f.label :email %>
           <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>

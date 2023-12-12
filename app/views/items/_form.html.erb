@@ -1,20 +1,16 @@
 <%= form_with model: item, local: true do |f| %>
  <%= render 'shared/error_messages', object: f.object %>
   <div class="mb-3 required-field">
-    <%= f.label :title %><span class="required-icon">★</span>
+    <%= f.label :title %><span class="required-icon"></span>
     <%= f.text_field :title, class: 'form-control', id: 'item_title' %>
   </div>
   <div class="form-group required-field">
-    <%= f.label :count %><span class="required-icon">★</span>
+    <%= f.label :count %><span class="required-icon"></span>
     <%= f.number_field :count, size: '5x5', min: 1 %>
   </div>
   <div class="mb-3 required-field">
-    <%= f.label :expired_at %><span class="required-icon">★</span>
+    <%= f.label :expired_at %><span class="required-icon"></span>
     <%= f.date_field :expired_at %>
-  </div>
-  <div class="mb-3">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
   </div>
   <div class="textarea">
     <%= f.label :detail %>

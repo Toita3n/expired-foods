@@ -96,10 +96,6 @@ ja:
     create:
       message_create: '商品・食材を作成しました'
       not_to_create: '商品・食材が作成されませんでした'
-    show:
-      title: '商品・食材情報'
-      return_items: '商品・食材一覧に戻る'
-      expiration: '賞味期限'
     edit:
       item_edit: '商品・食材編集'
     update:
@@ -134,17 +130,18 @@ ja:
       not_exceed_zero: '０未満にはなりません'
   profiles:
     show:
-      title: 'ユーザー詳細'
+      title: 'アカウント情報'
       email: 'メールアドレス'
-      change_profile: 'ユーザー情報の変更'
+      change_profile: 'メールアドレスの変更'
       password: 'パスワード'
-      line_account: 'ユーザー名/LINEアカウント'
-      linked_LINE: 'LINEアカウント連携'
-      connected_LINE: 'LINEアカウントが連携されています'
-      destroy_user: 'ユーザーアカウントの削除'
+      line_account: 'LINEとの連携'
+      unlinked_LINE: '未連携'
+      linked_LINE: 'LINEに連携する'
+      connected_LINE: '連携済み'
+      destroy_user: 'アカウントの削除'
       cannot_change_email: 'emailの変更へできません'
       cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
-      destroy: 'ユーザー削除'
+      destroy: 'アカウント削除'
     destroy:
       success: 'ユーザーを削除しました'
   shopping_lists:

@@ -6,11 +6,11 @@ class ShoppingListsController < ApplicationController
   end
 
   def new
-    @shopping_list = ListCollectionForm.new
+    @shopping_list = ShoppingListCollectionForm.new
   end
 
   def create
-    @shopping_list = current_user.shopping_lists.build(shopping_list_params)
+    @shopping_list = ShoppingListCollectionForm.new(shopping_list_collection_params)
     if @shopping_list.save
       redirect_to shopping_lists_path, success: t('.success')
     else
@@ -52,7 +52,7 @@ class ShoppingListsController < ApplicationController
   end
 
   def shopping_list_collection_params
-    params.require(:list_collection_form)
+    params.require(:shopping_list_collection_form)
     .permit(shopping_lists_attributes: [:product, :number, :trait, :availability])
   end
 end

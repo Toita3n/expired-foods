@@ -2,21 +2,17 @@
  <li id="<%= dom_id(item) %>">
   <div class="card">
     <div class="card-body">
-      <div class="item-info"><%= link_to item.title, item_path(item) %></div>
+      <div class="item-info"><%= item.title %></div>
       <div class="item-info">
-        <% if item.image.attached? %>
-         <%= image_tag item.image, size: '150x120' %>
-        <% else %>
-         <%= image_tag asset_path("default.jpg"), size: '150x120' %>
-        <% end %>
-      </div>
-      <div class="item-info">
-          <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
-          数:<%= item.count %>
-          <%= button_to '-', decrement_item_path(item), method: :patch, class: 'btn btn-danger item-action', data: { action: 'decrease' } %>
+       <div class="item-button-position">
+        <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
+        数:<%= item.count %>
+        <%= button_to '-', decrement_item_path(item), method: :patch, class: 'btn btn-danger item-action', data: { action: 'decrease' } %>
         </div>
+      </div>
       <div class="item-info"><%= t('defaults.expiration')%>:<%= item.expired_at.strftime('%Y-%m-%d') %></div>
       <div class="item-info"><%= item.remaining_days %></div>
+      <div class="item-info"><%= item.detail %></div>
       <div class="item-info"><%= render 'crud_menus', { item: item } %></div>
     </div>
   </div>

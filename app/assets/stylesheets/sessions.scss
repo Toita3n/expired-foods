@@ -4,47 +4,60 @@
 /*
  *= require_self
  */
-.card-info{
-    margin:5px;
-    background-color: silver;
-}
 .pot{
-    background-color: #D7EEFF;
-    width: 100%;
-    height: 700px;
+  width: 100%;
+  height: 80vh;
 }
 
-.required-field{
-  position: relative;
+.card-info {
+  width: 470px;
+  padding: 10px;
+  background-color: #FFDBC9;
+
+  .form-control {
+    width: 350px;
+  }
+
+  .text-center {
+    margin: 10px;
+  }
+
+  .button-center {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 .required-icon::after{
-  content: '必須';
+  content: '★';
   color: red;
-  position: relative;
-  top: 0;
-  right: 0px;
 }
 
 .line-login-button {
     display: inline-block;
     background-color: #06C755;
+    height: 40px;
     color: #fff;
     padding: 10px 20px 10px 50px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     border-left:1px solid #000000;
     background-image: image-url("btn_line_base.png");
     background-repeat: no-repeat;
   }
-
   /* LINEログインボタンのレスポンシブデザイン */
   @media (max-width: 768px) {
     .line-login-button {
-      font-size: 14px;
-      padding: 8px 16px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 20px 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
     }
   }

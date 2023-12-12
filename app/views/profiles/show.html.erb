@@ -28,10 +28,10 @@
            <% else %>
             <td>
               <% if current_user.uid.present? %>
-               <span><%= current_user.name %></span>
+               <span><%= t('.LINE_account_exits?') %></span>
                <td><%=t('.connected_LINE') %></td>
               <% else %>
-               <span><%= current_user.name %></span>
+               <span><%= t('.unlinked_LINE')%></span>
                 <td>
                   <%= link_to t('.linked_LINE'), auth_at_provider_path(provider: :line), class: 'btn btn-primary float-right' %>
                 </td>
