@@ -17,7 +17,7 @@ ja:
     expiration: '期限'
     register_item: '商品登録'
     use_template: 'テンプレートの使用'
-    item_list: '商品一覧'
+    item_list: '冷蔵庫の中身'
     shopping_list: '買い物リスト' 
     email_setting: 'メールアドレス変更'
     password_reset: 'パスワードリセット'
