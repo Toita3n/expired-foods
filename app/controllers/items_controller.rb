@@ -15,6 +15,10 @@ class ItemsController < ApplicationController
 
   def show
     @items = Item.select(:name).distinct
+    respond_to do |format|
+      format.html
+      format.js # js形式で送信された場合はこちらが適応され、js.erbを探す
+    end
   end
 
   def create

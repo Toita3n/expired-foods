@@ -15,12 +15,12 @@
           <%= f.password_field :password, class: 'form-control', placeholder:'パスワード', id: "show_password" %>
         </div>
         <div class="button-center">
-          <%= f.submit t('defaults.login'), class: 'btn btn-primary' %>
+          <%= f.submit t('defaults.login'), class: 'btn-login' %>
       <% end %>
         </div>
         <div class="button-center">
           <% if session[:guest_user_id].nil? %>
-            <%= link_to t('.guest_login'), guest_login_path, method: :post, class: 'btn btn-success' %>
+            <%= link_to t('.guest_login'), guest_login_path, method: :post, class: 'btn-guest' %>
           <% end %>
         </div>
         <div class="button-center">

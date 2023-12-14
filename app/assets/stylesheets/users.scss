@@ -8,12 +8,14 @@
       width: 250px;
   }
 
+  .button-center {
+    margin: auto;
+    width: 150px;    
+    text-align: center;
+}
+
   .text-center {
       margin: 5px;
-  }
-  .button-center {
-      margin: 5px;
-      display: center;
   }
 }
 
