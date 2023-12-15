@@ -4,6 +4,7 @@
 /*
  *= require_self
 */
+
 .scroll-box {
     width: 700px;
     height: 600px;
@@ -11,12 +12,12 @@
     border: 1px solid;
     margin: 0 auto;
     padding: 30px;
+    background-color: #fafafa;
 }
 
 .scroll-content {
     width: 600px;
     height: 500px;
-    background-color: #fafafa;
 
     span {
         color:red;

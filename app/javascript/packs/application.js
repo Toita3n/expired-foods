@@ -11,4 +11,4 @@ require("bootstrap");
 import "./sort_items"
 import "./count_items"
 import "./template_items"
-import "../stylesheets/showing_foods.scss"
+//import "../stylesheets/showing_foods.scss"

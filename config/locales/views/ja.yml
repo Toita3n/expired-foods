@@ -4,8 +4,8 @@ ja:
     admin_login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
-    setting: 'ユーザー設定'
-    enroll: 'ユーザー登録'
+    setting: 'アカウント設定'
+    enroll: 'アカウント作成'
     search_word: '検索ワード'
     thing: '商品情報'
     show: '詳細'
@@ -15,7 +15,7 @@ ja:
     submit: '送信'
     count: '数'
     expiration: '期限'
-    register_item: '商品登録'
+    register_item: '商品・食材登録'
     use_template: 'テンプレートの使用'
     item_list: '冷蔵庫の中身'
     shopping_list: '買い物リスト' 
@@ -37,16 +37,23 @@ ja:
       deleted: "%{item}を削除しました"
       deleted_confirm: '削除しますか？'
       not_authorized: '権限がありません'
+  static_pages:
+    term_of_use:
+      title: '利用規約'
+    privacy_policy:
+      title: 'プライバシーポリシー'
+    guide:
+      title: '使い方ガイド'
   users:
     new:
-      title: 'ユーザー登録'
+      title: 'アカウント作成'
       to_login_page: 'ログインページへ'
       line_login: 'LINEログイン'
     create:
-      success: 'ユーザー登録が完了しました'
-      fail: 'ユーザー登録に失敗しました'
+      success: 'アカウントを作成しました'
+      fail: 'アカウントの作成に失敗しました'
     show:
-      title: 'ユーザー詳細'
+      title: 'アカウント'
       email: 'メールアドレス'
       change_profile: 'ユーザー情報の変更'
       password: 'パスワード'
@@ -56,13 +63,13 @@ ja:
       destroy_user: 'ユーザーアカウントの削除'
       cannot_change_email: 'emailの変更へできません'
       cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
-      destroy: 'ユーザー削除'
+      destroy: 'アカウントー削除'
     update:
       success: 'ユーザー情報が更新されました'
     edit_line:
       edit_line_account: 'ラインアカウントの連携解除'
     destroy:
-      success: 'ユーザーを削除しました'
+      success: 'アカウントを削除しました'
   sessions:
     new:
       title: 'ログイン'
@@ -184,6 +191,8 @@ ja:
       guest_user_login: 'ゲストユーザーでログインしました。'
       limited_function: 'ゲストユーザーは機能を制限しています。'
       logout_guest_user: 'ログアウトしました'
+  term_of_use:
+    
   admin:
     user_sessions:
       new:

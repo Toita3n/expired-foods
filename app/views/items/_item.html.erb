@@ -4,18 +4,14 @@
     <div class="card-body">
       <div class="item-info"><%= item.title %></div>
       <div class="item-info">
-       <div class="item-button-position">
-        <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
+       <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
         数:<%= item.count %>
         <%= button_to '-', decrement_item_path(item), method: :patch, class: 'btn btn-danger item-action', data: { action: 'decrease' } %>
-        </div>
       </div>
-      <div class="item-info"><%= t('defaults.expiration')%>:<%= item.expired_at.strftime('%Y-%m-%d') %></div>
-      <div class="item-info"><%= item.remaining_days %></div>
-      <div class="item-info"><%= item.detail %></div>
+      <div class="item-info"><%= icon 'fa', 'calendar-days'%><%= item.expired_at.strftime('%Y-%m-%d') %></div>
+      <div class="item-info"><%= icon 'fas', 'clock'%><%= item.remaining_days %></div>
       <div class="item-info"><%= render 'crud_menus', { item: item } %></div>
     </div>
   </div>
-  <hr>
  </li>
 <% end %>

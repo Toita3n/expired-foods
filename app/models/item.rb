@@ -27,7 +27,7 @@ class Item < ApplicationRecord
       '期限切れです'
     else
       remaining_days = (expired_date - today).to_i
-      "あと #{remaining_days} 日です"
+      "#{remaining_days}日"
     end
   end
 
