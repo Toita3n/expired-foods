@@ -13,14 +13,6 @@ class ItemsController < ApplicationController
     @item = Item.new
   end
 
-  def show
-    @items = Item.select(:name).distinct
-    respond_to do |format|
-      format.html
-      format.js # js形式で送信された場合はこちらが適応され、js.erbを探す
-    end
-  end
-
   def create
     @item = current_user.items.build(item_params)
     if @item.save
@@ -34,7 +26,7 @@ class ItemsController < ApplicationController
 
   def update
     if @item.update(item_params)
-      redirect_to item_path(@item), success: t('.message_item_update')
+      redirect_to items_path, success: t('.message_item_update')
     else
       render :edit, danger: t('.not_to_update')
     end
