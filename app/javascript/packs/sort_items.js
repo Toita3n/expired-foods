@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("turbolinks:load", function() {
   const selectElement = document.getElementById("item-sort-select");
 
   // itemのviewファイルにのみ存在する場合に実行

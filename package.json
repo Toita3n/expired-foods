@@ -12,7 +12,6 @@
     "admin-lte": "^3.2.0",
     "bootstrap": "4.3.1",
     "express": "^4.18.2",
-    "jquery": "3.7.1",
     "moment": "^2.29.2",
     "moment-timezone": "0.5.31",
     "popper.js": "^1.16.1",
