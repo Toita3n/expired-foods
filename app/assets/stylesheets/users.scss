@@ -1,22 +1,29 @@
 /*
  *= require_self
  */
-.card-content {
-  width: 400px;
-
-  .form-control {
-      width: 250px;
-  }
-
-  .button-center {
-    margin: auto;
-    width: 150px;    
-    text-align: center;
+.pot{
+    width: 100%;
+    height: 80vh;
 }
 
-  .text-center {
+.card-info {
+    width: 470px;
+    padding: 10px;
+    background-color: #DDDDDD;
+  
+    .form-control {
+      width: 350px;
+    }
+  
+    .text-center {
+      margin: 10px;
+    }
+  
+    .button-center {
       margin: 5px;
-  }
+      padding: 5px;
+      text-align: center;
+    }
 }
 
 .table{

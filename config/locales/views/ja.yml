@@ -92,7 +92,7 @@ ja:
       all_items: '全ての商品・食材'
       count: '数'
       expired_at: '賞味期限'
-      sort: 'ソート'
+      sort: '並び替え'
       latest_expired_at: '遠い順'
       oldest_expired_at: '近い順'
       expiration: '賞味期限切れ'
