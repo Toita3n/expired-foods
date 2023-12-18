@@ -2,7 +2,7 @@
  <li id="<%= dom_id(item) %>">
   <div class="card">
     <div class="card-body">
-      <div class="item-info"><%= item.title %></div>
+      <div class="item-info"><%= link_to item.title, "#", class: 'item-modal-trigger', data: { toggle: 'modal', target: "#itemModal#{item.id}" }%></div>
       <div class="item-info">
        <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
         数:<%= item.count %>
@@ -15,3 +15,30 @@
   </div>
  </li>
 <% end %>
+
+<div class="modal fade" id="itemModal<%= item.id %>" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="itemModalLabel"><%= item.title %>の詳細</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class='row'>
+           <div class='col-md-12'>
+             <h3 class="d-inline"><%= item.title %></h3>
+             <ul class="list-inline">
+                 <li class="list-inline-item"><%= t('defaults.count')%>:<%= item.count %>個</li>
+                 <li class="list-inline-item"><%= icon 'fa', 'calendar-days'%><%= item.expired_at.strftime('%Y-%m-%d') %></li>
+                 <li class="list-inline-item"><%= item.remaining_days %></li>
+                 <div class="box2"><%= item.detail %></div>
+             </ul>
+               <%= link_to '冷蔵庫の中身に戻る', items_path, class: 'btn btn-secondary' %>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>

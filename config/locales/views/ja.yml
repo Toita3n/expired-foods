@@ -96,6 +96,7 @@ ja:
       latest_expired_at: '遠い順'
       oldest_expired_at: '近い順'
       expiration: '賞味期限切れ'
+      return_items: '冷蔵庫の中身に戻る'
       nothing: '商品・食材が存在しません'
     new:
       title: '商品・食材登録'
@@ -160,7 +161,7 @@ ja:
       add_shopping_lists: '買い物リストに商品を追加'
       product: '商品名'
       number: '総数'
-      trait: '詳細'
+      trait: 'メモ'
     create:
       success: '商品がショッピングリストに追加されました'
       fail: '商品が作成できませんでした'
@@ -191,8 +192,6 @@ ja:
       guest_user_login: 'ゲストユーザーでログインしました。'
       limited_function: 'ゲストユーザーは機能を制限しています。'
       logout_guest_user: 'ログアウトしました'
-  term_of_use:
-    
   admin:
     user_sessions:
       new:
