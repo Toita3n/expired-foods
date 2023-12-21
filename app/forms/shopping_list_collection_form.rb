@@ -3,8 +3,8 @@ class ShoppingListCollectionForm
   include ActiveModel::Callbacks
   include ActiveModel::Validations
   include ActiveModel::Validations::Callbacks
-  FORM_COUNT = 5
-  attr_accessor :shopping_lists
+  FORM_COUNT = 10
+  attr_accessor :shopping_lists, :user_id
 
   def initialize(attributes = {})
     super attributes
@@ -17,11 +17,10 @@ class ShoppingListCollectionForm
 
   def save
     ShoppingList.transaction do
-        self.shopping_lists.map do |shopping_list|
-            if shopping_list.availability
-                shopping_list.save
-            end
-        end
+      self.shopping_lists.map do |shopping_list|
+        shopping_list.user_id = self.user_id
+        shopping_list.save
+      end
     end
   end
 end

@@ -4,6 +4,16 @@
 /*
  *= require_self
 */
+.content-list {
+    padding: 5px;
+    margin: 5px;
+    overflow-y: scroll;
+
+    .button-lists {
+        float: left;
+        margin: 6px;
+    }
+}
 .shoppinglist-reginster {
     border: solid 1px #FFF;
     position : relative;

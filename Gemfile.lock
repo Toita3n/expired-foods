@@ -225,6 +225,7 @@ GEM
       letter_opener (~> 1.7)
       railties (>= 5.2)
       rexml
+    lib (2.0.2)
     line-bot-api (1.28.0)
     listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -472,6 +473,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letter_opener_web
+  lib (>= 1.3.6)
   line-bot-api
   listen (~> 3.3)
   meta-tags

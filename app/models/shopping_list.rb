@@ -3,7 +3,6 @@ class ShoppingList < ApplicationRecord
   with_options presence: true do 
     validates :product
     validates :number
-    validates :availability, inclusion: { in: [true, false] }
   end
   validates :trait, length: { minimum: 0, maximum: 256 }
 

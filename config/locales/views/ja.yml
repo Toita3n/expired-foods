@@ -155,8 +155,9 @@ ja:
   shopping_lists:
     index:
       title: 'ショッピングリスト'
-      add_shopping_lists: '買い物リストに商品を追加'
-      delete_selected: 'チェックボックスの商品を削除'
+      add_shopping_lists: '買い物リストに追加'
+      delete_selected: 'チェック済みを削除'
+      selected_delete: '削除用チェック'
     new:
       add_shopping_lists: '買い物リストに商品を追加'
       product: '商品名'
@@ -171,8 +172,8 @@ ja:
     update:
       success: '商品情報が変更されました'
       not_to_update: '変更されませんでした'
-    destroy:
-      success: 'ショッピングリストから商品を削除しました'
+    destroy_selected:
+      success: '買い物リストから商品を削除しました'
       no_selection: '削除するには削除対象にチェックボックスを入れて下さい'
   password_resets:
     new:

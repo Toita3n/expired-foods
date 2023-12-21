@@ -1,7 +1,9 @@
 <% content_for(:title, t('.title')) %>
-<div class="content">
+<div class="content-list">
  <table class="table">
-   <%= link_to t('.add_shopping_lists'), new_shopping_list_path, class: 'btn btn-primary'%>
+  <div class="button-lists">
+   <%= link_to t('.add_shopping_lists'), new_shopping_list_path, class:'btn btn-primary' %>
+  </div>
   <thead>
     <th><%=ShoppingList.human_attribute_name(:product) %></th>
     <th><%=ShoppingList.human_attribute_name(:number) %></th>
@@ -16,15 +18,11 @@
                  <%= label_tag :shopping_list_box, list.product %></td>
              <td><%= list.number %></td>
              <td><%= list.trait %></td>
-             <td><li class="list-inline-item">
-                    <%= link_to edit_shopping_list_path(list) do %>
-                     <%= icon 'fa', 'pen' %>
-                    <% end %>
-                  </li>
-             </td>
            </tr>
          <% end %>
-            <%= submit_tag t('.delete_selected'), class: 'btn btn-danger', data: { confirm: t('.confirm_delete') } %>
+          <div class ="button-lists">
+           <%= submit_tag t('.delete_selected'), class: 'btn btn-danger', data: { confirm: t('.confirm_delete') } %>
+          </div>
         <% end %>
           </tr>
        <% end %>

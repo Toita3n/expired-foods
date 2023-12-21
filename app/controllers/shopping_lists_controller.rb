@@ -1,6 +1,5 @@
 class ShoppingListsController < ApplicationController
   before_action :set_shopping, only: %i[edit update]
-
   def index
     @shopping_lists = ShoppingList.where(user_id: current_user.id)
   end
@@ -29,7 +28,7 @@ class ShoppingListsController < ApplicationController
     end
   end
 
-  def destroy
+  def destroy_selected
     selected_shopping_list_ids = params[:selected_shopping_lists]
 
     if selected_shopping_list_ids.present?
@@ -53,6 +52,6 @@ class ShoppingListsController < ApplicationController
 
   def shopping_list_collection_params
     params.require(:shopping_list_collection_form)
-    .permit(shopping_lists_attributes: [:product, :number, :trait, :availability])
+    .permit(shopping_lists_attributes: [:product, :number, :trait]).merge(user_id: @current_user.id)
   end
 end

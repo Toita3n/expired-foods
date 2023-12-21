@@ -6,7 +6,7 @@
       <div class="item-info">
        <%= button_to '+', increment_item_path(item), method: :patch, class: 'btn btn-primary item-action', data: { action: 'increment' } %>
         数:<%= item.count %>
-        <%= button_to '-', decrement_item_path(item), method: :patch, class: 'btn btn-danger item-action', data: { action: 'decrease' } %>
+       <%= button_to '-', decrement_item_path(item), method: :patch, class: 'btn btn-danger item-action', data: { action: 'decrease' } %>
       </div>
       <div class="item-info"><%= icon 'fa', 'calendar-days'%><%= item.expired_at.strftime('%Y-%m-%d') %></div>
       <div class="item-info"><%= icon 'fas', 'clock'%><%= item.remaining_days %></div>

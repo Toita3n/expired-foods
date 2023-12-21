@@ -3,9 +3,6 @@
   <table>
     <tr>
       <th>
-       <%= f.label :availability, '登録'%>
-      </th>
-      <th>
         <%= f.label :product, '商品名'%><span class="required-icon"></span>
       </th>
       <th>
@@ -18,9 +15,6 @@
     <tbody>
       <%= f.fields_for :shopping_lists do |f| %>
         <tr>
-          <td>
-            <%= f.check_box :availability %>
-          </td>
           <td>
             <%= f.text_field :product %>
           </td>

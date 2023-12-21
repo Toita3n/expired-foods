@@ -4,9 +4,11 @@
 /*
 *= require_self
 */
+
 .item-box {
     padding :5px;
     margin :5px;
+    overflow-y: scroll;
 
     li{
         list-style: none;
@@ -15,13 +17,17 @@
 
 .card-body{
     display: flex;
+
+    .item-info {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.item-info {
-    width: 300px;
-    display: flex;
-    text-align: center;
-    padding: 0 25px;
+.item-action {
+    margin: 0 10px;
 }
 
 .box1 {
@@ -46,12 +52,4 @@
     color: red;
     top: 0;
     right: 0px; 
-}
-
-.left-button{
-    position: left;
-}
-
-.right-button{
-    position: right;
 }
