@@ -13,9 +13,9 @@
             </th>
             <td>
               <% if current_user.email == 'guestuser@example.com' %></td>
-              <td><%= t('.cannot_change_email')%></td>
+              <span><%= t('.cannot_change_email')%></span>
             <% else %>
-              <%= current_user.email %>
+              <span><%= current_user.email %></span>
             <% end %>
             <td><%=link_to t('.change_profile'), edit_profile_path, class: 'btn btn-primary float-right' %></td>
           </tr>
@@ -28,12 +28,11 @@
            <% else %>
             <td>
               <% if current_user.uid.present? %>
-               <td><%=t('.connected_LINE') %></td>
+               <span><%=t('.connected_LINE') %></span>
+               <td><span>&nbsp;</span></td>
               <% else %>
                <span><%= t('.unlinked_LINE')%></span>
-                <td>
-                  <%= link_to t('.linked_LINE'), auth_at_provider_path(provider: :line), class: 'btn btn-primary float-right' %>
-                </td>
+               <td><%= link_to t('.linked_LINE'), auth_at_provider_path(provider: :line), class: 'btn btn-primary float-right' %>
               <% end %>
             </td>
            <% end %>
