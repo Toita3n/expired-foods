@@ -17,8 +17,7 @@ class OauthsController < ApplicationController
       if current_user.present?
         @user = update_from(provider)
       elsif
-        @user = create_from(provider)
-        redirect_to items_path, danger: 'ユーザーを新たに作成して下さい'
+        redirect_to root_path, danger: 'ユーザーを新たに作成して下さい'
       else @user
         redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
       end

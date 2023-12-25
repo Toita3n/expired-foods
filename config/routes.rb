@@ -23,7 +23,6 @@ Rails.application.routes.draw do
     collection do
       get 'search'
       get 'already_expired'
-      get 'before_expired'
     end
     patch 'increment', on: :member
     patch 'decrement', on: :member
