@@ -1,7 +1,6 @@
 class LineBotController < ApplicationController
   require 'line/bot'  # gem 'line-bot-api'
   skip_before_action :require_login
-
   protect_from_forgery except: [:callback]
 
   def callback
@@ -41,26 +40,56 @@ class LineBotController < ApplicationController
 
     if user && user.uid.present?
       text = event.message['text']
-      item = user.items.find_by(title: text)
-      # 商品情報を返信
-      if item
-        message = {
-          type: 'text',
-          text: "商品名: #{item.title}\n数量: #{item.count}\n賞味期限: #{item.expired_at.strftime('%Y-%m-%d')}\n概要: #{item.detail}"
-        }
-        client.reply_message(event['replyToken'], message)
-      else
-        message = {
-          type: 'text',
-          text: '該当する商品がありません'
-        }
-      end
 
-      response = client.reply_message(event['replyToken'], message)
-    else
-      if response[:status] != 200
-        puts 'failed to reply to the messages'
+      if text == '冷蔵庫'
+        # Display information about all items
+        all_items_message(user, event)
+      else
+        # Display information about a specific item
+        specific_item_message(user, text, event)
       end
+    else
+      message = {
+        type: 'text',
+        text: 'ユーザーが見つかりませんでした'
+      }
+      client.reply_message(event['replyToken'], message)
     end
+  end
+
+  def all_items_message(user, event)
+    items = user.items
+    if items.present?
+      message_text = "ユーザーのアイテム一覧:\n"
+      items.each do |item|
+        message_text += "商品名: #{item.title}\n数量: #{item.count}\n賞味期限: #{item.expired_at.strftime('%Y-%m-%d')}\n\n"
+      end
+    else
+      message_text = 'アイテムが見つかりませんでした'
+    end
+
+    message = {
+      type: 'text',
+      text: message_text
+    }
+    client.reply_message(event['replyToken'], message)
+  end
+
+  def specific_item_message(user, text, event)
+    item = user.items.find_by(title: text)
+
+    if item
+      message = {
+        type: 'text',
+        text: "商品名: #{item.title}\n数量: #{item.count}\n賞味期限: #{item.expired_at.strftime('%Y-%m-%d')}"
+      }
+    else
+      message = {
+        type: 'text',
+        text: '該当する商品がありません'
+      }
+    end
+
+    client.reply_message(event['replyToken'], message)
   end
 end
