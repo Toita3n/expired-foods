@@ -28,7 +28,6 @@
            <% else %>
             <td>
               <% if current_user.uid.present? %>
-               <span><%= t('.LINE_account_exits?') %></span>
                <td><%=t('.connected_LINE') %></td>
               <% else %>
                <span><%= t('.unlinked_LINE')%></span>
