@@ -2,7 +2,7 @@
  <%= render 'shared/error_messages', object: f.object %>
   <div class="mb-3 required-field">
     <%= f.label :title %><span class="required-icon"></span>
-    <%= f.text_field :title, class: 'form-control', id: 'item_title' %>
+    <%= f.text_field :title, id: 'item_title' %>
   </div>
   <div class="form-group required-field">
     <%= f.label :count %><span class="required-icon"></span>
@@ -13,14 +13,14 @@
     <%= f.date_field :expired_at %>
   </div>
   <div class="textarea">
-    <%= f.label :detail %>
-    <%= f.text_field :detail, class: "form-control" %>
+    <%= f.text_field :detail, placeholder: 'メモ(買った場所や値段、量などの情報を入力しましょう)', class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label :template %>
-    <%= f.select :template, options_for_select(["牛肉", "刺身", "鮭", "卵"]), {}, class: 'form-control', id: 'item_template' %>
-    <%= link_to t('defaults.use_template'), 'javascript:void(0);', id: 'use_template_button', class: 'btn btn-primary' %>
+    <%= f.select :template, options_for_select(["食材指定用テンプレート(クリックすると選択できます)", "牛肉", "刺身", "鮭", "卵"]), {}, id: 'item_template' %>
+    <%= link_to t('defaults.use_template'), 'javascript:void(0);', id: 'use_template_button', class: 'btn btn-outline-primary' %>
   </div>
-  <%= f.submit t('defaults.register'), class: 'btn btn-outline-primary' %>
+  <%= f.submit t('defaults.register'), class: 'btn btn-primary' %>
 <% end %>
+
+ 
 

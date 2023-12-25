@@ -28,6 +28,8 @@ class ShoppingListsController < ApplicationController
     end
   end
 
+  def destroy; end
+
   def destroy_selected
     selected_shopping_list_ids = params[:selected_shopping_lists]
 

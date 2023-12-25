@@ -17,7 +17,6 @@ ja:
         expired_at: 賞味期限
         count: 数
         detail: メモ(買った場所や値段、量などの情報を入力しましょう)
-        user_id: 'ユーザーID'
         template: '食材指定用テンプレート(クリックすると選択できます)'
       shopping_list:
         product: 項目
