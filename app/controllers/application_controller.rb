@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   def not_authenticated
     redirect_to login_path, danger: t('defaults.message.not_authorized')
   end
-  
+
   def guest_user
     current_user == User.find_by(email: 'guestuser@example.com')
   end

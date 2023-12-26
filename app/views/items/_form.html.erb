@@ -1,28 +1,26 @@
 <%= form_with model: item, local: true do |f| %>
  <%= render 'shared/error_messages', object: f.object %>
   <div class="mb-3 required-field">
-    <%= f.label :title %><span class="required-icon">★</span>
-    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.label :title %><span class="required-icon"></span>
+    <%= f.text_field :title, id: 'item_title' %>
   </div>
   <div class="form-group required-field">
-    <%= f.label :count %><span class="required-icon">★</span>
+    <%= f.label :count %><span class="required-icon"></span>
     <%= f.number_field :count, size: '5x5', min: 1 %>
   </div>
   <div class="mb-3 required-field">
-    <%= f.label :expired_at %><span class="required-icon">★</span>
+    <%= f.label :expired_at %><span class="required-icon"></span>
     <%= f.date_field :expired_at %>
   </div>
-  <div class="mb-3">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-  <div class="field">
-    <%= f.label :tag_name %>
-    <%= f.text_field :tag_name, value: @tag_list, class:"form-control" %>
-  </div>
   <div class="textarea">
-    <%= f.label :detail %>
-    <%= f.text_field :detail, class: "form-control" %>
+    <%= f.text_field :detail, placeholder: 'メモ(買った場所や値段、量などの情報を入力しましょう)', class: 'form-control' %>
   </div>
-  <%= f.submit t('defaults.register'), class: 'btn btn-outline-primary'  %>
+  <div class="form-group">
+    <%= f.select :template, options_for_select(["食材指定用テンプレート(クリックすると選択できます)", "牛肉", "刺身", "鮭", "卵"]), {}, id: 'item_template' %>
+    <%= link_to t('defaults.use_template'), 'javascript:void(0);', id: 'use_template_button', class: 'btn btn-outline-primary' %>
+  </div>
+  <%= f.submit t('defaults.register'), class: 'btn btn-primary' %>
 <% end %>
+
+ 
+

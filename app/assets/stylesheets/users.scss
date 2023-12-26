@@ -1,6 +1,29 @@
-.card-info{
-    margin:5px;
-    background-color: silver;
+/*
+ *= require_self
+ */
+.pot{
+    width: 100%;
+    height: 80vh;
+}
+
+.card-info {
+    width: 470px;
+    padding: 10px;
+    background-color: #DDDDDD;
+  
+    .form-control {
+      width: 350px;
+    }
+  
+    .text-center {
+      margin: 10px;
+    }
+  
+    .button-center {
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+    }
 }
 
 .table{
@@ -9,8 +32,8 @@
 }
 
 .user-info-box {
-    padding :5px;
-    margin :5px;
+    padding: 5px;
+    margin: 5px;
     width: 100%;
     height: 700px;
 }

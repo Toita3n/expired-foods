@@ -1,14 +1,34 @@
 // Place all the styles related to the ShoppingLists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.required-field{
-    position: relative;
+/*
+ *= require_self
+*/
+.content-list {
+    padding: 5px;
+    margin: 5px;
+    overflow-y: scroll;
+
+    .button-lists {
+        float: left;
+        margin: 6px;
+    }
 }
-  
-.required-icon::after{
-    content: '必須';
-    color: red;
-    position: relative;
-    top: 0;
-    right: 0px;
+.shoppinglist-reginster {
+    border: solid 1px #FFF;
+    position : relative;
+
+
+    .required-field {
+        position: relative;
+    }
+      
+    .required-icon::after {
+        content: '★';
+        color: red;
+        position: relative;
+        top: 0;
+        right: 0px;
+    }
+    
 }

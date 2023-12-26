@@ -9,3 +9,7 @@ require("@rails/activestorage").start()
 require("channels");
 require("bootstrap");
 import "./sort_items"
+import "./count_items"
+import "./template_items"
+//import "./modal_items"
+//import "../stylesheets/showing_foods.scss"

@@ -1,0 +1,20 @@
+<% content_for(:title) %>
+<div class="content d-flex justify-content-center align-items-center" style="height: 80vh;">
+  <div class="card-info"  style="width: 400px;">
+    <div class="card-header">
+      <%= t('defaults.email_setting')%>
+    </div>
+    <div class="card-body-up">
+      <%= form_with model: @user, url: profile_path, local: true do |f| %>
+       <%= render 'shared/error_messages', object: f.object %>
+        <div class="mb-3">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
+        </div>
+        <div>
+          <%= f.submit t('defaults.submit'), class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

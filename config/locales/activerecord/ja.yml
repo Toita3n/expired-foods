@@ -16,20 +16,16 @@ ja:
         image: 写真
         expired_at: 賞味期限
         count: 数
-        detail: 概要(買った場所や値段などの情報を入力できます)
-        tag_name: タグ (半角スペースで区切ると複数タグ登録できます)
-        user_id: 'ユーザーID'
-      tag:
-        name: タグ名
+        detail: メモ(買った場所や値段、量などの情報を入力しましょう)
+        template: '食材指定用テンプレート(クリックすると選択できます)'
       shopping_list:
-        product: 商品名
+        product: 項目
         number: 数
-        trait: 概要
-        
-        
+        trait: メモ
   # 全モデル共通の属性
   attributes:
     id: ID
+    name: 'アカウント名'
     email: メールアドレス
     password: パスワード
     password_confirmation: パスワード再確認用

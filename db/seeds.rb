@@ -16,7 +16,7 @@ User.create!(
 
 10.times do |n| 
   User.create!(
-      name: Faker::Games,
+      name: Faker::JapaneseMedia::StudioGhibli.character,
       email: Faker::Internet.email,
       password: '123456',
       password_confirmation: '123456',

@@ -1,8 +1,10 @@
 require 'puma/daemon'
 # アプリケーションディレクトリ
-app_dir = File.expand_path("../../", __FILE__)
+app_dir = '/var/www/expired-foods'
 # ソケット通信を図る為bindでURI指定
 bind "unix://#{app_dir}/tmp/sockets/puma.sock"
+
+environment 'production'
 # PIDファイル所在(プロセスID)
 pidfile "#{app_dir}/tmp/pids/puma.pid"
 # stateファイルはpumactlコマンドでサーバーを操作する。その所在。
@@ -14,6 +16,5 @@ threads threads_count, threads_count
 #port       ENV.fetch("PORT") { 3000 }
 workers 2
 
-environment 'production'
 plugin :tmp_restart
 daemonize

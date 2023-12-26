@@ -8,15 +8,15 @@ class User < ApplicationRecord
 
   validates :name, uniqueness: true, presence: true
   validates :email, uniqueness: true
-  validates :password, presence: true, if: -> {new_record? ||changes[:crypted_password]}
+  validates :password, presence: true, if: -> {new_record? ||changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
-  validates :password_confirmation, presence: true, length: {minimum: 3}, if: -> { new_record? || changes[:crypted_password]}
+  validates :password_confirmation, presence: true, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :reset_password_token, uniqueness: true, allow_nil: true
 
   enum role: { general: 0, admin: 1 }
 
-  scope :search_user_name, ->(name) { where("name LIKE :word", word: "%#{name}%")}
-  scope :search_email, ->(email) { where("email LIKE :word", word: "%#{email}%")}
+  scope :search_user_name, ->(name) { where("name LIKE :word", word: "%#{name}%") }
+  scope :search_email, ->(email) { where("email LIKE :word", word: "%#{email}%") }
 
   validate :cannot_change_email, on: :update, if: -> { guest? && email_changed? }
 

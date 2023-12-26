@@ -32,7 +32,6 @@ gem 'dotenv-rails'
 gem 'omniauth-line'
 gem 'omniauth-rails_csrf_protection'
 
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 4.3.1'
@@ -53,6 +52,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'spring'
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -64,11 +65,11 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'letter_opener_web'
-  gem 'capistrano'
+  gem 'capistrano', require: false
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
-  gem 'capistrano-rails'
-  gem 'capistrano3-unicorn'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano3-puma'
 end
 
 group :test do
@@ -87,4 +88,5 @@ gem 'meta-tags'
 
 group :production do
   gem 'aws-sdk-s3', require: false
+  #gem 'aws-sdk-rails', '~>3.6', '>= 3.6.1'
 end

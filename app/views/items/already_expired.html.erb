@@ -1,0 +1,22 @@
+<% content_for(:title, t('.title')) %>
+  <div class="item-box">
+    <div class="box-header">
+       <%= render 'search_form_items' %>
+      <h3 class="box-title"><% t('.title')%></h3>
+      <div class="ul list-inline">
+        <li>
+          <label for="item-sort"><i class="fa-solid fa-filter"></i></label>
+            <select id="item-sort-select">
+              <option value="expired"><%= t('.expiration')%></option>
+            </select>
+          <%= link_to t('.all_items'), items_path, class: 'btn btn-outline-primary' %>
+        </li>
+      </div>
+    </div>
+      <% if @expired_items.present? %>
+        <%= render @expired_items %>
+      <% else %>
+        <p><%= t('.nothing')%></p>
+      <% end %>
+      <%= paginate @expired_items, theme: 'bootstrap-5' %>
+  </div>

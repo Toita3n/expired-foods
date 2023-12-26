@@ -21,7 +21,7 @@
           </li>
            <% if current_user.email != 'guestuser@example.com' %>
             <li class="nav-item">
-              <%= link_to t('defaults.setting'), user_path(current_user), class: 'nav-link' %>
+              <%= link_to t('defaults.setting'), profile_path, class: 'nav-link' %>
             </li>
            <% end %>
         <% else %>

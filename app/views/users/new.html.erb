@@ -1,38 +1,35 @@
 <% content_for(:title, t('.title')) %>
-<div class="pot d-flex justify-content-center align-items-center" style="height: 80vh;">
-  <div class="card-info"  style="width: 400px;">
+<div class="pot d-flex justify-content-center align-items-center">
+  <div class="card-info">
     <div class="card-header">
       <%= t('.title')%>
     </div>
-    <div class="card-body-up">
+    <div class="card-content">
       <%= form_with model: @sign_up_form, url: sign_up_path do |f| %>
        <%= render 'shared/error_messages', object: f.object %>
         <div class="mb-3 required-field">
-          <%= f.label :name, t('.name') %><span class="required-icon">★</span>
+          <%= f.label :name %><span class="required-icon"></span>
           <%= f.text_field :name, class: 'form-control', placeholder:'ユーザー名' %>
         </div>
         <div class="mb-3 required-field">
-          <%= f.label :email %><span class="required-icon">★</span>
+          <%= f.label :email %><span class="required-icon"></span>
           <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>
         <div class="mb-3 required-field">
-          <%= f.label :password %><span class="required-icon">★</span>
+          <%= f.label :password %><span class="required-icon"></span>
           <%= f.password_field :password, class: 'form-control', placeholder: 'パスワード' %>
         </div>
         <div class="mb-3 required-field">
-          <%= f.label :password_confirmation %><span class="required-icon">★</span>
+          <%= f.label :password_confirmation %><span class="required-icon"></span>
           <%= f.password_field :password_confirmation, class: 'form-control', placeholder:'パスワード確認' %>
         </div>
-        <div>
-          <%= f.submit t('defaults.submit'), class: 'btn btn-primary' %>
-        </div>
+        <div class="text-center">
+          <%= f.submit t('defaults.enroll'), class: 'btn btn-primary' %>
       <% end %>
-      <div class="text-center">
          <p>ユーザーを作成すると利用規約とプライバシーポリシーに同意したことになります</p>
          <%= link_to t('.to_login_page'), login_path %>
-         <%= link_to t('defaults.term_of_use'), term_of_use_path %>
-         <%= link_to t('defaults.privacy_policy'), privacy_policy_path %>
-      </div>
+        </div>
+    </div>
   </div>
 </div>
 

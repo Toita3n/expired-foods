@@ -1,13 +1,7 @@
-<ul class='crud-menu-btn list-inline float-right'>
-  <li class="list-inline-item">
-    <%= link_to edit_item_path(item), id: "button-edit-#{item.id}" do %>
-     <%= icon 'fa', 'pen' %>
-    <% end %>
-  </li>
-|
-  <li class="list-inline-item">
-    <%= link_to item_path(item), id: "button-delete-#{item.id}", method: :delete, data:{confirm: t('defaults.message.deleted_confirm')} do %>
-      <%= icon 'fas', 'trash' %>
-    <% end %>
-  </li>
-</ul>
+<%= link_to edit_item_path(item), class: "line-center", id: "button-edit-#{item.id}" do %>
+  <%= icon 'fa', 'pen' %>
+<% end %>
+ |
+<%= link_to item_path(item), class: "line-center", id: "button-delete-#{item.id}", method: :delete, data:{confirm: t('defaults.message.deleted_confirm')} do %>
+  <%= icon 'fas', 'eraser' %>
+<% end %>

@@ -1,3 +1,3 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :line, ENV['LINE_LOGIN_CHANNEL_ID'], ENV['LINE_LOGIN_SECRET']
+  provider :line, Rails.application.credentials.dig(:line, :login_channel_id), Rails.application.credentials.dig(:line, :login_secret)
 end

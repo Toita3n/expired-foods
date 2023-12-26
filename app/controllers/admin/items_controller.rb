@@ -9,9 +9,7 @@ class Admin::ItemsController < Admin::BaseController
 
   def update
     @item = Item.find(params[:id])
-    tag_list = params[:item][:tag_name].split(' ')
     if  @item.update(item_params)
-        @item.save_tags(tag_list)
         redirect_to admin_item_path(@item), success: t('.message_item_update')
     else
         flash.now['danger'] = t('.not_to_update')
@@ -38,10 +36,10 @@ class Admin::ItemsController < Admin::BaseController
   end
 
   def item_params
-    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :tag_list, :tag_name, :detail)
+    params.require(:item).permit(:title, :count, :expired_at, :image, :image_cache, :detail)
   end
 
   def search_item_params
-    params.fetch(:q, {}).permit(:title, :detail, :tag_name, :user_id_item)
+    params.fetch(:q, {}).permit(:title, :detail)
   end
 end

@@ -25,13 +25,6 @@
           <td><%= @item.count %></td>
         </tr>
         <tr>
-          <th scope="row"><%= Item.human_attribute_name(:tag) %></th>
-          <td> <% @item.tags.each do |tag| %>
-                <%= tag.name %>
-               <% end %>
-          </td>
-        </tr>
-        <tr>
           <th scope="row"><%= Item.human_attribute_name(:detail) %></th>
           <td><%= @item.detail %></td>
         </tr>

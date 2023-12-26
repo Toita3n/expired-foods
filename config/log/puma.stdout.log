@@ -70,3 +70,1648 @@ Exiting
 [7782] - Worker 0 (PID: 8446) booted in 0.03s, phase: 0
 [7782] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8444
 [7782] - Worker 1 (PID: 8514) booted in 0.0s, phase: 0
+[7782] === puma shutdown: 2023-11-13 16:35:46 +0000 ===
+[7782] - Goodbye!
+[7782] - Gracefully shutting down workers...
+=== puma startup: 2023-11-13 16:35:46 +0000 ===
+=== puma startup: 2023-11-13 16:35:46 +0000 ===
+=== puma startup: 2023-11-13 16:35:46 +0000 ===
+Exiting
+=== puma startup: 2023-11-14 02:03:01 +0000 ===
+[3389] - Worker 1 (PID: 3392) booted in 0.0s, phase: 0
+[3389] - Worker 0 (PID: 3391) booted in 0.0s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3392
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] ! Out-of-sync worker list, no 3392 worker
+[3389] - Worker 1 (PID: 3904) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3904
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] ! Out-of-sync worker list, no 3904 worker
+[3389] - Worker 1 (PID: 3921) booted in 0.04s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3921
+[3389] - Worker 1 (PID: 3929) booted in 36.42s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3929
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3937
+[3389] ! Out-of-sync worker list, no 3937 worker
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3945
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3952
+[3389] ! Out-of-sync worker list, no 3945 worker
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3959
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3967
+[3389] ! Out-of-sync worker list, no 3952 worker
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3391
+[3389] ! Terminating timed out worker (worker failed to boot within 60 seconds): 3974
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3959 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3967 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3391 worker
+[3389] ! Out-of-sync worker list, no 3974 worker
+[3389] - Worker 0 (PID: 3982) booted in 0.02s, phase: 0
+[3389] - Worker 1 (PID: 3983) booted in 0.06s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3982
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] ! Out-of-sync worker list, no 3982 worker
+[3389] - Worker 0 (PID: 4063) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4063
+[3389] - Worker 0 (PID: 4144) booted in 0.08s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4144
+[3389] ! Out-of-sync worker list, no 4144 worker
+[3389] ! Out-of-sync worker list, no 4144 worker
+[3389] ! Out-of-sync worker list, no 4144 worker
+[3389] - Worker 0 (PID: 4358) booted in 0.06s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 3983
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4358
+[3389] - Worker 1 (PID: 4427) booted in 0.02s, phase: 0
+[3389] - Worker 0 (PID: 4434) booted in 0.0s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4434
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] ! Out-of-sync worker list, no 4434 worker
+[3389] - Worker 0 (PID: 4509) booted in 0.07s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4427
+[3389] ! Out-of-sync worker list, no 4427 worker
+[3389] ! Out-of-sync worker list, no 4427 worker
+[3389] - Worker 1 (PID: 4663) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4663
+[3389] ! Out-of-sync worker list, no 4663 worker
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4509
+[3389] ! Out-of-sync worker list, no 4663 worker
+[3389] ! Out-of-sync worker list, no 4663 worker
+[3389] ! Out-of-sync worker list, no 4663 worker
+[3389] - Worker 1 (PID: 4864) booted in 0.07s, phase: 0
+[3389] - Worker 0 (PID: 4871) booted in 0.0s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4864
+[3389] ! Out-of-sync worker list, no 4864 worker
+[3389] - Worker 1 (PID: 4937) booted in 0.07s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4937
+[3389] ! Out-of-sync worker list, no 4937 worker
+[3389] ! Out-of-sync worker list, no 4937 worker
+[3389] - Worker 1 (PID: 4951) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4871
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4951
+[3389] - Worker 1 (PID: 4969) booted in 0.02s, phase: 0
+[3389] - Worker 0 (PID: 4968) booted in 0.1s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4969
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] ! Out-of-sync worker list, no 4969 worker
+[3389] - Worker 1 (PID: 5206) booted in 0.08s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4968
+[3389] ! Out-of-sync worker list, no 4968 worker
+[3389] ! Out-of-sync worker list, no 4968 worker
+[3389] ! Out-of-sync worker list, no 4968 worker
+[3389] ! Out-of-sync worker list, no 4968 worker
+[3389] ! Out-of-sync worker list, no 4968 worker
+[3389] - Worker 0 (PID: 5377) booted in 0.08s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5377
+[3389] ! Out-of-sync worker list, no 5377 worker
+[3389] ! Out-of-sync worker list, no 5377 worker
+[3389] ! Out-of-sync worker list, no 5377 worker
+[3389] - Worker 0 (PID: 5398) booted in 0.07s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5398
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] ! Out-of-sync worker list, no 5398 worker
+[3389] - Worker 0 (PID: 5417) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5417
+[3389] - Worker 0 (PID: 5456) booted in 0.07s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5456
+[3389] - Worker 0 (PID: 5494) booted in 0.02s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5206
+[3389] ! Out-of-sync worker list, no 5206 worker
+[3389] ! Out-of-sync worker list, no 5206 worker
+[3389] - Worker 1 (PID: 5558) booted in 0.08s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5558
+[3389] ! Out-of-sync worker list, no 5558 worker
+[3389] ! Out-of-sync worker list, no 5558 worker
+[3389] ! Out-of-sync worker list, no 5558 worker
+[3389] ! Out-of-sync worker list, no 5558 worker
+[3389] - Worker 1 (PID: 5622) booted in 0.07s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5622
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5494
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] ! Out-of-sync worker list, no 5622 worker
+[3389] - Worker 1 (PID: 5638) booted in 0.07s, phase: 0
+[3389] - Worker 0 (PID: 5645) booted in 0.0s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5638
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5645
+[3389] ! Out-of-sync worker list, no 5645 worker
+[3389] - Worker 1 (PID: 5737) booted in 0.06s, phase: 0
+[3389] - Worker 0 (PID: 5738) booted in 0.11s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5737
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] ! Out-of-sync worker list, no 5737 worker
+[3389] - Worker 1 (PID: 5801) booted in 0.09s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5738
+[3389] ! Out-of-sync worker list, no 5738 worker
+[3389] ! Out-of-sync worker list, no 5738 worker
+[3389] ! Out-of-sync worker list, no 5738 worker
+[3389] ! Out-of-sync worker list, no 5738 worker
+[3389] - Worker 0 (PID: 5865) booted in 0.05s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5801
+[3389] - Worker 1 (PID: 5882) booted in 0.01s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5865
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5882
+[3389] - Worker 0 (PID: 6427) booted in 0.01s, phase: 0
+[3389] - Worker 1 (PID: 6428) booted in 0.01s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6427
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6428
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] ! Out-of-sync worker list, no 6427 worker
+[3389] - Worker 0 (PID: 6557) booted in 0.02s, phase: 0
+[3389] - Worker 1 (PID: 6564) booted in 0.0s, phase: 0
+[3389] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6557
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] ! Out-of-sync worker list, no 6557 worker
+[3389] - Worker 0 (PID: 6894) booted in 0.01s, phase: 0
+[3389] === puma shutdown: 2023-11-14 04:51:45 +0000 ===
+[3389] - Goodbye!
+[3389] - Gracefully shutting down workers...
+=== puma startup: 2023-11-14 04:51:45 +0000 ===
+=== puma startup: 2023-11-14 04:51:45 +0000 ===
+Exiting
+=== puma startup: 2023-11-14 06:08:40 +0000 ===
+[4028] - Worker 1 (PID: 4031) booted in 0.0s, phase: 0
+[4028] - Worker 0 (PID: 4030) booted in 0.0s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4030
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] ! Out-of-sync worker list, no 4030 worker
+[4028] - Worker 0 (PID: 4318) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4318
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] ! Out-of-sync worker list, no 4318 worker
+[4028] - Worker 0 (PID: 4701) booted in 0.08s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4031
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4701
+[4028] - Worker 0 (PID: 4958) booted in 0.0s, phase: 0
+[4028] - Worker 1 (PID: 4959) booted in 0.01s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4959
+[4028] ! Out-of-sync worker list, no 4959 worker
+[4028] ! Out-of-sync worker list, no 4959 worker
+[4028] ! Out-of-sync worker list, no 4959 worker
+[4028] ! Out-of-sync worker list, no 4959 worker
+[4028] ! Out-of-sync worker list, no 4959 worker
+[4028] - Worker 1 (PID: 5158) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5158
+[4028] - Worker 1 (PID: 5464) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4958
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] ! Out-of-sync worker list, no 4958 worker
+[4028] - Worker 0 (PID: 5914) booted in 0.05s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5464
+[4028] ! Out-of-sync worker list, no 5464 worker
+[4028] - Worker 1 (PID: 6327) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5914
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] ! Out-of-sync worker list, no 5914 worker
+[4028] - Worker 0 (PID: 6529) booted in 0.06s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6529
+[4028] ! Out-of-sync worker list, no 6529 worker
+[4028] ! Out-of-sync worker list, no 6529 worker
+[4028] ! Out-of-sync worker list, no 6529 worker
+[4028] - Worker 0 (PID: 6581) booted in 0.05s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6581
+[4028] ! Out-of-sync worker list, no 6581 worker
+[4028] ! Out-of-sync worker list, no 6581 worker
+[4028] ! Out-of-sync worker list, no 6581 worker
+[4028] ! Out-of-sync worker list, no 6581 worker
+[4028] - Worker 0 (PID: 7251) booted in 0.13s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 6327
+[4028] ! Out-of-sync worker list, no 6327 worker
+[4028] ! Out-of-sync worker list, no 6327 worker
+[4028] ! Out-of-sync worker list, no 6327 worker
+[4028] - Worker 1 (PID: 7473) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7473
+[4028] ! Out-of-sync worker list, no 7473 worker
+[4028] ! Out-of-sync worker list, no 7473 worker
+[4028] ! Out-of-sync worker list, no 7473 worker
+[4028] ! Out-of-sync worker list, no 7473 worker
+[4028] - Worker 1 (PID: 7586) booted in 0.06s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7586
+[4028] ! Out-of-sync worker list, no 7586 worker
+[4028] ! Out-of-sync worker list, no 7586 worker
+[4028] - Worker 1 (PID: 7602) booted in 0.26s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7602
+[4028] - Worker 1 (PID: 7631) booted in 0.26s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7251
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] ! Out-of-sync worker list, no 7251 worker
+[4028] - Worker 0 (PID: 7671) booted in 0.07s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7671
+[4028] ! Out-of-sync worker list, no 7671 worker
+[4028] - Worker 0 (PID: 7745) booted in 0.05s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7631
+[4028] ! Out-of-sync worker list, no 7631 worker
+[4028] - Worker 1 (PID: 7942) booted in 0.07s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7942
+[4028] ! Out-of-sync worker list, no 7942 worker
+[4028] ! Out-of-sync worker list, no 7942 worker
+[4028] - Worker 1 (PID: 8033) booted in 0.05s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7745
+[4028] ! Out-of-sync worker list, no 7745 worker
+[4028] ! Out-of-sync worker list, no 7745 worker
+[4028] ! Out-of-sync worker list, no 7745 worker
+[4028] ! Out-of-sync worker list, no 7745 worker
+[4028] ! Out-of-sync worker list, no 7745 worker
+[4028] - Worker 0 (PID: 8061) booted in 0.07s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8061
+[4028] ! Out-of-sync worker list, no 8061 worker
+[4028] ! Out-of-sync worker list, no 8061 worker
+[4028] ! Out-of-sync worker list, no 8061 worker
+[4028] ! Out-of-sync worker list, no 8061 worker
+[4028] - Worker 0 (PID: 8194) booted in 0.07s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8194
+[4028] - Worker 0 (PID: 8207) booted in 0.09s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8207
+[4028] - Worker 0 (PID: 8216) booted in 0.19s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8216
+[4028] - Worker 0 (PID: 8229) booted in 0.13s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8033
+[4028] ! Out-of-sync worker list, no 8033 worker
+[4028] ! Out-of-sync worker list, no 8033 worker
+[4028] - Worker 1 (PID: 8452) booted in 0.59s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8229
+[4028] ! Out-of-sync worker list, no 8229 worker
+[4028] ! Out-of-sync worker list, no 8229 worker
+[4028] ! Out-of-sync worker list, no 8229 worker
+[4028] - Worker 0 (PID: 8786) booted in 0.43s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8786
+[4028] - Worker 0 (PID: 8869) booted in 0.06s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8869
+[4028] ! Out-of-sync worker list, no 8869 worker
+[4028] ! Out-of-sync worker list, no 8869 worker
+[4028] ! Out-of-sync worker list, no 8869 worker
+[4028] - Worker 0 (PID: 8902) booted in 0.54s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8902
+[4028] - Worker 0 (PID: 8912) booted in 0.61s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8912
+[4028] - Worker 0 (PID: 8920) booted in 0.19s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8920
+[4028] - Worker 0 (PID: 8935) booted in 0.2s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8935
+[4028] - Worker 0 (PID: 8942) booted in 0.16s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8942
+[4028] - Worker 0 (PID: 8951) booted in 3.66s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8951
+[4028] - Worker 0 (PID: 8962) booted in 0.08s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8962
+[4028] - Worker 0 (PID: 8975) booted in 0.23s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8975
+[4028] - Worker 0 (PID: 8999) booted in 0.14s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8999
+[4028] - Worker 0 (PID: 9016) booted in 0.14s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9016
+[4028] - Worker 0 (PID: 9037) booted in 0.16s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9037
+[4028] - Worker 0 (PID: 9053) booted in 0.22s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8452
+[4028] ! Out-of-sync worker list, no 8452 worker
+[4028] ! Out-of-sync worker list, no 8452 worker
+[4028] ! Out-of-sync worker list, no 8452 worker
+[4028] - Worker 1 (PID: 9164) booted in 0.62s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9053
+[4028] ! Out-of-sync worker list, no 9053 worker
+[4028] - Worker 0 (PID: 9210) booted in 0.47s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9210
+[4028] - Worker 0 (PID: 9294) booted in 0.56s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9294
+[4028] - Worker 0 (PID: 9304) booted in 0.09s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9164
+[4028] ! Out-of-sync worker list, no 9164 worker
+[4028] - Worker 1 (PID: 10061) booted in 0.41s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10061
+[4028] - Worker 1 (PID: 10187) booted in 0.1s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10187
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] ! Out-of-sync worker list, no 10187 worker
+[4028] - Worker 1 (PID: 10470) booted in 0.12s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10470
+[4028] - Worker 1 (PID: 10498) booted in 0.17s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10498
+[4028] - Worker 1 (PID: 10506) booted in 2.11s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10506
+[4028] - Worker 1 (PID: 10520) booted in 0.17s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10520
+[4028] - Worker 1 (PID: 10537) booted in 0.48s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10537
+[4028] - Worker 1 (PID: 10551) booted in 1.42s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10551
+[4028] - Worker 1 (PID: 10559) booted in 0.08s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10559
+[4028] - Worker 1 (PID: 10567) booted in 1.7s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10567
+[4028] - Worker 1 (PID: 10576) booted in 0.09s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10576
+[4028] - Worker 1 (PID: 10583) booted in 1.68s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10583
+[4028] - Worker 1 (PID: 10591) booted in 0.16s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10591
+[4028] - Worker 1 (PID: 10599) booted in 1.66s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10599
+[4028] - Worker 1 (PID: 10606) booted in 10.17s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10606
+[4028] - Worker 1 (PID: 10613) booted in 2.7s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10613
+[4028] - Worker 1 (PID: 10623) booted in 45.11s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 9304
+[4028] ! Out-of-sync worker list, no 9304 worker
+[4028] - Worker 0 (PID: 10631) booted in 0.6s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10631
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] ! Out-of-sync worker list, no 10631 worker
+[4028] - Worker 0 (PID: 10796) booted in 0.38s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10796
+[4028] - Worker 0 (PID: 10807) booted in 0.22s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10807
+[4028] - Worker 0 (PID: 10814) booted in 0.12s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10814
+[4028] - Worker 0 (PID: 10821) booted in 1.31s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10821
+[4028] - Worker 0 (PID: 10828) booted in 0.17s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10828
+[4028] - Worker 0 (PID: 10835) booted in 0.19s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10835
+[4028] - Worker 0 (PID: 10843) booted in 0.19s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10843
+[4028] - Worker 0 (PID: 10850) booted in 1.49s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10850
+[4028] - Worker 0 (PID: 10858) booted in 2.33s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10858
+[4028] - Worker 0 (PID: 10865) booted in 3.9s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10865
+[4028] - Worker 0 (PID: 10872) booted in 5.26s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10872
+[4028] - Worker 0 (PID: 10880) booted in 3.59s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10880
+[4028] - Worker 0 (PID: 10890) booted in 61.21s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10623
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10890
+[4028] ! Out-of-sync worker list, no 10623 worker
+[4028] - Worker 1 (PID: 10898) booted in 0.3s, phase: 0
+[4028] - Worker 0 (PID: 10899) booted in 0.37s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10899
+[4028] - Worker 0 (PID: 10983) booted in 0.01s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10983
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 10898
+[4028] - Worker 0 (PID: 11035) booted in 0.56s, phase: 0
+[4028] - Worker 1 (PID: 11042) booted in 0.01s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11035
+[4028] ! Out-of-sync worker list, no 11035 worker
+[4028] ! Out-of-sync worker list, no 11035 worker
+[4028] ! Out-of-sync worker list, no 11035 worker
+[4028] ! Out-of-sync worker list, no 11035 worker
+[4028] ! Out-of-sync worker list, no 11035 worker
+[4028] - Worker 0 (PID: 11108) booted in 0.35s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11108
+[4028] - Worker 0 (PID: 11116) booted in 0.42s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11116
+[4028] - Worker 0 (PID: 11123) booted in 2.16s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11123
+[4028] - Worker 0 (PID: 11131) booted in 0.13s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11131
+[4028] - Worker 0 (PID: 11144) booted in 0.04s, phase: 0
+[4028] ! Terminating timed out worker (worker failed to check in within 60 seconds): 11144
+[4028] - Worker 0 (PID: 11151) booted in 0.18s, phase: 0
+=== puma startup: 2023-11-14 16:54:11 +0000 ===
+=== puma startup: 2023-11-14 16:54:11 +0000 ===
+[4028] === puma shutdown: 2023-11-14 16:54:11 +0000 ===
+[4028] - Goodbye!
+[4028] - Gracefully shutting down workers...
+=== puma startup: 2023-11-14 16:54:12 +0000 ===
+Exiting
+=== puma startup: 2023-11-14 22:14:56 +0000 ===
+[4002] - Worker 1 (PID: 4005) booted in 0.0s, phase: 0
+[4002] - Worker 0 (PID: 4004) booted in 0.0s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4005
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] ! Out-of-sync worker list, no 4005 worker
+[4002] - Worker 1 (PID: 5085) booted in 0.04s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5085
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5258
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5267
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5276
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5283
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5290
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5302
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5312
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5320
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 4004
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 5085 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5258 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5267 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5276 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5283 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5290 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5302 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5312 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 5320 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] ! Out-of-sync worker list, no 4004 worker
+[4002] - Worker 1 (PID: 5334) booted in 21.44s, phase: 0
+[4002] - Worker 0 (PID: 5340) booted in 0.12s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5334
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5564
+[4002] ! Out-of-sync worker list, no 5334 worker
+[4002] ! Out-of-sync worker list, no 5564 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5571
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5578
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5587
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5340
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5595
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5571 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5578 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5587 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5595 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] ! Out-of-sync worker list, no 5340 worker
+[4002] - Worker 0 (PID: 5605) booted in 0.04s, phase: 0
+[4002] - Worker 1 (PID: 5606) booted in 0.07s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5605
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5730
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5737
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5744
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5606
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5751
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5605 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5730 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5737 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5744 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5751 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] ! Out-of-sync worker list, no 5606 worker
+[4002] - Worker 1 (PID: 5759) booted in 13.78s, phase: 0
+[4002] - Worker 0 (PID: 5761) booted in 13.69s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5759
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5761
+[4002] - Worker 1 (PID: 5773) booted in 0.59s, phase: 0
+[4002] - Worker 0 (PID: 5774) booted in 1.15s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5773
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5774
+[4002] - Worker 1 (PID: 5788) booted in 0.27s, phase: 0
+[4002] - Worker 0 (PID: 5790) booted in 0.67s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5788
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5790
+[4002] - Worker 1 (PID: 5803) booted in 10.32s, phase: 0
+[4002] - Worker 0 (PID: 5804) booted in 25.59s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5803
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5804
+[4002] - Worker 0 (PID: 5820) booted in 10.98s, phase: 0
+[4002] - Worker 1 (PID: 5821) booted in 20.2s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5820
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5821
+[4002] - Worker 0 (PID: 5835) booted in 13.95s, phase: 0
+[4002] - Worker 1 (PID: 5837) booted in 24.29s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5835
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5837
+[4002] - Worker 0 (PID: 5849) booted in 10.72s, phase: 0
+[4002] - Worker 1 (PID: 5852) booted in 6.15s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5849
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5852
+[4002] - Worker 0 (PID: 5863) booted in 6.16s, phase: 0
+[4002] - Worker 1 (PID: 5867) booted in 6.02s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5863
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5867
+[4002] - Worker 0 (PID: 5878) booted in 24.78s, phase: 0
+[4002] - Worker 1 (PID: 5879) booted in 47.38s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5878
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5879
+[4002] - Worker 0 (PID: 5894) booted in 9.88s, phase: 0
+[4002] - Worker 1 (PID: 5896) booted in 20.12s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5894
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5896
+[4002] - Worker 0 (PID: 5909) booted in 12.01s, phase: 0
+[4002] - Worker 1 (PID: 5911) booted in 39.34s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5909
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5911
+[4002] - Worker 0 (PID: 5926) booted in 37.11s, phase: 0
+[4002] - Worker 1 (PID: 5927) booted in 58.81s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5926
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5927
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] ! Out-of-sync worker list, no 5926 worker
+[4002] ! Out-of-sync worker list, no 5927 worker
+[4002] - Worker 1 (PID: 7408) booted in 0.04s, phase: 0
+[4002] - Worker 0 (PID: 7407) booted in 0.06s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7408
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7434
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7442
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7449
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7457
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7465
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7472
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7479
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7486
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7494
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7501
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7508
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7516
+[4002] ! Out-of-sync worker list, no 7408 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7525
+[4002] ! Out-of-sync worker list, no 7434 worker
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7407
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7533
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7442 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7449 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7457 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7465 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7472 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7479 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7486 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7494 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7501 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7508 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7516 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7525 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7533 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] ! Out-of-sync worker list, no 7407 worker
+[4002] - Worker 1 (PID: 7543) booted in 13.45s, phase: 0
+[4002] - Worker 0 (PID: 7542) booted in 33.2s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7543
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7542
+[4002] - Worker 1 (PID: 7557) booted in 16.61s, phase: 0
+[4002] - Worker 0 (PID: 7560) booted in 10.18s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7557
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7560
+[4002] - Worker 1 (PID: 7571) booted in 11.91s, phase: 0
+[4002] - Worker 0 (PID: 7572) booted in 19.92s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7571
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7572
+[4002] - Worker 1 (PID: 7585) booted in 6.03s, phase: 0
+[4002] - Worker 0 (PID: 7588) booted in 8.91s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7585
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7588
+[4002] - Worker 1 (PID: 7602) booted in 8.3s, phase: 0
+[4002] - Worker 0 (PID: 7604) booted in 9.5s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7602
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7604
+[4002] - Worker 0 (PID: 7619) booted in 17.42s, phase: 0
+[4002] - Worker 1 (PID: 7618) booted in 23.05s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7618
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7619
+[4002] - Worker 1 (PID: 7635) booted in 14.32s, phase: 0
+[4002] - Worker 0 (PID: 7634) booted in 37.61s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7634
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7635
+[4002] - Worker 0 (PID: 7657) booted in 28.75s, phase: 0
+[4002] - Worker 1 (PID: 7658) booted in 99.62s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7657
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7658
+[4002] - Worker 1 (PID: 7679) booted in 0.04s, phase: 0
+[4002] - Worker 0 (PID: 7680) booted in 0.08s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7679
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7802
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7809
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7816
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7824
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7680
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7834
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7836
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7848
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7853
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7863
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7870
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7877
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7882
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7679 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7802 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7894
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7895
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7909
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7911
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7809 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7925
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7926
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7944
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7945
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7961
+[4002] ! Terminating timed out worker (worker failed to boot within 60 seconds): 7963
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7816 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7824 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7680 worker
+[4002] ! Out-of-sync worker list, no 7834 worker
+[4002] ! Out-of-sync worker list, no 7836 worker
+[4002] ! Out-of-sync worker list, no 7848 worker
+[4002] ! Out-of-sync worker list, no 7853 worker
+[4002] ! Out-of-sync worker list, no 7863 worker
+[4002] ! Out-of-sync worker list, no 7870 worker
+[4002] ! Out-of-sync worker list, no 7877 worker
+[4002] ! Out-of-sync worker list, no 7882 worker
+[4002] ! Out-of-sync worker list, no 7895 worker
+[4002] ! Out-of-sync worker list, no 7894 worker
+[4002] ! Out-of-sync worker list, no 7911 worker
+[4002] ! Out-of-sync worker list, no 7909 worker
+[4002] ! Out-of-sync worker list, no 7926 worker
+[4002] ! Out-of-sync worker list, no 7925 worker
+[4002] ! Out-of-sync worker list, no 7944 worker
+[4002] ! Out-of-sync worker list, no 7945 worker
+[4002] ! Out-of-sync worker list, no 7961 worker
+[4002] ! Out-of-sync worker list, no 7963 worker
+[4002] - Worker 0 (PID: 7979) booted in 0.04s, phase: 0
+[4002] - Worker 1 (PID: 7980) booted in 0.07s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7980
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 7979
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7980 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] ! Out-of-sync worker list, no 7979 worker
+[4002] - Worker 1 (PID: 8423) booted in 14.52s, phase: 0
+[4002] - Worker 0 (PID: 8426) booted in 6.06s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8423
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8426
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] ! Out-of-sync worker list, no 8423 worker
+[4002] ! Out-of-sync worker list, no 8426 worker
+[4002] - Worker 1 (PID: 8459) booted in 0.25s, phase: 0
+[4002] - Worker 0 (PID: 8458) booted in 0.69s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8458
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8459
+[4002] - Worker 1 (PID: 8944) booted in 0.12s, phase: 0
+[4002] - Worker 0 (PID: 8943) booted in 0.53s, phase: 0
+[4002] ! Terminating timed out worker (worker failed to check in within 60 seconds): 8944
+[4002] - Worker 1 (PID: 9003) booted in 0.15s, phase: 0
+[4002] === puma shutdown: 2023-11-15 07:24:12 +0000 ===
+[4002] - Goodbye!
+[4002] - Gracefully shutting down workers...
+=== puma startup: 2023-11-15 07:24:12 +0000 ===
+=== puma startup: 2023-11-15 07:24:12 +0000 ===
+=== puma startup: 2023-11-15 07:24:12 +0000 ===
+Exiting
+=== puma startup: 2023-11-15 08:04:48 +0000 ===
+[5442] - Worker 1 (PID: 5445) booted in 9.56s, phase: 0
+[5442] - Worker 0 (PID: 5444) booted in 9.56s, phase: 0
+[5442] === puma shutdown: 2023-11-15 08:11:47 +0000 ===
+[5442] - Goodbye!
+[5442] - Gracefully shutting down workers...
+=== puma startup: 2023-11-15 08:47:26 +0000 ===
+[5709] - Worker 1 (PID: 5712) booted in 0.0s, phase: 0
+[5709] - Worker 0 (PID: 5711) booted in 0.0s, phase: 0
+[5709] === puma shutdown: 2023-11-15 09:10:49 +0000 ===
+[5709] - Goodbye!
+[5709] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-15 09:10:57 +0000 ===
+[5946] - Worker 0 (PID: 5948) booted in 0.0s, phase: 0
+[5946] - Worker 1 (PID: 5949) booted in 0.0s, phase: 0
+[5946] === puma shutdown: 2023-11-15 09:14:20 +0000 ===
+[5946] - Goodbye!
+[5946] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-15 12:20:29 +0000 ===
+[10545] - Worker 0 (PID: 10547) booted in 4.88s, phase: 0
+[10545] - Worker 1 (PID: 10548) booted in 4.89s, phase: 0
+[10545] === puma shutdown: 2023-11-15 13:01:00 +0000 ===
+[10545] - Goodbye!
+[10545] - Gracefully shutting down workers...
+=== puma startup: 2023-11-15 13:01:00 +0000 ===
+=== puma startup: 2023-11-15 13:01:00 +0000 ===
+=== puma startup: 2023-11-16 05:55:27 +0000 ===
+[4839] - Worker 0 (PID: 4841) booted in 0.0s, phase: 0
+[4839] - Worker 1 (PID: 4842) booted in 0.0s, phase: 0
+[4839] === puma shutdown: 2023-11-16 06:08:27 +0000 ===
+[4839] - Goodbye!
+[4839] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-16 06:08:51 +0000 ===
+[5010] - Worker 0 (PID: 5012) booted in 0.0s, phase: 0
+[5010] - Worker 1 (PID: 5013) booted in 0.0s, phase: 0
+[5010] === puma shutdown: 2023-11-16 06:17:20 +0000 ===
+[5010] - Goodbye!
+[5010] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-16 06:17:35 +0000 ===
+[5171] - Worker 0 (PID: 5173) booted in 0.0s, phase: 0
+[5171] - Worker 1 (PID: 5174) booted in 0.0s, phase: 0
+[5171] === puma shutdown: 2023-11-16 06:45:20 +0000 ===
+[5171] - Goodbye!
+[5171] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-16 06:45:36 +0000 ===
+[5328] - Worker 0 (PID: 5330) booted in 0.0s, phase: 0
+[5328] - Worker 1 (PID: 5331) booted in 0.0s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5330
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] ! Out-of-sync worker list, no 5330 worker
+[5328] - Worker 0 (PID: 5675) booted in 22.13s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5675
+[5328] - Worker 0 (PID: 5683) booted in 1.23s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5683
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5690
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5698
+[5328] ! Out-of-sync worker list, no 5690 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5707
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5715
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5722
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5729
+[5328] ! Out-of-sync worker list, no 5698 worker
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5331
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5736
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5707 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5740
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5750
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5715 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5762
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5768
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5781
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5783
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5722 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5802
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5804
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5729 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5331 worker
+[5328] ! Out-of-sync worker list, no 5736 worker
+[5328] ! Out-of-sync worker list, no 5740 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5817
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5818
+[5328] ! Out-of-sync worker list, no 5750 worker
+[5328] ! Out-of-sync worker list, no 5762 worker
+[5328] ! Out-of-sync worker list, no 5768 worker
+[5328] ! Out-of-sync worker list, no 5781 worker
+[5328] ! Out-of-sync worker list, no 5783 worker
+[5328] ! Out-of-sync worker list, no 5802 worker
+[5328] ! Out-of-sync worker list, no 5804 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5833
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5834
+[5328] ! Out-of-sync worker list, no 5817 worker
+[5328] ! Out-of-sync worker list, no 5818 worker
+[5328] ! Out-of-sync worker list, no 5833 worker
+[5328] ! Out-of-sync worker list, no 5834 worker
+[5328] - Worker 0 (PID: 5853) booted in 9.39s, phase: 0
+[5328] - Worker 1 (PID: 5854) booted in 12.01s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5853
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5854
+[5328] - Worker 1 (PID: 5875) booted in 0.4s, phase: 0
+[5328] - Worker 0 (PID: 5874) booted in 1.65s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5875
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5874
+[5328] - Worker 1 (PID: 5900) booted in 0.54s, phase: 0
+[5328] - Worker 0 (PID: 5904) booted in 2.67s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5900
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5904
+[5328] - Worker 0 (PID: 5922) booted in 5.05s, phase: 0
+[5328] - Worker 1 (PID: 5923) booted in 8.64s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5922
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5923
+[5328] - Worker 0 (PID: 5938) booted in 6.06s, phase: 0
+[5328] - Worker 1 (PID: 5939) booted in 13.48s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5938
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5939
+[5328] - Worker 1 (PID: 5956) booted in 18.0s, phase: 0
+[5328] - Worker 0 (PID: 5955) booted in 50.41s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5956
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5955
+[5328] - Worker 1 (PID: 5969) booted in 55.42s, phase: 0
+[5328] - Worker 0 (PID: 5972) booted in 73.77s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5969
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5972
+[5328] - Worker 0 (PID: 5985) booted in 61.0s, phase: 0
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 5986
+[5328] ! Out-of-sync worker list, no 5986 worker
+[5328] ! Terminating timed out worker (worker failed to check in within 60 seconds): 5985
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 6000
+[5328] ! Out-of-sync worker list, no 6000 worker
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 6004
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 6005
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 6018
+[5328] ! Terminating timed out worker (worker failed to boot within 60 seconds): 6019
+[5328] ! Out-of-sync worker list, no 6004 worker
+[5328] ! Out-of-sync worker list, no 6005 worker
+[5328] - Worker 0 (PID: 6018) booted in 154.91s, phase: 0
+[5328] - Worker 1 (PID: 6019) booted in 142.78s, phase: 0
+[5328] - Worker 0 (PID: 6032) booted in 0.02s, phase: 0
+[5328] - Worker 1 (PID: 6034) booted in 0.04s, phase: 0
+[5328] === puma shutdown: 2023-11-16 08:29:13 +0000 ===
+[5328] - Goodbye!
+[5328] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-16 08:29:35 +0000 ===
+[6557] - Worker 0 (PID: 6559) booted in 0.0s, phase: 0
+[6557] - Worker 1 (PID: 6560) booted in 0.0s, phase: 0
+[6557] === puma shutdown: 2023-11-16 11:04:39 +0000 ===
+[6557] - Goodbye!
+[6557] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-16 11:04:49 +0000 ===
+[7148] - Worker 0 (PID: 7150) booted in 0.0s, phase: 0
+[7148] - Worker 1 (PID: 7151) booted in 0.0s, phase: 0
+[7148] === puma shutdown: 2023-11-16 12:22:10 +0000 ===
+[7148] - Goodbye!
+[7148] - Gracefully shutting down workers...
+=== puma startup: 2023-11-16 12:22:10 +0000 ===
+Exiting
+=== puma startup: 2023-11-16 23:50:08 +0000 ===
+[3397] - Worker 0 (PID: 3399) booted in 0.0s, phase: 0
+[3397] - Worker 1 (PID: 3400) booted in 0.0s, phase: 0
+[3397] === puma shutdown: 2023-11-17 01:27:24 +0000 ===
+[3397] - Goodbye!
+[3397] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-17 01:27:48 +0000 ===
+[3864] - Worker 0 (PID: 3866) booted in 0.0s, phase: 0
+[3864] - Worker 1 (PID: 3867) booted in 0.0s, phase: 0
+[3864] === puma shutdown: 2023-11-17 01:28:16 +0000 ===
+[3864] - Goodbye!
+[3864] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-17 01:34:47 +0000 ===
+[3916] - Worker 0 (PID: 3918) booted in 0.0s, phase: 0
+[3916] - Worker 1 (PID: 3919) booted in 0.0s, phase: 0
+[3916] === puma shutdown: 2023-11-17 01:35:04 +0000 ===
+[3916] - Goodbye!
+[3916] - Gracefully shutting down workers...
+Exiting
+=== puma startup: 2023-11-17 01:39:42 +0000 ===
+[3971] - Worker 0 (PID: 3973) booted in 0.0s, phase: 0
+[3971] - Worker 1 (PID: 3974) booted in 0.0s, phase: 0
+[3971] === puma shutdown: 2023-11-17 05:50:44 +0000 ===
+[3971] - Goodbye!
+[3971] - Gracefully shutting down workers...
+=== puma startup: 2023-11-17 05:50:44 +0000 ===
+Exiting
+=== puma startup: 2023-11-17 09:37:11 +0000 ===
+[3393] - Worker 0 (PID: 3395) booted in 0.0s, phase: 0
+[3393] - Worker 1 (PID: 3396) booted in 0.0s, phase: 0
+[3393] === puma shutdown: 2023-11-17 09:55:53 +0000 ===
+[3393] - Goodbye!
+[3393] - Gracefully shutting down workers...
+Exiting

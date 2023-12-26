@@ -7,17 +7,16 @@ class InquiriesController < ApplicationController
   def create
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save
-       InquiryMailer.inquiry_mail(@inquiry).deliver
-       redirect_to inquiry_mentions_path(@inquiry)
+      InquiryMailer.inquiry_mail(@inquiry).deliver
+      redirect_to inquiry_mentions_path(@inquiry)
     else
-       render :new
+      render :new
     end
   end
 
-  def mentions;end
+  def mentions; end
 
   def inquiry_params
     params.require(:inquiry).permit(:email, :text)
   end
-
 end

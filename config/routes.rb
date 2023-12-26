@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'static_pages#top'
-  get '/index.html', to: 'static_pages#index'
-  get 'sessions/new'
+  get '/index.html', to: 'static_pages#top'
   get '/privacy_policy', to: 'static_pages#privacy_policy'
   get '/term_of_use', to: 'static_pages#term_of_use'
+  get '/guide', to: 'static_pages#guide'
   get :sign_up, to: 'users#new'
   post :sign_up, to: 'users#create'
   get '/login', to: 'sessions#new'
@@ -22,13 +22,17 @@ Rails.application.routes.draw do
   resources :items do
     collection do
       get 'search'
+      get 'already_expired'
     end
+    patch 'increment', on: :member
+    patch 'decrement', on: :member
   end
-  resources :users, only: %i[new create show edit update destroy] do
-   resource :authentication
-  end
-  resources :tags, only: %i[index show edit update destroy]
-  resources :shopping_lists
+
+  resources :users, only: %i[new create destroy]
+  resource :authentication
+  resource :profile, only: %i[show edit update]
+  resources :shopping_lists, only: %i[index create new]
+  delete 'shopping_lists/destroy', to: 'shopping_lists#destroy_selected', as: :destroy_selected_shopping_lists
   resources :password_resets, only: %i[new create edit update]
   resources :inquiries, only: %i[new create] do
     get '/mentions', to: 'inquiries#mentions'
@@ -51,11 +55,6 @@ Rails.application.routes.draw do
       end
     end
 
-    resources :tags, only: %i[index edit show update destroy search] do
-      collection do
-        get 'search'
-      end
-    end
     resources :shopping_lists, only: %i[index update show destroy] do
       collection do
         get 'search'

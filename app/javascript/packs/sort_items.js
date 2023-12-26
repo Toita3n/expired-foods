@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("turbolinks:load", function() {
   const selectElement = document.getElementById("item-sort-select");
 
   // itemのviewファイルにのみ存在する場合に実行
@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
       if (selectedValue === "latest") {
         // 遠い順の場合の処理
         redirectUrl += "?latest_expired=true";
-      } else if (selectedValue === "expired") {
+      } else if (selectedValue === "close") {
         // 近い順の場合の処理
-        redirectUrl += "?expired=true";
+        redirectUrl += "?close_expired=true";
+      } else if (selectedValue === "expired") {
+        redirectUrl += "?already_expired=true";
       }
 
       // 画面移行

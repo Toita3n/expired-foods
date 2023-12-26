@@ -15,6 +15,7 @@ class Admin::UsersController < Admin::BaseController
        render :edit
     end
   end
+
   def show; end
 
   def destroy

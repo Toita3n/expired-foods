@@ -7,7 +7,6 @@ class SearchItemsForm
   attribute :tag_name, :string
   attribute :user_id_item, :integer
 
-
   def search
     relation = Item.distinct
 
