@@ -1,3 +1,25 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/*
+ *= require_self
+ */
+.card-body {
+    .form-size {
+        width:300px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 480px){
+    .table{
+        width: 100%;
+    }
+    .card-body{
+        .form-size{
+            font-size: 16px;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+}

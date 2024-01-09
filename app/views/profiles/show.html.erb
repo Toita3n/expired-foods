@@ -1,5 +1,5 @@
 <% content_for(:title, current_user.name) %>
-<div class="content pt-3">
+<div class="content">
   <div class="row">
     <div class="col-md-10 offset-md-1 mb-5">
       <h1 class="float-card"><%= t('.title')%></h1>
@@ -32,7 +32,7 @@
               <% else %>
                <span><%= t('.unlinked_LINE')%></span>
                 <td>
-                  <%= link_to t('.linked_LINE'), auth_at_provider_path(provider: :line), class: 'btn btn-primary float-right' %>
+                  <%= link_to t('.linked_LINE'), auth_at_provider_path(provider: :line), class: 'btn btn-success float-right' %>
                 </td>
               <% end %>
             </td>

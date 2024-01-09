@@ -36,7 +36,7 @@ gem 'omniauth-rails_csrf_protection'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 4.3.1'
 gem 'sassc', '2.1.0'
-gem 'font-awesome-sass', '~> 6.4.0'
+gem 'font-awesome-sass', "~> 6.2", "< 6.3"
 gem 'kaminari'
 gem 'bootstrap5-kaminari-views', '~> 0.0.1'
 gem 'config'
@@ -51,6 +51,8 @@ gem 'typhoeus'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'factory_bot_rails', '6.2'
   gem 'spring'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false

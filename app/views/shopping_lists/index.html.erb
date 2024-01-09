@@ -8,18 +8,22 @@
     <th><%=ShoppingList.human_attribute_name(:product) %></th>
     <th><%=ShoppingList.human_attribute_name(:number) %></th>
     <th><%=ShoppingList.human_attribute_name(:trait) %></th>
+    <th><%= t('.edit')%></th>
   </thead>
      <tbody>
        <% if @shopping_lists.present? %>
-       <%= form_tag destroy_selected_shopping_lists_path, method: :delete, id: 'delete-form' do %>
+        <%= form_tag destroy_selected_shopping_lists_path, method: :delete, id: 'delete-form' do %>
          <% current_user.shopping_lists.each do |list| %>
            <tr>
              <td><%= check_box_tag 'selected_shopping_lists[]', list.id %>
                  <%= label_tag :shopping_list_box, list.product %></td>
              <td><%= list.number %></td>
              <td><%= list.trait %></td>
-           </tr>
+             <td><%= link_to edit_shopping_list_path(list), class: "line-center" do %>
+              <%= icon 'fa', 'pen' %><% end %>
+             </td>
          <% end %>
+           </tr>
           <div class ="button-lists">
            <%= submit_tag t('.delete_selected'), class: 'btn btn-danger', data: { confirm: t('.confirm_delete') } %>
           </div>

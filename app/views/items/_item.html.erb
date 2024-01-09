@@ -33,7 +33,7 @@
                  <li class="list-inline-item"><%= t('defaults.count')%>:<%= item.count %>個</li>
                  <li class="list-inline-item"><%= icon 'fa', 'calendar-days'%><%= item.expired_at.strftime('%Y-%m-%d') %></li>
                  <li class="list-inline-item"><%= item.remaining_days %></li>
-                 <div class="box2"><%= item.detail %></div>
+                 <div class="box3"><%= item.detail %></div>
              </ul>
                <%= link_to '冷蔵庫の中身に戻る', items_path, class: 'btn btn-secondary' %>
            </div>

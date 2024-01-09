@@ -1,12 +1,16 @@
+<% content_for(:title, t('.title')) %>
 <div class="content">
- <div class="container">
   <div class="row">
-   <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <div class="card-label">
-       <h1><%= t('.item_edit')%></h1>
-        <%= render 'shopping_lists' %>
+        <div class="card-header">
+          <i class="bi bi-calendar me-2"></i>
+          <span><%= t('.item-edit')%></span>
+        </div>
+        <div class="edit-box">
+          <%= render 'shopping_lists' %>
+        </div>
       </div>
-   </div>
+    </div>
   </div>
- </div>
 </div>
