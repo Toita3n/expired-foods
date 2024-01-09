@@ -36,11 +36,34 @@
 
 .box1 {
     border:solid 2px #A5A19A;
+    margin: 30px 0 0 0;
     width: 700px;
     height: 710px;
 }
 
+.content {
+    margin: 30px 0 0 0;
+}
+
 .box2 {
+    width: 520px;
+    margin: 1em auto;
+    padding: 1em;
+    border:solid 2px black;
+    background-color: #EEEEEE;
+
+    .form-control {
+        width: 400px;
+    }
+
+    .textarea-memo {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.box3 {
+    width: 460px;
     margin: 1em auto;
     padding: 1em;
     border:solid 2px black;
@@ -56,4 +79,31 @@
     color: red;
     top: 0;
     right: 0px; 
+}
+
+@media screen and (max-width: 480px) {
+
+    .box2 {
+        width: 420px;
+        margin: 1em auto;
+        padding: 1em;
+        background-color: #EEEEEE;
+
+        .form-control {
+            width: 250px;
+        }
+
+        .textarea-memo {
+            width: 250px;
+            height: 100px;
+        }
+    }
+
+    .box3 {
+        width: 320px;
+        margin: 1em auto;
+        padding: 1em;
+        border:solid 2px black;
+        background-color: #EEEEEE;
+    }
 }

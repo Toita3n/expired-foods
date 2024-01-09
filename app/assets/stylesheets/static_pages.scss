@@ -7,7 +7,7 @@
 
 .scroll-box {
     width: 700px;
-    height: 600px;
+    height: 690px;
     overflow: scroll;
     border: 1px solid;
     margin: 0 auto;
@@ -35,4 +35,25 @@
 
 .scroll-box::-webkit-scrollbar-thumb:hover {
     background-color: black;
+}
+
+@media screen and (max-width: 480px){
+    .scroll-box {
+        width: 480px;
+        height: 600px;
+        overflow: scroll;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fafafa;
+    }
+    
+    .scroll-content {
+        width: 450px;
+        height: 400px;
+    
+        span {
+            color:red;
+        }
+    }
 }

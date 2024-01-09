@@ -1,0 +1,16 @@
+<%= form_with model: @shopping_list, local: true do |f| %>
+ <%= render 'shared/error_messages', object: f.object %>
+  <div class="mb-3 required-field">
+    <%= f.label :product, '商品名' %><span class="required-icon"></span>
+    <%= f.text_field :product, class: 'form-control' %>
+  </div>
+  <div class="fomr-group required-field">
+    <%= f.label :number, '総数' %><span class="required-icon"></span>
+    <%= f.number_field :number, class: 'form-control', min: 1  %>
+  </div>
+  <div class="mb-3 textarea">
+    <%= f.label :trait, 'メモ' %>
+    <%= f.text_area :trait, class: 'form-control' %>
+  </div>
+    <%= f.submit t('defaults.register'), class: 'btn btn-primary' %>
+<% end %>

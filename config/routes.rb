@@ -31,7 +31,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[new create destroy]
   resource :authentication
   resource :profile, only: %i[show edit update]
-  resources :shopping_lists, only: %i[index create new]
+  resources :shopping_lists, only: %i[index create new edit update]
   delete 'shopping_lists/destroy', to: 'shopping_lists#destroy_selected', as: :destroy_selected_shopping_lists
   resources :password_resets, only: %i[new create edit update]
   resources :inquiries, only: %i[new create] do
