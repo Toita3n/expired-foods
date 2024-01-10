@@ -1,35 +1,67 @@
 <% content_for(:title, t('.title')) %>
 <div class="content-list">
- <table class="table">
-  <div class="button-lists">
-   <%= link_to t('.add_shopping_lists'), new_shopping_list_path, class:'btn btn-primary' %>
-  </div>
-  <thead>
-    <th><%=ShoppingList.human_attribute_name(:product) %></th>
-    <th><%=ShoppingList.human_attribute_name(:number) %></th>
-    <th><%=ShoppingList.human_attribute_name(:trait) %></th>
-    <th><%= t('.edit')%></th>
-  </thead>
-     <tbody>
-       <% if @shopping_lists.present? %>
+  <table class="table">
+    <div class="button-lists">
+      <%= link_to t('.add_shopping_lists'), new_shopping_list_path, class:'btn btn-primary' %>
+    </div>
+    <thead>
+      <th><%= ShoppingList.human_attribute_name(:product) %></th>
+      <th><%= ShoppingList.human_attribute_name(:number) %></th>
+      <th><%= ShoppingList.human_attribute_name(:trait) %></th>
+    </thead>
+    <tbody>
+      <% if @shopping_lists.present? %>
         <%= form_tag destroy_selected_shopping_lists_path, method: :delete, id: 'delete-form' do %>
-         <% current_user.shopping_lists.each do |list| %>
-           <tr>
-             <td><%= check_box_tag 'selected_shopping_lists[]', list.id %>
-                 <%= label_tag :shopping_list_box, list.product %></td>
-             <td><%= list.number %></td>
-             <td><%= list.trait %></td>
-             <td><%= link_to edit_shopping_list_path(list), class: "line-center" do %>
-              <%= icon 'fa', 'pen' %><% end %>
-             </td>
-         <% end %>
-           </tr>
-          <div class ="button-lists">
-           <%= submit_tag t('.delete_selected'), class: 'btn btn-danger', data: { confirm: t('.confirm_delete') } %>
+          <% @shopping_lists.each do |shopping_list| %> <%# 'current_user.shopping_lists' から '@shopping_lists' に変更 %>
+            <tr>
+              <td>
+                <%= check_box_tag 'selected_shopping_lists[]', shopping_list.id %>
+                <%= link_to(shopping_list.product, "#", class: 'list-modal-trigger', data: { toggle: 'modal', target: "#listModal#{shopping_list.id}" }) %>
+              </td>
+              <td><%= shopping_list.number %></td>
+              <td><%= shopping_list.trait %></td>
+            </tr>
+          <% end %>
+          <div class="button-lists">
+            <%= submit_tag t('.delete_selected'), class: 'btn btn-danger', data: { confirm: t('.confirm_delete') } %>
           </div>
         <% end %>
-          </tr>
-       <% end %>
-     </tbody>
- </table>
+      <% end %>
+    </tbody>
+  </table>
 </div>
+
+<% @shopping_lists.each do |shopping_list| %> <%# 追加: モーダル表示対象を繰り返し処理 %>
+  <div class="modal fade" id="listModal<%= shopping_list.id %>" tabindex="-1" role="dialog" aria-labelledby="listModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="listModalLabel"><%= shopping_list.product %>の編集</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="edit-box">
+            <%= form_with model: shopping_list, local: true do |f| %> <%# 追加: フォームモデルを 'shopping_list' に変更 %>
+              <%= render 'shared/error_messages', object: f.object %>
+              <div class="mb-3 required-field">
+                <%= f.label :product, '商品名' %><span class="required-icon"></span>
+                <%= f.text_field :product, class: 'form-control' %>
+              </div>
+              <div class="form-group required-field">
+                <%= f.label :number, '総数' %><span class="required-icon"></span>
+                <%= f.number_field :number, class: 'form-control', min: 1  %>
+              </div>
+              <div class="mb-3 textarea">
+                <%= f.label :trait, 'メモ' %>
+                <%= f.text_area :trait, class: 'form-control' %>
+              </div>
+              <%= f.submit t('defaults.register'), class: 'btn btn-primary' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -197,6 +197,9 @@ ja:
       guest_user_login: 'ゲストユーザーでログインしました。'
       limited_function: 'ゲストユーザーは機能を制限しています。'
       logout_guest_user: 'ログアウトしました'
+  oauths:
+    callback:
+      return_to_home_page: 'ホームページへ戻る'
   admin:
     user_sessions:
       new:

@@ -46,12 +46,12 @@
         font-size: 16px;
 
         .table{
-
             width: 10px;
 
             .form-control {
                 width: 10px;
             }
+
             .form-number{
                 width:5px;
             }
@@ -65,6 +65,7 @@
     padding: 1em;
     border:solid 2px black;
     background-color: #EEEEEE;
+
     .form-control{
         width: 200px;
     }
@@ -72,13 +73,12 @@
 
 .shoppinglist-reginster {
     border: solid 1px #FFF;
-    position : relative;
-
+    position: relative;
 
     .required-field {
         position: relative;
     }
-      
+
     .required-icon::after {
         content: '★';
         color: red;

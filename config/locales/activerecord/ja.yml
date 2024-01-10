@@ -13,7 +13,6 @@ ja:
       sessions:
       item:
         title: 商品名
-        image: 写真
         expired_at: 賞味期限
         count: 数
         detail: メモ(買った場所や値段、量などの情報を入力しましょう)
