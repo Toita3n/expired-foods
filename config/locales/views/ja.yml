@@ -159,7 +159,11 @@ ja:
       add_shopping_lists: '買い物リストに追加'
       delete_selected: 'チェック済みを削除'
       selected_delete: '削除用チェック'
+      product: '商品名'
+      number: '総数'
+      trait: 'メモ'
       edit: '編集'
+      update: '更新'
     new:
       title: 'リストの新規作成'
       add_shopping_lists: '買い物リストに商品を追加'
@@ -169,10 +173,6 @@ ja:
     create:
       success: '商品がショッピングリストに追加されました'
       fail: '商品が作成できませんでした'
-    edit:
-      title: '買い物リスト編集'
-      item-edit: '買い物リストの編集'
-      confirm_delete: '削除しますか？'
     update:
       success: '商品情報が変更されました'
       not_to_update: '変更されませんでした'

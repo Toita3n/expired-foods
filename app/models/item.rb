@@ -1,8 +1,5 @@
 class Item < ApplicationRecord
   belongs_to :user
-  has_one_attached :image
-  attr_accessor :image_cache
-
   validates :title, presence: true
   validates :count, presence: true, numericality: true
   validates :expired_at, presence: true

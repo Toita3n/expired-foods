@@ -8,7 +8,7 @@ class OauthsController < ApplicationController
   def callback
     provider = auth_params[:provider]
     @user = User.find_by(id: session[:user_id])
-    
+
     if auth_params[:denied].present?
       redirect_to root_path, notice: 'ログインをキャンセルしました'
     elsif @user = login_from(provider)
