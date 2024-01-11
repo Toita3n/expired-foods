@@ -16,7 +16,7 @@
  会員登録
  ログイン
  ユーザー詳細
- 商品一覧（冷蔵庫内の商品棚、indexとして使用）
+ 商品一覧（冷蔵庫内の商品棚、indexとして使用）->名称を冷蔵庫の中身に変更
  商品詳細(賞味期限・消費期限、買った場所など)
  買い物リスト
  LINEログイン
@@ -32,4 +32,4 @@
 https://www.figma.com/file/bAEJaoqbJOAX6yf0uEZz75/expired_foods?type=design&node-id=0%3A1&mode=design&t=zGEZgn14ElDN3Vfg-1
 
 # ER図
-![Alt text](https://i.gyazo.com/cdae65f284ee46a4d88448418b0a9454.png)
+![Alt text](https://i.gyazo.com/5a8b2fe3172f273e10274c05ccc62833.png)

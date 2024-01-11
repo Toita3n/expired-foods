@@ -9,24 +9,26 @@
         <%= f.label :number, '総数'%><span class="required-icon"></span>
       </th>
       <th>
-        <%= f.label :trait, 'メモ'%>
+        <%= f.label :trait, 'メモ' %>
       </th>
     </tr>
     <tbody>
       <%= f.fields_for :shopping_lists do |f| %>
         <tr>
           <td>
-            <%= f.text_field :product, class: 'form-control' %>
+            <%= f.text_field :product %>
           </td>
           <td>
-            <%= f.number_field :number, min: 1, class: 'form-control' %>
+            <%= f.number_field :number, min: 1 %>
           </td>
           <td>
-            <%= f.text_area :trait, class: 'form-control' %>
+            <%= f.text_area :trait %>
           </td>
         </tr>
       <% end %>
     </tbody>
   </table>
-  <%= f.submit t('defaults.register_item'), class: 'btn btn-primary' %>
+  <div class="shoppinglist-button">
+    <%= f.submit t('defaults.register_item'), class: 'btn btn-primary' %>
+  </div>
 <% end %>
