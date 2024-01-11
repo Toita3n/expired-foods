@@ -4,18 +4,32 @@
 /*
  *= require_self
  */
+
+.content{
+    width: 100%;
+
+    .table{
+        width: 100%;
+    }
+}
 .card-body {
     .form-size {
-        width:300px;
+        width: 400px;
         padding: 5px;
         margin: 5px;
+
+        .form-control{
+            width: 350px;
+        }
     }
 }
 
 @media screen and (max-width: 480px){
+
     .table{
-        width: 100%;
+        width: 95%;
     }
+
     .card-body{
         .form-size{
             font-size: 16px;

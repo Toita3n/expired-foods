@@ -18,6 +18,7 @@
 .scroll-content {
     width: 600px;
     height: 500px;
+    margin: 5px;
 
     span {
         color:red;
@@ -43,15 +44,18 @@
         height: 600px;
         overflow: scroll;
         border: 1px solid;
-        margin: 0 auto;
-        padding: 25px;
+        margin-bottom: 10%;
         background-color: #fafafa;
     }
 
     .scroll-content {
         width: 340px;
         height: 400px;
-    
+
+        p{
+            font-size: 16px;
+        }
+
         span {
             color:red;
         }

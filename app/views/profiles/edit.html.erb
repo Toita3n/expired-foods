@@ -9,7 +9,7 @@
        <%= render 'shared/error_messages', object: f.object %>
         <div class="form-size">
           <%= f.label :email %>
-          <%= f.email_field :email, placeholder: 'メールアドレス' %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'メールアドレス' %>
         </div>
         <div>
           <%= f.submit t('defaults.submit'), class: 'btn btn-primary' %>
