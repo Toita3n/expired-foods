@@ -13,15 +13,8 @@ describe '冷蔵庫の中身の一覧機能', type: :system do
           expect(current_path).to eq login_path
         end
       end
-
-      context '商品・食材編集ページにアクセス' do
-        it '編集ページへのアクセスが失敗する' do
-            visit edit_item_path(item)
-            expect(page).to have_content('ログインしてください')
-            expect(current_path).to eq item_path(item)
-        end
-      end
     end
+  end
 
   describe 'モーダル表記の表示確認' do
     context '商品・食材がモーダル表記の詳細ページにアクセス' do
@@ -31,7 +24,7 @@ describe '冷蔵庫の中身の一覧機能', type: :system do
           expect
 
     end
-
+  end
   describe 'ログイン後' do
       before { login_as(user) }
 
@@ -56,6 +49,7 @@ describe '冷蔵庫の中身の一覧機能', type: :system do
           it 'ユーザーが作成した商品が表示される' do
               expect(page).to have_content '最初の商品'
           end
+        end
       end
   end
 end

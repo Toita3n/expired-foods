@@ -50,6 +50,7 @@ ja:
       title: 'アカウント作成'
       to_login_page: 'ログインページへ'
       line_login: 'LINEログイン'
+      enroll: 'アカウントを作成する'
     create:
       success: 'アカウントを作成しました'
       fail: 'アカウントの作成に失敗しました'
