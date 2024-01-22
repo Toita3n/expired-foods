@@ -28,6 +28,9 @@
             <%= link_to t('.line_login'), auth_at_provider_path(provider: :line), class: "line-login-button" %>
           </div>
         </div>
+        <div class="text-center2">
+          <p>＊LINEログインは既存のEXPIRED-FOODSアカウントと関連付けたLINEアカウントのみ使用できます</p>
+        </div>
         <div class="text-center">
           <%= link_to t('.password_forget'), new_password_reset_path %>
         </div>
