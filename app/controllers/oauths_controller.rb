@@ -10,16 +10,15 @@ class OauthsController < ApplicationController
     @user = User.find_by(id: session[:user_id])
 
     if auth_params[:denied].present?
-      redirect_to root_path, notice: 'ログインをキャンセルしました'
+      redirect_to login_path, notice: 'ログインをキャンセルしました'
     elsif @user = login_from(provider)
       redirect_to root_path, notice: 'LINEでログインをしました。正しいメールアドレス、パスワードでない場合は編集して下さい。'
     else
       if current_user.present?
         @user = update_from(provider)
-      elsif
-        redirect_to root_path, danger: 'ユーザーを新たに作成して下さい'
-      else @user
         redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
+      else
+        redirect_to root_path, danger: 'ユーザーを新たに作成して下さい'
       end
     end
   end

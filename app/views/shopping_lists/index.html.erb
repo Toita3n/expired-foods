@@ -49,13 +49,13 @@
                 <%= f.label :product, t('.product') %><span class="required-icon"></span>
                 <%= f.text_field :product, class: 'form-control' %>
               </div>
-              <div class="form-group required-field">
+              <div class="mb-3 required-field">
                 <%= f.label :number, t('.number') %><span class="required-icon"></span>
-                <%= f.number_field :number, class: 'form-control', min: 1  %>
+                <%= f.number_field :number, class: 'form-control', min: 1 %>
               </div>
-              <div class="mb-3 textarea">
+              <div class="mb-3 required-field">
                 <%= f.label :trait, t('.trait') %>
-                <%= f.text_area :trait, class: 'form-control' %>
+                <%= f.text_field :trait, class: 'form-control', max: 50 %>
               </div>
               <%= f.submit t('.update'), class: 'btn btn-primary' %>
             <% end %>

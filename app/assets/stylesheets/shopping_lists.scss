@@ -19,15 +19,15 @@
         width: 300px;
         height: 40px;
     }
-    
+
     input[type="number"] {
         width: 70px;
         height: 40px;
     }
-    
-    textarea {
-        width: 280px;
-        height: 30px;
+
+    .trait_field {
+        width: 300px;
+        height: 40px;
     }
 
     .shoppinglist-button{
@@ -36,7 +36,6 @@
         text-align: center;
     }
 }
-
 
 @media screen and (max-width: 768px){
     .content-list{
@@ -79,7 +78,7 @@
                 height: 50px;
             }
             
-            textarea {
+            .trait_field {
                 width: 170px;
                 height: 50px;
             }

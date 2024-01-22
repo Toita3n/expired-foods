@@ -19,12 +19,13 @@ describe '冷蔵庫の中身の一覧機能', type: :system do
   describe 'モーダル表記の表示確認' do
     context '商品・食材がモーダル表記の詳細ページにアクセス' do
       it '商品・食材の詳細ページが表示される', js: true do
-          find(".")
+          find(".item")
           click item.title
           expect
 
     end
   end
+
   describe 'ログイン後' do
       before { login_as(user) }
 
