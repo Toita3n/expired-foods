@@ -13,12 +13,13 @@ class OauthsController < ApplicationController
       redirect_to login_path, notice: 'ログインをキャンセルしました'
     elsif @user = login_from(provider)
       redirect_to root_path, notice: 'LINEでログインをしました。正しいメールアドレス、パスワードでない場合は編集して下さい。'
-    else
+    elsif auth_params[:error].present?
+      redirect_to login_path, alert: 'エラーが発生しました'
       if current_user.present?
         @user = update_from(provider)
-        redirect_to user_path(@user), notice: "#{provider.titleize}を連携しました"
+        redirect_to profile_path, notice: "#{provider.titleize}を連携しました"
       else
-        redirect_to root_path, danger: 'ユーザーを新たに作成して下さい'
+        redirect_to root_path, danger: 'ユーザーを新しく作成して下さい'
       end
     end
   end
