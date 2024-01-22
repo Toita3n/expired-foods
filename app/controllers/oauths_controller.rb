@@ -11,10 +11,11 @@ class OauthsController < ApplicationController
 
     if auth_params[:denied].present?
       redirect_to login_path, notice: 'ログインをキャンセルしました'
+    elsif auth_params[:error].present?
+      redirect_to login_path, danger: 'エラーが発生しました'
     elsif @user = login_from(provider)
       redirect_to root_path, notice: 'LINEでログインをしました。正しいメールアドレス、パスワードでない場合は編集して下さい。'
-    elsif auth_params[:error].present?
-      redirect_to login_path, alert: 'エラーが発生しました'
+    else
       if current_user.present?
         @user = update_from(provider)
         redirect_to profile_path, notice: "#{provider.titleize}を連携しました"
