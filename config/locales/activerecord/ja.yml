@@ -9,29 +9,44 @@ ja:
       user:
         role: 管理権限
         name: 'ユーザー名'
+        email: 'メールアドレス'
         uid: 'LINEアカウント'
+        password: 'パスワード'
+        password_confirmation: 'パスワード再確認用'
+        created_at: '作成日時'
+        updated_at: '更新日時'
       sessions:
       item:
-        title: 商品名
-        expired_at: 賞味期限
-        count: 数
-        detail: メモ(買った場所や値段、量などの情報を入力しましょう)
+        title: '商品名'
+        expired_at: '賞味期限'
+        count: '数'
+        detail: 'メモ(買った場所や値段、量などの情報を入力しましょう)'
         template: '食材指定用テンプレート(クリックすると選択できます)'
       shopping_list:
-        product: 項目
-        number: 数
-        trait: メモ
+        product: '項目'
+        number: '数'
+        trait: 'メモ'
+      inquiry:
+        text: '本文'
   # 全モデル共通の属性
   attributes:
-    id: ID
+    id: 'ID'
     name: 'アカウント名'
-    email: メールアドレス
-    password: パスワード
-    password_confirmation: パスワード再確認用
-    created_at: 作成日時
-    updated_at: 更新日時
+    email: 'メールアドレス'
+    password: 'パスワード'
+    password_confirmation: 'パスワード再確認用'
+    created_at: '作成日時'
+    updated_at: '更新日時'
   enums:
     user:
       role:
-        general: 一般
-        admin: 管理者
+        general: '一般'
+        admin: '管理者'
+  errors:
+    messeges:
+           invalid: "%{attribute}が正しくありません"
+           blank: "%{attribute}を入力してください"
+           too_long: は%{count}文字以内で入力してください
+           too_shoot: "#{attribute}は%{count}文字以上で入力してください"
+           required: を入力してください
+           taken: はすでに存在します

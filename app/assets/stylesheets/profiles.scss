@@ -14,12 +14,11 @@
 }
 .card-body {
     .form-size {
-        width: 400px;
+        width: 330px;
         padding: 5px;
-        margin: 5px;
 
         .form-control{
-            width: 350px;
+            width: 330px;
         }
     }
 }
@@ -32,9 +31,13 @@
 
     .card-body{
         .form-size{
+            width: 250px;
             font-size: 16px;
             padding: 5px;
-            margin: 5px;
+
+            .form-control {
+                width:250px;
+            }
         }
     }
 }

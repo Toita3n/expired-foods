@@ -4,6 +4,7 @@
    <div class="row">
      <p><%= t('.title')%></p>
      <%= form_with model: @inquiry, local: true do |f| %>
+       <%= render 'shared/error_messages', object: f.object %>
        <%= f.email_field :email, class: "form-control", placeholder: "メールアドレス" %>
        <%= f.text_area :text, class: "form-control", placeholder: "本文", size: "20x20" %>
        <%= f.submit t('defaults.submit'), class: "btn btn-primary" %>

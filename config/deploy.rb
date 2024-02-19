@@ -8,7 +8,7 @@ set :deploy_to, '/var/www/expired-foods'
 set :branch, 'main'
 
 # どのリポジトリからアプリをpullするかを指定する
-set :repo_url,  'git@github.com:Toita3n/expired-foods.git'
+set :repo_url, 'git@github.com:Toita3n/expired-foods.git'
 
 # バージョンが変わっても共通で参照するディレクトリを指定
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')

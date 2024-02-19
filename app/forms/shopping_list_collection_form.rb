@@ -12,7 +12,7 @@ class ShoppingListCollectionForm
   end
 
   def shopping_lists_attributes=(attributes)
-    self.shopping_lists = attributes.map {|_, v| ShoppingList.new(v)}
+    self.shopping_lists = attributes.map { |_, v| ShoppingList.new(v) }
   end
 
   def save

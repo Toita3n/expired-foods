@@ -8,12 +8,11 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 set :rails_env, 'production'
 # どの公開鍵を利用してデプロイするか
-set :ssh_options, { 
-    auth_methods: [ 'publickey' ],
-    keys: [ '~/.ssh/runteq-key.pem' ],
+set :ssh_options, {
+    auth_methods: ['publickey'],
+    keys: ['~/.ssh/runteq-key.pem'],
   }
 server '172.31.0.188', user: 'ec2-user', roles: %w{app db web}
-
 
 # role-based syntax
 # ==================
@@ -27,8 +26,6 @@ server '172.31.0.188', user: 'ec2-user', roles: %w{app db web}
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-
-
 # Configuration
 # =============
 # You can set any configuration variable like in config/deploy.rb
@@ -36,8 +33,6 @@ server '172.31.0.188', user: 'ec2-user', roles: %w{app db web}
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-
-
 
 # Custom SSH Options
 # ==================

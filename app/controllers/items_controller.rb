@@ -38,7 +38,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    @search_items_form = SearchItemsForm.new(search_item_params) #form_objectを使用してsearchする
+    @search_items_form = SearchItemsForm.new(search_item_params) # form_objectを使用してsearchする
     @search_items = @search_items_form.search.order(created_at: :desc).page(params[:page]).per(5)
   end
 
@@ -48,7 +48,7 @@ class ItemsController < ApplicationController
   end
 
   def decrement
-    if @item.count > 0
+    if @item.count > 0 # 0以下にならないようにする @item.count.positive?
       @item.decrement!(:count)
       redirect_to items_path, warning: t('.decrease')
     else
@@ -63,9 +63,9 @@ class ItemsController < ApplicationController
   end
 
   def item_sort(params)
-    if params[:latest_expired]#賞味期限が遠い順
+    if params[:latest_expired] # 賞味期限が遠い順
       current_user.items.latest_expired.page(params[:page]).per(5)
-    elsif params[:close_expired]#賞味期限が遠い順
+    elsif params[:close_expired] # 賞味期限が遠い順
       current_user.items.close_expired.page(params[:page]).per(5)
     else
       current_user.items.close_expired.order(created_at: :desc).page(params[:page]).per(5)

@@ -14,7 +14,7 @@ class SignUpForm
   def save
     return false unless valid?
     user = User.new(name: name, email: email, password: password, password_confirmation: password_confirmation)
-    user.save!
+    user.save
   end
 
   def user

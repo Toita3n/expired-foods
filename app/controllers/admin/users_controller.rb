@@ -1,5 +1,5 @@
 class Admin::UsersController < Admin::BaseController
-  before_action :set_user, only:  %i[edit update show destroy]
+  before_action :set_user, only: %i[edit update show destroy]
 
   def index
     @users = User.all.order(created_at: :desc).page(params[:page])
@@ -9,10 +9,10 @@ class Admin::UsersController < Admin::BaseController
 
   def update
     if @user.update(user_params)
-       redirect_to admin_user_path(@user), success: t('defaults.message.updated', item: User.model_name.human)
+      redirect_to admin_user_path(@user), success: t('defaults.message.updated', item: User.model_name.human)
     else
-       flash.now[:danger] = t('.fail')
-       render :edit
+      flash.now[:danger] = t('.fail')
+      render :edit
     end
   end
 

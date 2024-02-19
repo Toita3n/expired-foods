@@ -1,7 +1,6 @@
 require 'line/bot'
 
 class ApplicationController < ActionController::Base
-
   helper_method :current_user
   helper_method :not_authenticated
   before_action :require_login

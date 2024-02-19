@@ -40,8 +40,6 @@ yarn-debug.log*
 .yarn-integrity
 
 db/migrate/seeds.rb
-/rspec/*
-/spec/*
 
 /.env
 /config/credentials/production.key

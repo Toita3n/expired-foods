@@ -80,7 +80,7 @@ Rails.application.config.sorcery.configure do |config|
   # i.e. [:twitter, :facebook, :github, :linkedin, :xing, :google, :liveid, :salesforce, :slack, :line].
   # Default: `[]`
   #
-   config.external_providers = %i[line]
+  config.external_providers = %i[line]
 
   # You can change it by your local ca_file. i.e. '/etc/pki/tls/certs/ca-bundle.crt'
   # Path to ca_file. By default use a internal ca-bundle.crt.
@@ -219,15 +219,14 @@ Rails.application.config.sorcery.configure do |config|
   # config.salesforce.scope = "full"
   # config.salesforce.user_info_mapping = {:email => "email"}
 
-   config.line.key = Rails.application.credentials.dig(:line, :login_channel_id)
-   config.line.secret = Rails.application.credentials.dig(:line, :login_secret)
-   config.line.callback_url = Rails.application.credentials.dig(:line, :callback)
-   config.line.scope = 'profile openid email'
-   config.line.bot_prompt = "aggressive"
-   config.line.user_info_mapping = { name: 'displayName',
-                                     uid: 'userId'}
+  config.line.key = Rails.application.credentials.dig(:line, :login_channel_id)
+  config.line.secret = Rails.application.credentials.dig(:line, :login_secret)
+  config.line.callback_url = Rails.application.credentials.dig(:line, :callback)
+  config.line.scope = 'profile openid email'
+  config.line.bot_prompt = "aggressive"
+  config.line.user_info_mapping = { name: 'displayName',
+                                     uid: 'userId' }
 
-  
   # For information about Discord API
   # https://discordapp.com/developers/docs/topics/oauth2
   # config.discord.key = "xxxxxx"

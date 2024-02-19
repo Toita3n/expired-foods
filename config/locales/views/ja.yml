@@ -8,6 +8,7 @@ ja:
     enroll: 'アカウント作成'
     search_word: '検索ワード'
     thing: '商品情報'
+    change: '変更'
     show: '詳細'
     edit: '編集'
     delete: '削除'
@@ -19,7 +20,8 @@ ja:
     edit_lists: 'この内容に編集する'
     use_template: 'テンプレート'
     item_list: '冷蔵庫の中身'
-    shopping_list: '買い物リスト' 
+    shopping_list: '買い物リスト'
+    enroll_shopping_lists: '買い物リストに登録'
     email_setting: 'メールアドレス変更'
     password_reset: 'パスワードリセット'
     return_to_top_page: 'トップページに戻る'
@@ -54,18 +56,6 @@ ja:
     create:
       success: 'アカウントを作成しました'
       fail: 'アカウントの作成に失敗しました'
-    show:
-      title: 'アカウント'
-      email: 'メールアドレス'
-      change_profile: 'ユーザー情報の変更'
-      password: 'パスワード'
-      line_account: 'LINEアカウント'
-      linked_LINE: 'LINEアカウント連携'
-      connected_LINE: 'LINEアカウントが連携されています'
-      destroy_user: 'ユーザーアカウントの削除'
-      cannot_change_email: 'emailの変更へできません'
-      cannot_put_LINEID: 'ゲストユーザーはLINEを登録できません'
-      destroy: 'アカウントー削除'
     update:
       success: 'ユーザー情報が更新されました'
     edit_line:
@@ -114,6 +104,7 @@ ja:
     destroy:
       message_deleted: '削除しました'
     search:
+      title: '商品・食材検索後'
       add_item: '商品・食材追加'
       expired_at: '賞味期限'
       sort: 'ソート'
@@ -172,7 +163,7 @@ ja:
       number: '総数'
       trait: 'メモ'
     create:
-      success: '商品がショッピングリストに追加されました'
+      success: '商品がショッピングリストに追加されました(商品名、総数が入ってない場合は表示されません)'
       fail: '商品が作成できませんでした'
     update:
       success: '商品情報が変更されました'
@@ -210,7 +201,7 @@ ja:
         success: 'ログインしました'
         fail: 'ログインに失敗しました'
       destroy:
-        success:  'ログアウトしました'
+        success: 'ログアウトしました'
     users:
       index:
         title: 'ユーザー一覧'

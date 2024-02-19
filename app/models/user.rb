@@ -6,9 +6,9 @@ class User < ApplicationRecord
   has_many :authentications, dependent: :destroy
   accepts_nested_attributes_for :authentications
 
-  validates :name, uniqueness: true, presence: true
-  validates :email, uniqueness: true
-  validates :password, presence: true, if: -> {new_record? ||changes[:crypted_password] }
+  validates :name, uniqueness: true, presence: true, length: { maximum: 25 }
+  validates :email, uniqueness: true, presence: true
+  validates :password, presence: true, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :reset_password_token, uniqueness: true, allow_nil: true
@@ -38,7 +38,7 @@ class User < ApplicationRecord
       user.password = SecureRandom.hex(10) if user.new_record?
       user.password_confirmation = user.password if user.new_record?
       user.role = :general
-      user.save! if user.new_record? 
+      user.save! if user.new_record?
     end
   end
 end

@@ -9,11 +9,11 @@ class Admin::ItemsController < Admin::BaseController
 
   def update
     @item = Item.find(params[:id])
-    if  @item.update(item_params)
-        redirect_to admin_item_path(@item), success: t('.message_item_update')
+    if @item.update(item_params)
+      redirect_to admin_item_path(@item), success: t('.message_item_update')
     else
-        flash.now['danger'] = t('.not_to_update')
-        render :edit
+      flash.now['danger'] = t('.not_to_update')
+      render :edit
     end
   end
 

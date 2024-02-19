@@ -10,15 +10,12 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  get 'password_resets/create'
-  get 'password_resets/edit'
-  get 'password_resets/update'
   post '/guest_login', to: 'guest_sessions#create'
   delete '/guest_logout', to: 'guest_sessions#destroy'
   post '/callback', to: 'line_bot#callback'
   get '/callback', to: 'oauths#callback'
   post 'oauth/callback', to: 'oauths#callback'
-  get "oauth/:provider", to: "oauths#oauth", as: :auth_at_provider
+  get 'oauth/:provider', to: 'oauths#oauth', as: :auth_at_provider
   resources :items do
     collection do
       get 'search'
@@ -27,7 +24,6 @@ Rails.application.routes.draw do
     patch 'increment', on: :member
     patch 'decrement', on: :member
   end
-
   resources :users, only: %i[new create destroy]
   resource :authentication
   resource :profile, only: %i[show edit update]

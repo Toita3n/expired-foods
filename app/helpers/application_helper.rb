@@ -17,10 +17,10 @@ module ApplicationHelper
       site: 'expired-foods',
       title: '食材の賞味期限切れを防止するサービス',
       reverse: true,
-      separator: '|',   #Webサイト名とページタイトルを区切るために使用されるテキスト
+      separator: '|', # Webサイト名とページタイトルを区切るために使用されるテキスト
       description: '賞味期限切れをなくそう！',
-      keywords: '食材,賞味期限',   #キーワードを「,」区切りで設定する
-      canonical: request.original_url,   #優先するurlを指定する
+      keywords: '食材,賞味期限', # キーワードを「,」区切りで設定する
+      canonical: request.original_url, # 優先するurlを指定する
       noindex: ! Rails.env.production?,
 
       og: {
