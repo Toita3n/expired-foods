@@ -8,7 +8,7 @@ https://www.stop-expired-foods.com
  冷蔵庫内の食材をメモして、その食材の賞味期限/消費期限が来るまでの時間を表示する冷蔵庫管理サービスです。
 
  #　サービスへの想い
- 私は自炊をすることが多いのですが、冷蔵庫の中身に眠らせたままにしている食材があったり、そのままダメになってしまった食べ物などがあったりしたのでしたので冷蔵庫の中身を可視化するために作成しました。現在は、商品の記録のみですが、段階的に新機能を実装して利便性を向上させようと思っています。
+ 私は自炊をすることが多いのですが、冷蔵庫の中身に眠らせたままにしている食材があったり、そのままダメになってしまった食べ物などがあったりしたのでしたので冷蔵庫の中身を可視化するために作成しました。現在は、商品の記録のみですが、段階的に新機能を実装して利便性を向上させようと思っています。また、LINEと連携してexpired-foodsの公式アカウントを友だち登録するとトーク画面から冷蔵庫の中身が検索できます。
 
 # 今後実装予定の機能
   冷蔵庫内で作れるメニュー
@@ -38,17 +38,7 @@ https://www.stop-expired-foods.com
  | ![Alt text](https://i.gyazo.com/bad03b3a9bf69a361d525bac91f88dee.png) | ![Alt text](https://i.gyazo.com/067c4ae5212f65a1f6f8925706e8ec3a.png) |
  | 最大10までの商品を同時に登録できるようにしています。| アカウント詳細ページからLINE連携やアカウントの削除をできるようにしています。 |
 # 使用技術一覧
-<img src="https://img.shields.io/badge/-Ruby-CC342D.svg?logo=ruby&style=plastic">
-<img src="https://img.shields.io/badge/-Rails-CC0000.svg?logo=rails&style=plastic">
-<img src="https://img.shields.io/badge/-Javascript-F7DF1E.svg?logo=javascript&style=plastic">
-
-<img src="https://img.shields.io/badge/-Node.js-339933.svg?logo=node.js&style=plastic">
-<img src="https://img.shields.io/badge/-Mysql-4479A1.svg?logo=mysql&style=plastic">
-<img src="https://img.shields.io/badge/-Yarn-2C8EBB.svg?logo=yarn&style=plastic">
-<img src="https://img.shields.io/badge/-Line-00C300.svg?logo=line&style=plastic">
-<img src="https://img.shields.io/badge/-Nginx-269539.svg?logo=nginx&style=plastic">
-<img src="https://img.shields.io/badge/-Amazon%20aws-232F3E.svg?logo=amazon-aws&style=plastic">
-<img src="https://img.shields.io/badge/-Amazon%20aws%20EC2-232F3E.svg?logo=amazon-aws&style=plastic">
+<img src="https://img.shields.io/badge/-Ruby-CC342D.svg?logo=ruby&style=plastic"><img src="https://img.shields.io/badge/-Rails-CC0000.svg?logo=rails&style=plastic"><img src="https://img.shields.io/badge/-Javascript-F7DF1E.svg?logo=javascript&style=plastic"><img src="https://img.shields.io/badge/-Node.js-339933.svg?logo=node.js&style=plastic"><img src="https://img.shields.io/badge/-Mysql-4479A1.svg?logo=mysql&style=plastic"><img src="https://img.shields.io/badge/-Yarn-2C8EBB.svg?logo=yarn&style=plastic"><img src="https://img.shields.io/badge/-Line-00C300.svg?logo=line&style=plastic"><img src="https://img.shields.io/badge/-Nginx-269539.svg?logo=nginx&style=plastic"><img src="https://img.shields.io/badge/-Amazon%20aws-232F3E.svg?logo=amazon-aws&style=plastic"><img src="https://img.shields.io/badge/-Amazon%20aws%20EC2-232F3E.svg?logo=amazon-aws&style=plastic">
 
 ## バックエンド
 ・ Ruby -v 3.0.2

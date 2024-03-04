@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
   end
 
   def already_expired
-    @expired_items = current_user.items.already_expired.order(created_at: :desc).page(params[:page]).per(5)
+    @expired_items = current_user.items.already_expired.order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def new
@@ -64,11 +64,11 @@ class ItemsController < ApplicationController
 
   def item_sort(params)
     if params[:latest_expired] # 賞味期限が遠い順
-      current_user.items.latest_expired.page(params[:page]).per(5)
+      current_user.items.latest_expired.page(params[:page]).per(10)
     elsif params[:close_expired] # 賞味期限が遠い順
-      current_user.items.close_expired.page(params[:page]).per(5)
+      current_user.items.close_expired.page(params[:page]).per(10)
     else
-      current_user.items.close_expired.order(created_at: :desc).page(params[:page]).per(5)
+      current_user.items.close_expired.order(created_at: :desc).page(params[:page]).per(10)
     end
   end
 
