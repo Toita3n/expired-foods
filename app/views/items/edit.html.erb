@@ -1,13 +1,13 @@
 <% content_for(:title, @item.title) %>
-<div class="container">
+<div class="content">
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <div class="box1">
+      <div class="card-label">
         <div class="card-header">
           <i class="bi bi-calendar me-2"></i>
           <span><%= t('.item_edit')%></span>
         </div>
-        <div class="card-body">
+        <div class="box2">
           <%= render 'form', { item: @item } %>
         </div>
       </div>

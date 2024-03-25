@@ -1,5 +1,6 @@
 # サービス名
 　expired_foods
+![Alt text](https://i.gyazo.com/c8c6f19a54ce3e31e2dcebc621db11cd.jpg)
 
 # サービスのURL
 https://www.stop-expired-foods.com
@@ -44,6 +45,8 @@ https://www.stop-expired-foods.com
 ・ Ruby -v 3.0.2
 
 ・ Ruby on Rails -v 6.1.4
+
+・ Node -v 16.17.0
 ## フロントエンド
 ・ HTML
 
@@ -60,3 +63,6 @@ https://www.figma.com/file/bAEJaoqbJOAX6yf0uEZz75/expired_foods?type=design&node
 
 # ER図
 ![Alt text](https://i.gyazo.com/5a8b2fe3172f273e10274c05ccc62833.png)
+
+# インフラ図
+![Alt text](https://i.gyazo.com/f5b33c001002bf389ddf6d8bc4789f9d.png)

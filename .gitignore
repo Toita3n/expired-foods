@@ -40,7 +40,7 @@ yarn-debug.log*
 .yarn-integrity
 
 db/migrate/seeds.rb
-
+/.DS_Store
 /.env
 /config/credentials/production.key
 /lib/vision.rb
