@@ -41,7 +41,6 @@ yarn-debug.log*
 
 db/migrate/seeds.rb
 .DS_Store
-/Rakefile
 
 /.env
 /config/credentials/production.key
@@ -52,5 +51,6 @@ config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
 /coverage
+Capfile
 /spec/*
 
