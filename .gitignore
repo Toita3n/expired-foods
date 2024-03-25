@@ -40,15 +40,17 @@ yarn-debug.log*
 .yarn-integrity
 
 db/migrate/seeds.rb
-/.DS_Store
+.DS_Store
+/Rakefile
+
 /.env
 /config/credentials/production.key
 /lib/vision.rb
 
-config/inirializers/omniauth.rb
+/config/inirializers/omniauth.rb
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
 /coverage
-/lib/*
+/spec/*
 
